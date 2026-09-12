@@ -1,0 +1,35 @@
+[project]
+name = "fruit-fly-lab"
+version = "0.2.0"
+description = "Connectome-constrained fruit-fly mechanics and scientific reference models"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = "GPL-3.0-or-later"
+dependencies = [
+    "flygym==2.1.0",
+    "mujoco==3.9.0",
+    "numpy>=2,<3",
+    "pandas>=2.2,<3",
+    "pyarrow>=19",
+]
+
+[project.optional-dependencies]
+cuda = ["torch==2.14.0; sys_platform == 'linux'"]
+viewer = ["pyobjc-framework-Cocoa>=11; sys_platform == 'darwin'"]
+research = ["h5py>=3", "openpyxl>=3", "beautifulsoup4>=4", "brian2>=2.9,<3", "joblib>=1.4,<2"]
+
+[project.urls]
+Repository = "https://github.com/blevlabs/fruit-fly-lab"
+Issues = "https://github.com/blevlabs/fruit-fly-lab/issues"
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+flygym = { git = "https://github.com/NeLy-EPFL/flygym", rev = "38c8ec61034cd59bc5ba0de20688d4a3c0000d60" }
+torch = { index = "pytorch-cu126" }
+
+[[tool.uv.index]]
+name = "pytorch-cu126"
+url = "https://download.pytorch.org/whl/cu126"
+explicit = true

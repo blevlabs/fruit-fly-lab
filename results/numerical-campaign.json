@@ -1,0 +1,101 @@
+{
+  "scope": "Numerical completion, finite state, physical history and fluid conservation only; no behavior, gain, statistical or biological-accuracy acceptance",
+  "status": "PASS_NUMERICAL_ONLY",
+  "replication_unit": "Fresh simulated individual/process; checkpoint phases are consecutive history segments, not biological replicates",
+  "neural_timestep_s": 0.0001,
+  "physics_timestep_s": 2.5e-06,
+  "historical_only": true,
+  "trials": [
+    {
+      "trial": "pilot-warm-seed7",
+      "stage": "pilot",
+      "status": "PASS_NUMERICAL_ONLY",
+      "errors": [],
+      "wall_seconds": 449.0348904780001,
+      "valid_checkpoint_steps": {
+        "initial": 0,
+        "latest": 1000
+      },
+      "frames": 10,
+      "max_fluid_residual_mm3": 1.5143965785953718e-19
+    },
+    {
+      "trial": "warm-seed0",
+      "stage": "full",
+      "status": "PASS_NUMERICAL_ONLY",
+      "errors": [],
+      "wall_seconds": 11572.894179672,
+      "valid_checkpoint_steps": {
+        "initial": 0,
+        "latest": 30000
+      },
+      "frames": 300,
+      "max_fluid_residual_mm3": 1.5257101132218831e-19
+    },
+    {
+      "trial": "warm-seed17",
+      "stage": "full",
+      "status": "PASS_NUMERICAL_ONLY",
+      "errors": [],
+      "wall_seconds": 11178.319193284,
+      "valid_checkpoint_steps": {
+        "initial": 0,
+        "latest": 30000
+      },
+      "frames": 300,
+      "max_fluid_residual_mm3": 1.5456842813684066e-19
+    },
+    {
+      "trial": "warm-seed31",
+      "stage": "full",
+      "status": "PASS_NUMERICAL_ONLY",
+      "errors": [],
+      "wall_seconds": 10801.355215033,
+      "valid_checkpoint_steps": {
+        "initial": 0,
+        "latest": 30000
+      },
+      "frames": 300,
+      "max_fluid_residual_mm3": 1.601615261708916e-19
+    },
+    {
+      "trial": "disabled-seed47",
+      "stage": "full",
+      "status": "PASS_NUMERICAL_ONLY",
+      "errors": [],
+      "wall_seconds": 9610.19245441,
+      "valid_checkpoint_steps": {
+        "initial": 0,
+        "latest": 30000
+      },
+      "frames": 300,
+      "max_fluid_residual_mm3": 1.5923666554463628e-19
+    },
+    {
+      "trial": "mouth-wet-seed59",
+      "stage": "full",
+      "status": "PASS_NUMERICAL_ONLY",
+      "errors": [],
+      "wall_seconds": 11102.779165599999,
+      "valid_checkpoint_steps": {
+        "initial": 0,
+        "latest": 30000
+      },
+      "frames": 300,
+      "max_fluid_residual_mm3": 1.6236091056237773e-19
+    },
+    {
+      "trial": "mouth-dry-seed59",
+      "stage": "full",
+      "status": "PASS_NUMERICAL_ONLY",
+      "errors": [],
+      "wall_seconds": 11370.363370347,
+      "valid_checkpoint_steps": {
+        "initial": 0,
+        "latest": 30000
+      },
+      "frames": 300,
+      "max_fluid_residual_mm3": 1.6363599655193115e-19
+    }
+  ]
+}

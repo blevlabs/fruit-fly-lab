@@ -1,0 +1,279 @@
+{
+  "kind": "adult-physiology-source-measurements-and-published-fits",
+  "extracted_utc": "2026-09-12",
+  "runtime_parameter_changes": false,
+  "tdt": {
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2849092/",
+    "source": "Eldred et al. 2010, Tables 2 and 3; PDF pages 4 and 6 visually checked",
+    "preparation": "Tr-WT native TDT myosin transgene in Mhc10; 2-3 day females; demembranated parallel bundle of 8-10 large fibers; 15 C; sarcomere length 3.6 um",
+    "solution_caution": "Methods give 10 mM MgATP mounting bath; Results explicitly report 20 mM MgATP and 0 mM Pi for active tension and Vslack. Preserve this source discrepancy.",
+    "uncertainty": "Reported mean +/- SE, not specimen tolerance. Individual data and covariance unavailable.",
+    "calibration": {
+      "active_stress_Pa": {
+        "mean": 37000,
+        "se": 3000,
+        "n": 21,
+        "kind": "measured"
+      },
+      "passive_stress_Pa": {
+        "mean": 900,
+        "se": 200,
+        "n": 7,
+        "kind": "measured_at_3.6_um"
+      },
+      "pCa50": {
+        "mean": 5.62,
+        "se": 0.01,
+        "n": 6,
+        "kind": "source_fitted"
+      },
+      "hill_n": {
+        "mean": 10.2,
+        "se": 2.1,
+        "n": 6,
+        "kind": "source_fitted"
+      },
+      "hill_a_over_F0": {
+        "mean": 0.15,
+        "se": 0.02,
+        "n": 10,
+        "kind": "source_fitted"
+      },
+      "hill_b_ML_s": {
+        "mean": 0.77,
+        "se": 0.1,
+        "n": 10,
+        "kind": "source_fitted"
+      }
+    },
+    "source_fit_checks_not_holdout": {
+      "extrapolated_vmax_ML_s": {
+        "mean": 5.1,
+        "se": 0.34,
+        "n": 10
+      },
+      "peak_power_velocity_ML_s": {
+        "mean": 1.34,
+        "se": 0.08,
+        "n": 10
+      },
+      "peak_power_force_fraction": {
+        "mean": 0.26,
+        "se": 0.01,
+        "n": 10
+      },
+      "peak_power_normalized_s_inv": {
+        "mean": 0.35,
+        "se": 0.03,
+        "n": 10
+      }
+    },
+    "reserved_comparison": {
+      "slack_velocity_ML_s": {
+        "mean": 6.1,
+        "se": 0.3,
+        "n": 10,
+        "kind": "separate_slack_test; not used for Hill reference constants; specimen overlap unknown"
+      }
+    },
+    "representative_bundle_geometry_not_whole_muscle": {
+      "length_um": 125,
+      "width_um": 110,
+      "depth_um": 45
+    },
+    "remaining": [
+      "raw force-clamp/slack specimens and covariance",
+      "source MgATP and Vslack comparison discrepancies",
+      "living calcium versus spikes and temperature",
+      "whole-muscle PCSA and TTMn/STTMm recruitment allocation"
+    ]
+  },
+  "cm9": {
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3913865/",
+    "source": "Mahoney et al. 2014 Table 1 first w1118 7-day row and Figure 5",
+    "preparation": "7-day virgin female w1118; cranial CM9 fiber in pinned retracted proboscis; 0.5 mM Ca and 3 mM Mg modified HL3; controlled bath temperature not specified",
+    "calibration_reference": {
+      "epsp_mV": {
+        "mean": 9.03,
+        "sem": 0.33,
+        "n": 13
+      },
+      "mepsp_mV": {
+        "mean": 1.12,
+        "sem": 0.08,
+        "n": 13
+      },
+      "quantal_content": {
+        "mean": 8.55,
+        "sem": 0.61,
+        "n": 13,
+        "kind": "mean of per-NMJ EPSP/mEPSP ratios, not ratio of aggregate means"
+      }
+    },
+    "reserved_protocol": {
+      "rates_Hz": [
+        20,
+        40
+      ],
+      "duration_s": 15,
+      "n_per_condition": 8,
+      "readouts": "initial, halfway and final; average nearest three EPSP amplitudes",
+      "published_result": "only 42-day 40-Hz condition significantly depressed under reported ANOVA; young 7-day condition not significantly depressed",
+      "raw_amplitudes_available": false
+    },
+    "other_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5012858/",
+    "other_source_data_scope": "2016 Figure 1 source data 1 has hypertonic spontaneous event counts in 5-second bins, not paired-pulse EPSP or recovery traces. Figure 6 source data is complexin fluorescence.",
+    "remaining": [
+      "per-specimen stimulus-aligned EPSP and mEPSP waveforms with units",
+      "multiple pulse intervals and post-train recovery in one cohort",
+      "M9 membrane-to-calcium and isolated force/load recordings",
+      "M9 PCSA and moment arms"
+    ]
+  },
+  "foreleg_probe": {
+    "source_url": "https://github.com/elifesciences-publications/FlySound/blob/559a86e1bdccaba0b64c17ab97d7d09fd830cfa9/FlySoundDevices/forceProbeCalibration.m#L77-L109",
+    "source_sha256": "b147712f6ea22369fe2752cd316fa5de1c5458b32599e8cabc1fdb608c792e67",
+    "kind": "Measured instrument calibration matrix transcribed from archived author code; not motor-unit force trials",
+    "units": "column 1 micrometres, columns 2..7 balance readings multiplied by 1e-7 kg; g=9.8 m/s2 as source",
+    "matrix": [
+      [
+        0.0,
+        0.0,
+        null,
+        null,
+        -4.0,
+        0.0,
+        null
+      ],
+      [
+        50.0,
+        10.0,
+        null,
+        null,
+        8.0,
+        12.0,
+        11.0
+      ],
+      [
+        100.0,
+        21.0,
+        null,
+        25.0,
+        20.0,
+        24.0,
+        21.0
+      ],
+      [
+        150.0,
+        28.0,
+        20.0,
+        null,
+        null,
+        36.0,
+        35.0
+      ],
+      [
+        200.0,
+        40.0,
+        42.0,
+        49.0,
+        44.0,
+        48.0,
+        45.0
+      ],
+      [
+        250.0,
+        54.0,
+        53.0,
+        null,
+        null,
+        60.0,
+        59.0
+      ],
+      [
+        300.0,
+        65.0,
+        65.0,
+        74.0,
+        67.0,
+        72.0,
+        66.0
+      ],
+      [
+        350.0,
+        75.0,
+        76.0,
+        null,
+        null,
+        77.0,
+        76.0
+      ],
+      [
+        400.0,
+        84.0,
+        84.0,
+        94.0,
+        92.0,
+        93.0,
+        87.0
+      ],
+      [
+        450.0,
+        94.0,
+        90.0,
+        null,
+        null,
+        102.0,
+        104.0
+      ],
+      [
+        500.0,
+        107.0,
+        106.0,
+        124.0,
+        111.0,
+        116.0,
+        112.0
+      ],
+      [
+        600.0,
+        null,
+        null,
+        140.0,
+        137.0,
+        130.0,
+        131.0
+      ],
+      [
+        700.0,
+        null,
+        null,
+        161.0,
+        161.0,
+        152.0,
+        162.0
+      ],
+      [
+        800.0,
+        null,
+        null,
+        188.0,
+        null,
+        178.0,
+        null
+      ]
+    ],
+    "source_preprocessing": "Subtract first row for MATLAB columns 2,3,5,6,7. Stack columns 2..6 only and drop NaN. Column 3 loses every value due to NaN baseline; column 4 is not baseline-subtracted; column 7 excluded. Exact source handling retained.",
+    "source_reported_stiffness_N_m": 0.2234,
+    "dynamic_mass_kg": 1.702e-07,
+    "dynamic_damping_kg_s": 0.0001377,
+    "dynamic_source": "https://zenodo.org/api/records/4527659/files/Methods_BarRelaxation.m/content",
+    "split": "Instrument-only diagnostic: all retained source columns reproduce published calibration; fit source columns 2,4,5 and reserve column 6 for descriptive prediction. Column/collection identities, not randomized biological specimens; no prespecified empirical acceptance margin.",
+    "remaining": [
+      "raw dynamic probe decay trajectories and coefficient covariance",
+      "raw electrical/probe motor-unit trial access",
+      "Figure4 dynamic force correction generating path",
+      "exact motor ID and recruited muscle territory crosswalk"
+    ]
+  }
+}

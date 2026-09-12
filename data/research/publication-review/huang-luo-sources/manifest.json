@@ -1,0 +1,68 @@
+{
+  "scope": "Selected original model inputs; unchanged bytes, no refitting. Original code/paper linked in documentation.",
+  "model": {
+    "repository": "https://github.com/schnitzer-lab/Luo_Huang_2024_MB_model",
+    "revision": "5d7c08a9a88f923169a0c3008aca68af421e9a7f",
+    "committer_date": "2024-06-02T03:18:16-07:00",
+    "license": "GPL-3.0-or-later per unmodified README lines45-60",
+    "third_party_license": "Unmodified customcolormap/license.txt retained alongside its source"
+  },
+  "article": {
+    "title": "Dopamine-mediated interactions between short- and long-term memory dynamics",
+    "doi": "10.1038/s41586-024-07819-w",
+    "authors": "Huang, Luo et al.",
+    "license": "CC BY 4.0 according to original publisher article notice"
+  },
+  "files": [
+    {
+      "path": "upstream-model/data_and_parameters/Dx_steady_state_nonlinear_3_27-Mar-2023_2modules.mat",
+      "bytes": 1248270,
+      "sha256": "69effbd740976aa0702963edf3fa1105b110ff5bb05833fa7367d998567d05c6",
+      "origin": "https://github.com/schnitzer-lab/Luo_Huang_2024_MB_model/blob/5d7c08a9a88f923169a0c3008aca68af421e9a7f/data_and_parameters/Dx_steady_state_nonlinear_3_27-Mar-2023_2modules.mat",
+      "upstream_path": "data_and_parameters/Dx_steady_state_nonlinear_3_27-Mar-2023_2modules.mat",
+      "git_blob": "5fe860cfeaccb9715a4ce5043789907bdfe9d309",
+      "prior_review_hash_matched": true,
+      "unchanged": true
+    },
+    {
+      "path": "upstream-model/data_and_parameters/Dx_steady_state_nonlinear_3_27-Mar-2023_3modules.mat",
+      "bytes": 1798652,
+      "sha256": "cb7b555026f97b59678adf8902b9f4a02975413a7eed9d6e03f2e2864821915d",
+      "origin": "https://github.com/schnitzer-lab/Luo_Huang_2024_MB_model/blob/5d7c08a9a88f923169a0c3008aca68af421e9a7f/data_and_parameters/Dx_steady_state_nonlinear_3_27-Mar-2023_3modules.mat",
+      "upstream_path": "data_and_parameters/Dx_steady_state_nonlinear_3_27-Mar-2023_3modules.mat",
+      "git_blob": "afa203387069b99e56dacf315217c3b030c357fe",
+      "prior_review_hash_matched": true,
+      "unchanged": true
+    },
+    {
+      "path": "upstream-model/data_and_parameters/Imaging_24hr_data.xlsx",
+      "bytes": 13478,
+      "sha256": "45497111f4b49a48c4d85f6ddc898c32a4090320228c27a280f96a6266cbc9d6",
+      "origin": "https://github.com/schnitzer-lab/Luo_Huang_2024_MB_model/blob/5d7c08a9a88f923169a0c3008aca68af421e9a7f/data_and_parameters/Imaging_24hr_data.xlsx",
+      "upstream_path": "data_and_parameters/Imaging_24hr_data.xlsx",
+      "git_blob": "6d65c8d5a376e280b0e6de8385032b547eaf730c",
+      "prior_review_hash_matched": true,
+      "unchanged": true
+    },
+    {
+      "path": "upstream-model/matlab_code/model_fitting/figures/Dx_steady_state_nonlinear_3_17-Apr-2024_2modules.mat",
+      "bytes": 1248225,
+      "sha256": "060cf49ea370b1219635af185cb9181fecda288d2d14a6a54d8d1691a1963a10",
+      "origin": "https://github.com/schnitzer-lab/Luo_Huang_2024_MB_model/blob/5d7c08a9a88f923169a0c3008aca68af421e9a7f/matlab_code/model_fitting/figures/Dx_steady_state_nonlinear_3_17-Apr-2024_2modules.mat",
+      "upstream_path": "matlab_code/model_fitting/figures/Dx_steady_state_nonlinear_3_17-Apr-2024_2modules.mat",
+      "git_blob": "acfcdb4b9bbd7055bc0460015057669f5fb50970",
+      "prior_review_hash_matched": false,
+      "unchanged": true
+    },
+    {
+      "path": "upstream-model/matlab_code/model_fitting/figures/Dx_steady_state_nonlinear_3_17-Apr-2024_3modules.mat",
+      "bytes": 1798678,
+      "sha256": "ad37789664af8453a9409ebcec3d553fd58585c6bad7d2b4d5f2ad863ca06ef9",
+      "origin": "https://github.com/schnitzer-lab/Luo_Huang_2024_MB_model/blob/5d7c08a9a88f923169a0c3008aca68af421e9a7f/matlab_code/model_fitting/figures/Dx_steady_state_nonlinear_3_17-Apr-2024_3modules.mat",
+      "upstream_path": "matlab_code/model_fitting/figures/Dx_steady_state_nonlinear_3_17-Apr-2024_3modules.mat",
+      "git_blob": "84a7927b4b21304e7d109862c43854c7156cc53f",
+      "prior_review_hash_matched": false,
+      "unchanged": true
+    }
+  ]
+}

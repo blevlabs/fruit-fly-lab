@@ -1,0 +1,4418 @@
+{
+  "schema": 1,
+  "title": "Fruit Fly Lab research reference index",
+  "review_date": "2026-09-12",
+  "scope": "Public bibliography and source provenance. Citation is distinct from execution, runtime reuse and validation.",
+  "counts": {
+    "primary_citations": 79,
+    "simulator_review_repository_revisions": 44,
+    "catalogue_entries": 30,
+    "additional_repositories": 17,
+    "additional_research_url_targets": 316,
+    "research_reports": 42
+  },
+  "counting_note": "URL targets include alternate article locations, figure anchors and code-file links; they are not counts of distinct papers.",
+  "roles": {
+    "runtime_dependency": "Dependency used by the embodied implementation",
+    "runtime_code_basis": "Code underlying the embodied neural implementation",
+    "runtime_asset_basis": "Anatomical geometry/asset provenance; no upstream policy adoption implied",
+    "runtime_data_basis": "External anatomical or optical data used in attributed mappings",
+    "offline_reproduction": "Isolated model or source-law execution, outside the CNS worker",
+    "reviewed_source": "Methods/code/data inspected; no execution or integration asserted"
+  },
+  "primary_citations": [
+    {
+      "number": 1,
+      "key": "eon",
+      "label": "How the Eon Team Produced a Virtual Embodied Fly",
+      "attribution": "Eon Systems",
+      "urls": [
+        "https://eon.systems/updates/embodied-brain-emulation"
+      ],
+      "doi": [],
+      "kind": "official_methods_note",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 2,
+      "key": "flygymcode",
+      "label": "FlyGym, revision 38c8ec6",
+      "attribution": "NeLy-EPFL",
+      "urls": [
+        "https://github.com/NeLy-EPFL/flygym/tree/38c8ec61034cd59bc5ba0de20688d4a3c0000d60"
+      ],
+      "doi": [],
+      "kind": "code_or_repository",
+      "use": "runtime_dependency"
+    },
+    {
+      "number": 3,
+      "key": "eoncode",
+      "label": "fly-brain, revision a3db62f",
+      "attribution": "Eon Systems",
+      "urls": [
+        "https://github.com/eonsystemspbc/fly-brain/tree/a3db62f9436074e485c0278290c2164ed6150808"
+      ],
+      "doi": [],
+      "kind": "code_or_repository",
+      "use": "runtime_code_basis"
+    },
+    {
+      "number": 4,
+      "key": "sphinx",
+      "label": "The digital sphinx: Can a worm brain control a fly body?",
+      "attribution": "Brunton/Tuthill collaborators",
+      "urls": [
+        "https://elifesciences.org/reviewed-preprints/111516"
+      ],
+      "doi": [
+        "10.7554/eLife.111516.1"
+      ],
+      "kind": "research_publication",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 5,
+      "key": "sphinxcode",
+      "label": "DigitalSphinx2026, revision fd40f45",
+      "attribution": "Brunton Lab",
+      "urls": [
+        "https://github.com/Brunton-Lab/DigitalSphinx2026/tree/fd40f4540fac19fee9477a88d384d3a553e83c9a"
+      ],
+      "doi": [],
+      "kind": "code_or_repository",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 6,
+      "key": "flywireoriginal",
+      "label": "Neuronal wiring diagram of an adult brain",
+      "attribution": "Dorkenwald S et al",
+      "urls": [
+        "https://doi.org/10.1038/s41586-024-07558-y"
+      ],
+      "doi": [
+        "10.1038/s41586-024-07558-y"
+      ],
+      "kind": "research_publication",
+      "use": "anatomical_reference"
+    },
+    {
+      "number": 7,
+      "key": "fanc",
+      "label": "Connectomic reconstruction of a female Drosophila ventral nerve cord",
+      "attribution": "Azevedo AW et al",
+      "urls": [
+        "https://doi.org/10.1038/s41586-024-07389-x",
+        "https://faculty.washington.edu/tuthill/docs/azevedo24_appendix.pdf"
+      ],
+      "doi": [
+        "10.1038/s41586-024-07389-x"
+      ],
+      "kind": "research_publication",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 8,
+      "key": "manc",
+      "label": "MANC motor identification",
+      "attribution": "Cheong HSJ et al",
+      "urls": [
+        "https://doi.org/10.7554/eLife.96084.3",
+        "https://elifesciences.org/reviewed-preprints/97766v1"
+      ],
+      "doi": [
+        "10.7554/eLife.96084.3"
+      ],
+      "kind": "research_publication",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 9,
+      "key": "banc",
+      "label": "Distributed control circuits across a brain-and-cord connectome",
+      "attribution": "Bates AS, Phelps JS et al",
+      "urls": [
+        "https://doi.org/10.1038/s41586-026-10735-w"
+      ],
+      "doi": [
+        "10.1038/s41586-026-10735-w"
+      ],
+      "kind": "research_publication",
+      "use": "reviewed_reference",
+      "article_license_record": "CC BY 4.0"
+    },
+    {
+      "number": 10,
+      "key": "malecns",
+      "label": "Sexual dimorphism in the complete Drosophila male central nervous system connectome",
+      "attribution": "Berg S et al",
+      "urls": [
+        "https://doi.org/10.1016/j.cell.2026.08.015"
+      ],
+      "doi": [
+        "10.1016/j.cell.2026.08.015"
+      ],
+      "kind": "research_publication",
+      "use": "anatomical_basis"
+    },
+    {
+      "number": 11,
+      "key": "shiu",
+      "label": "A Drosophila computational brain model reveals sensorimotor processing",
+      "attribution": "Shiu PK et al",
+      "urls": [
+        "https://doi.org/10.1038/s41586-024-07763-9"
+      ],
+      "doi": [
+        "10.1038/s41586-024-07763-9"
+      ],
+      "kind": "research_publication",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 12,
+      "key": "shiucode",
+      "label": "Drosophila_brain_model, revision 91bdd1e",
+      "attribution": "Shiu PK, Spiller N",
+      "urls": [
+        "https://github.com/philshiu/Drosophila_brain_model/tree/91bdd1e7dcf193f3e7ca5a8933497fcef63b7960"
+      ],
+      "doi": [],
+      "kind": "code_or_repository",
+      "use": "legacy_neural_reference"
+    },
+    {
+      "number": 13,
+      "key": "shiusupp",
+      "label": "Original supplementary tables",
+      "attribution": "Shiu et al",
+      "urls": [
+        "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-024-07763-9/MediaObjects/41586_2024_7763_MOESM2_ESM.xlsx"
+      ],
+      "doi": [],
+      "kind": "dataset_or_data_release",
+      "use": "offline_reference_data"
+    },
+    {
+      "number": 14,
+      "key": "shiudata",
+      "label": "Model source and simulation data archive",
+      "attribution": "Shiu et al",
+      "urls": [
+        "https://doi.org/10.17617/3.CZODIW"
+      ],
+      "doi": [
+        "10.17617/3.CZODIW"
+      ],
+      "kind": "dataset_or_data_release",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 15,
+      "key": "nmf",
+      "label": "NeuroMechFly, a neuromechanical model of adult Drosophila melanogaster",
+      "attribution": "Lobato-Rios V et al",
+      "urls": [
+        "https://doi.org/10.1038/s41592-022-01466-7"
+      ],
+      "doi": [
+        "10.1038/s41592-022-01466-7"
+      ],
+      "kind": "research_publication",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 16,
+      "key": "nmf2",
+      "label": "NeuroMechFly v2: simulating embodied sensorimotor control in adult Drosophila",
+      "attribution": "Wang-Chen et al",
+      "urls": [
+        "https://doi.org/10.1038/s41592-024-02497-y"
+      ],
+      "doi": [
+        "10.1038/s41592-024-02497-y"
+      ],
+      "kind": "research_publication",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 17,
+      "key": "nmf2supp",
+      "label": "Original supplementary information",
+      "attribution": "Wang-Chen et al",
+      "urls": [
+        "https://media.springernature.com/original/springer-static/esm/art:10.1038%2Fs41592-024-02497-y/MediaObjects/41592_2024_2497_MOESM1_ESM.pdf"
+      ],
+      "doi": [],
+      "kind": "research_publication",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 18,
+      "key": "flygymlegacy",
+      "label": "FlyGym Gymnasium publication-era API, revision d285260",
+      "attribution": "NeLy-EPFL",
+      "urls": [
+        "https://github.com/NeLy-EPFL/flygym-gymnasium/tree/d285260a1c8a7b3494150cd1590f2c9fe4b5e06b"
+      ],
+      "doi": [],
+      "kind": "code_or_repository",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 19,
+      "key": "flybody",
+      "label": "Whole-body physics simulation of fruit fly locomotion",
+      "attribution": "Vaxenburg R et al",
+      "urls": [
+        "https://doi.org/10.1038/s41586-025-09029-4"
+      ],
+      "doi": [
+        "10.1038/s41586-025-09029-4"
+      ],
+      "kind": "research_publication",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 20,
+      "key": "flybodysupp",
+      "label": "Original supplementary information",
+      "attribution": "Vaxenburg et al",
+      "urls": [
+        "https://media.springernature.com/original/springer-static/esm/art:10.1038%2Fs41586-025-09029-4/MediaObjects/41586_2025_9029_MOESM1_ESM.pdf"
+      ],
+      "doi": [],
+      "kind": "research_publication",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 21,
+      "key": "flybodycode",
+      "label": "flybody, revision d015e9b",
+      "attribution": "Turaga Lab",
+      "urls": [
+        "https://github.com/TuragaLab/flybody/tree/d015e9bfe441bd90ae431bac24c55cb74bdbce26"
+      ],
+      "doi": [],
+      "kind": "code_or_repository",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 22,
+      "key": "flybodydata",
+      "label": "MuJoCo fruit-fly body model datasets",
+      "attribution": "Vaxenburg et al",
+      "urls": [
+        "https://doi.org/10.25378/janelia.25309105"
+      ],
+      "doi": [
+        "10.25378/janelia.25309105"
+      ],
+      "kind": "dataset_or_data_release",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 23,
+      "key": "flymimic",
+      "label": "Musculoskeletal simulation of limb movement biomechanics in Drosophila melanogaster",
+      "attribution": "Özdil G et al",
+      "urls": [
+        "https://arxiv.org/html/2509.06426v2"
+      ],
+      "doi": [],
+      "kind": "research_publication",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 24,
+      "key": "flymimiccode",
+      "label": "FlyMimic, revision 9ea1131",
+      "attribution": "Özdil G et al",
+      "urls": [
+        "https://github.com/gizemozd/FlyMimic/tree/9ea1131626cd76f7203b74076ef8f0e9cab30bef"
+      ],
+      "doi": [],
+      "kind": "code_or_repository",
+      "use": "runtime_asset_basis"
+    },
+    {
+      "number": 25,
+      "key": "grooming",
+      "label": "Centralized brain networks controlling antennal grooming coordination",
+      "attribution": "Özdil G et al",
+      "urls": [
+        "https://doi.org/10.1038/s41467-026-72152-x"
+      ],
+      "doi": [
+        "10.1038/s41467-026-72152-x"
+      ],
+      "kind": "research_publication",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 26,
+      "key": "groomingcode",
+      "label": "Antennal grooming, revision 65787ac",
+      "attribution": "NeLy-EPFL",
+      "urls": [
+        "https://github.com/NeLy-EPFL/antennal-grooming/tree/65787ac7fa35aa5520addb6d3e4ac27887bbaf60",
+        "https://github.com/gizemozd/flyvis/blob/8d2ca41b5bbb5917b11d3e838e77e5459123dab7/grooming_scripts/grooming_network_train_MLP.py"
+      ],
+      "doi": [],
+      "kind": "code_or_repository",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 27,
+      "key": "pugliese",
+      "label": "Connectome simulations identify a central pattern generator circuit for fly walking",
+      "attribution": "Pugliese et al",
+      "urls": [
+        "https://www.biorxiv.org/content/10.1101/2025.09.12.675944v2"
+      ],
+      "doi": [
+        "10.1101/2025.09.12.675944v2"
+      ],
+      "kind": "research_publication",
+      "use": "reviewed_reference",
+      "article_license_record": "CC BY-NC-ND; separate code license not established"
+    },
+    {
+      "number": 28,
+      "key": "pugliesecode",
+      "label": "Pugliese_2026, revision faee4b0",
+      "attribution": "Pugliese et al",
+      "urls": [
+        "https://github.com/smpuglie/Pugliese_2026/tree/faee4b06869855ae0164cbf217fb6ec28ef3521b"
+      ],
+      "doi": [],
+      "kind": "code_or_repository",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 29,
+      "key": "flyvis",
+      "label": "Connectome-constrained networks predict neural activity across the fly visual system",
+      "attribution": "Lappalainen JK et al",
+      "urls": [
+        "https://doi.org/10.1038/s41586-024-07939-3"
+      ],
+      "doi": [
+        "10.1038/s41586-024-07939-3"
+      ],
+      "kind": "research_publication",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 30,
+      "key": "flyviscode",
+      "label": "FlyVis, revision 92b3845",
+      "attribution": "Turaga Lab",
+      "urls": [
+        "https://github.com/TuragaLab/flyvis/tree/92b3845cc426dd309a1a0e1b3890156c42e14021"
+      ],
+      "doi": [],
+      "kind": "code_or_repository",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 31,
+      "key": "flygm",
+      "label": "Whole-Brain Connectomic Graph Model Enables Whole-Body Locomotion Control in Fruit Fly",
+      "attribution": "",
+      "urls": [
+        "https://arxiv.org/html/2602.17997v3"
+      ],
+      "doi": [],
+      "kind": "research_publication",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 32,
+      "key": "flygmpage",
+      "label": "Official FlyGM project",
+      "attribution": "LNS Group",
+      "urls": [
+        "https://lnsgroup.cc/research/FlyGM/"
+      ],
+      "doi": [],
+      "kind": "official_project_page",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 33,
+      "key": "loihi",
+      "label": "Neuromorphic Simulation of Drosophila Melanogaster Brain Connectome on Loihi 2",
+      "attribution": "Wang F et al",
+      "urls": [
+        "https://arxiv.org/abs/2508.16792"
+      ],
+      "doi": [],
+      "kind": "research_publication",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 34,
+      "key": "orientation",
+      "label": "Connectome-Based Modelling Reveals Orientation Maps in the Drosophila Optic Lobe",
+      "attribution": "Liew JN et al",
+      "urls": [
+        "https://arxiv.org/html/2609.01330v1"
+      ],
+      "doi": [],
+      "kind": "research_publication",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 35,
+      "key": "networkstructure",
+      "label": "Network Structure Governs Drosophila Brain Functionality",
+      "attribution": "Zhang X et al",
+      "urls": [
+        "https://arxiv.org/html/2404.17128v4"
+      ],
+      "doi": [
+        "10.1016/j.fmre.2025.01.017"
+      ],
+      "kind": "research_publication",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 36,
+      "key": "larval",
+      "label": "A neuromechanical model for Drosophila larval crawling based on physical measurements",
+      "attribution": "Sun X et al",
+      "urls": [
+        "https://doi.org/10.1186/s12915-022-01336-w"
+      ],
+      "doi": [
+        "10.1186/s12915-022-01336-w"
+      ],
+      "kind": "research_publication",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 37,
+      "key": "banctables",
+      "label": "BANC supplementary data 2",
+      "attribution": "Bates et al",
+      "urls": [
+        "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-026-10735-w/MediaObjects/41586_2026_10735_MOESM4_ESM.txt",
+        "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-026-10735-w/MediaObjects/41586_2026_10735_MOESM5_ESM.txt",
+        "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-026-10735-w/MediaObjects/41586_2026_10735_MOESM6_ESM.txt"
+      ],
+      "doi": [],
+      "kind": "dataset_or_data_release",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 38,
+      "key": "flywireanno",
+      "label": "Official annotation table, revision 8587524",
+      "attribution": "FlyWire Consortium",
+      "urls": [
+        "https://raw.githubusercontent.com/flyconnectome/flywire_annotations/8587524c1748ce5ef2080822a2fc890fc03bf597/supplemental_files/Supplemental_file1_neuron_annotations.tsv"
+      ],
+      "doi": [],
+      "kind": "dataset_or_data_release",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 39,
+      "key": "respiration",
+      "label": "Neural control of respiration in Drosophila",
+      "attribution": "Luo et al",
+      "urls": [
+        "https://doi.org/10.64898/2026.07.28.740380",
+        "https://faculty.washington.edu/tuthill/docs/respiration2026.pdf"
+      ],
+      "doi": [
+        "10.64898/2026.07.28.740380"
+      ],
+      "kind": "research_publication",
+      "use": "reviewed_reference",
+      "article_license_record": "CC BY-ND 4.0"
+    },
+    {
+      "number": 40,
+      "key": "respirationcode",
+      "label": "Spiracle connectomics source, revision d30a3eb",
+      "attribution": "Luo et al",
+      "urls": [
+        "https://github.com/camellyc/connectomics_code/tree/d30a3eb713a3683efe385241a6664a1d382d343b"
+      ],
+      "doi": [],
+      "kind": "code_or_repository",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 41,
+      "key": "respirationdata",
+      "label": "Respiration dataset record",
+      "attribution": "Luo et al",
+      "urls": [
+        "https://doi.org/10.5061/dryad.zkh1893s4"
+      ],
+      "doi": [
+        "10.5061/dryad.zkh1893s4"
+      ],
+      "kind": "dataset_or_data_release",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 42,
+      "key": "hairplate",
+      "label": "Proprioceptive limit detectors contribute to sensorimotor control of the Drosophila leg",
+      "attribution": "Pratt et al",
+      "urls": [
+        "https://doi.org/10.1038/s41467-026-69333-z"
+      ],
+      "doi": [
+        "10.1038/s41467-026-69333-z"
+      ],
+      "kind": "research_publication",
+      "use": "reviewed_reference",
+      "article_license_record": "CC BY 4.0"
+    },
+    {
+      "number": 43,
+      "key": "hairplatecode",
+      "label": "Hair_Plate_Paper v1.0.0",
+      "attribution": "Pratt et al",
+      "urls": [
+        "https://github.com/Prattbuw/Hair_Plate_Paper/tree/d0b1ca45e56477ece6f442fe940d97d6fc1104eb",
+        "https://doi.org/10.5061/dryad.fxpnvx153"
+      ],
+      "doi": [
+        "10.5061/dryad.fxpnvx153"
+      ],
+      "kind": "code_and_dataset",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 44,
+      "key": "bristle",
+      "label": "A central somatotopic map of the fly leg supports spatially targeted grooming",
+      "attribution": "Elabbady et al",
+      "urls": [
+        "https://doi.org/10.1016/j.cub.2026.03.045"
+      ],
+      "doi": [
+        "10.1016/j.cub.2026.03.045"
+      ],
+      "kind": "research_publication",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 45,
+      "key": "bristlecode",
+      "label": "elabbady_bristles_2026, revision 69de9c9",
+      "attribution": "Tuthill Lab",
+      "urls": [
+        "https://github.com/tuthill-lab/elabbady_bristles_2026/tree/69de9c9b5043e955c9dccb4c532b1dbee725136d"
+      ],
+      "doi": [],
+      "kind": "code_or_repository",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 46,
+      "key": "esrf",
+      "label": "Reconstruction of the neuromusculature of Drosophila legs, ESRF User Meeting abstract booklet",
+      "attribution": "Ispizua J et al",
+      "urls": [
+        "https://www.esrf.fr/files/live/sites/www/files/events/conferences/2026/User%20Meeting%202026/UM2026_E-booklet.pdf",
+        "https://www.esrf.fr/files/live/sites/www/files/events/conferences/2026/UDM3/UDM3%20programme%202026.pdf"
+      ],
+      "doi": [],
+      "kind": "conference_abstract",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 47,
+      "key": "flybrainlab",
+      "label": "Accelerating with FlyBrainLab the discovery of the functional logic of the Drosophila brain in the connectomic and synaptomic era",
+      "attribution": "Lazar AA, Liu T, Turkcan MK, Zhou Y",
+      "urls": [
+        "https://doi.org/10.7554/eLife.62362"
+      ],
+      "doi": [
+        "10.7554/eLife.62362"
+      ],
+      "kind": "research_publication",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 48,
+      "key": "olftranspaper",
+      "label": "A molecular odorant transduction model and the complexity of spatio-temporal encoding in the Drosophila antenna",
+      "attribution": "Lazar AA, Yeh CH",
+      "urls": [
+        "https://doi.org/10.1371/journal.pcbi.1007751"
+      ],
+      "doi": [
+        "10.1371/journal.pcbi.1007751"
+      ],
+      "kind": "research_publication",
+      "use": "offline_reproduction_basis",
+      "article_license_record": "CC BY 4.0"
+    },
+    {
+      "number": 49,
+      "key": "olftranscode",
+      "label": "OlfTrans, revision 3f873ea",
+      "attribution": "FlyBrainLab",
+      "urls": [
+        "https://github.com/FlyBrainLab/OlfTrans/tree/3f873eafba3a21b8fcb27231b49835df1d3cbc0c",
+        "https://github.com/FlyBrainLab/EOScircuits/tree/2ade33db402997f5001f1707f136370c660dce33"
+      ],
+      "doi": [],
+      "kind": "code_or_repository",
+      "use": "offline_reproduction_and_related_source"
+    },
+    {
+      "number": 50,
+      "key": "olfdata",
+      "label": "In vivo Antenna Electrophysiology Recordings, alpha v0.1",
+      "attribution": "FFBO",
+      "urls": [
+        "http://amacrine.ee.columbia.edu:15000/",
+        "http://amacrine.ee.columbia.edu:15000/data.h5",
+        "http://amacrine.ee.columbia.edu:15000/README.txt"
+      ],
+      "doi": [],
+      "kind": "dataset_or_data_release",
+      "use": "offline_reference_data"
+    },
+    {
+      "number": 51,
+      "key": "taskodor",
+      "label": "Chemoreceptor co-expression in Drosophila melanogaster olfactory neurons",
+      "attribution": "Task D et al",
+      "urls": [
+        "https://doi.org/10.7554/eLife.72599"
+      ],
+      "doi": [
+        "10.7554/eLife.72599"
+      ],
+      "kind": "research_publication",
+      "use": "biological_reference"
+    },
+    {
+      "number": 52,
+      "key": "martelli",
+      "label": "Slow presynaptic mechanisms that mediate adaptation in the olfactory pathway of Drosophila",
+      "attribution": "Martelli C, Fiala A",
+      "urls": [
+        "https://doi.org/10.7554/eLife.43735"
+      ],
+      "doi": [
+        "10.7554/eLife.43735",
+        "10.7554/eLife.43735.006"
+      ],
+      "kind": "research_publication",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 53,
+      "key": "gorur",
+      "label": "Olfactory receptor neurons use gain control and complementary kinetics to encode intermittent odorant stimuli",
+      "attribution": "Gorur-Shandilya S et al",
+      "urls": [
+        "https://doi.org/10.7554/eLife.27670"
+      ],
+      "doi": [
+        "10.7554/eLife.27670"
+      ],
+      "kind": "research_publication",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 54,
+      "key": "song",
+      "label": "Stochastic, adaptive sampling of information by microvilli in fly photoreceptors",
+      "attribution": "Song Z et al",
+      "urls": [
+        "https://doi.org/10.1016/j.cub.2012.05.047"
+      ],
+      "doi": [
+        "10.1016/j.cub.2012.05.047"
+      ],
+      "kind": "research_publication",
+      "use": "reviewed_photoreceptor_reference",
+      "article_license_record": "CC BY 3.0"
+    },
+    {
+      "number": 55,
+      "key": "retinarfc",
+      "label": "A Parallel Processing Model of the Drosophila Retina, Neurokernel RFC 3",
+      "attribution": "Lazar AA, Ukani NH, Zhou Y",
+      "urls": [
+        "https://neurokernel.github.io/rfc/nk-rfc3.pdf"
+      ],
+      "doi": [],
+      "kind": "technical_report",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 56,
+      "key": "vistranscode",
+      "label": "VisTrans, revision ba09677",
+      "attribution": "FlyBrainLab",
+      "urls": [
+        "https://github.com/FlyBrainLab/VisTrans/tree/ba096778d4bd895a0e0fab02b9c519c5941bc82b",
+        "https://github.com/neurokernel/retina/tree/fdab351e6c5530c8f051193158856ba6ef11d715"
+      ],
+      "doi": [],
+      "kind": "code_or_repository",
+      "use": "reviewed_source"
+    },
+    {
+      "number": 57,
+      "key": "groundtruth",
+      "label": "drosophila_neurotransmitters, revision a941741",
+      "attribution": "Bates AS, Jefferis GSXE, Adjavon DY, Funke J and collaborators",
+      "urls": [
+        "https://github.com/flyconnectome/drosophila_neurotransmitters/tree/a9417412c8a70fcc9f80a65ca5bc6064eba07be3",
+        "https://github.com/flyconnectome/drosophila_neuropeptides/tree/7a1416a5e244d415e8cabdd3172592dab7d65dc2"
+      ],
+      "doi": [],
+      "kind": "dataset_or_data_release",
+      "use": "biological_reference_data"
+    },
+    {
+      "number": 58,
+      "key": "desktop",
+      "label": "desktop-fly, revision 32b0001",
+      "attribution": "DenisSergeevitch",
+      "urls": [
+        "https://github.com/DenisSergeevitch/desktop-fly/tree/32b00011e83c3dc85fa3ea0b3934155b04f1635d"
+      ],
+      "doi": [],
+      "kind": "code_or_repository",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 59,
+      "key": "desktopmechanics",
+      "label": "Locomotor.swift",
+      "attribution": "DenisSergeevitch",
+      "urls": [
+        "https://github.com/DenisSergeevitch/desktop-fly/blob/32b00011e83c3dc85fa3ea0b3934155b04f1635d/Locomotor.swift",
+        "https://github.com/DenisSergeevitch/desktop-fly/blob/32b00011e83c3dc85fa3ea0b3934155b04f1635d/LegDynamics.swift"
+      ],
+      "doi": [],
+      "kind": "code_or_repository",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 60,
+      "key": "flygame",
+      "label": "flygame, revision a09221d",
+      "attribution": "stanbot8",
+      "urls": [
+        "https://github.com/stanbot8/flygame/tree/a09221de3a44290e0d98dc6da57566ebce12687e"
+      ],
+      "doi": [],
+      "kind": "code_or_repository",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 61,
+      "key": "flyloop",
+      "label": "flyloop, revision a033ba6",
+      "attribution": "4R7I5T",
+      "urls": [
+        "https://github.com/4R7I5T/flyloop/tree/a033ba6c94bb0461cc3b5a8d20fd9834247b6642"
+      ],
+      "doi": [],
+      "kind": "code_or_repository",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 62,
+      "key": "social",
+      "label": "Slava pong",
+      "attribution": "Original author posts:",
+      "urls": [
+        "https://x.com/slvDev/status/2098531088196911175",
+        "https://x.com/smjain/status/2098596658913407380",
+        "https://x.com/oguzthedev/status/2098454610998333574",
+        "https://x.com/VicVRad/status/2098451315969888636",
+        "https://x.com/shmulc8/status/2098424905037467809",
+        "https://x.com/NotWhoYouDream/status/2098528126976262205",
+        "https://x.com/93bitmap/status/2098577395393647043"
+      ],
+      "doi": [],
+      "kind": "author_posts",
+      "use": "author_claims_reviewed_only"
+    },
+    {
+      "number": 63,
+      "key": "doomfly",
+      "label": "doomfly, revision 71ecf53",
+      "attribution": "nftechie",
+      "urls": [
+        "https://github.com/nftechie/doomfly/tree/71ecf53d78eaffaf1a57ed7b0ccf5d458abc9f33"
+      ],
+      "doi": [],
+      "kind": "code_or_repository",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 64,
+      "key": "fly64",
+      "label": "Fly64, revision f2f4114",
+      "attribution": "ornata",
+      "urls": [
+        "https://github.com/ornata/fly/tree/f2f4114e53eaa326e54129f27a5383f93c6957af"
+      ],
+      "doi": [],
+      "kind": "code_or_repository",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 65,
+      "key": "flyai",
+      "label": "fly.ai, revision 088d06b",
+      "attribution": "alextitonis",
+      "urls": [
+        "https://github.com/alextitonis/fly.ai/tree/088d06b428aa78f9990f21a6cfa716c70390dd8e"
+      ],
+      "doi": [],
+      "kind": "code_or_repository",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 66,
+      "key": "flydoom",
+      "label": "flydoom, revision dffc37f",
+      "attribution": "mutkuoz",
+      "urls": [
+        "https://github.com/mutkuoz/flydoom/tree/dffc37fc48f7736d6614f5bc240694971900c824"
+      ],
+      "doi": [],
+      "kind": "code_or_repository",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 67,
+      "key": "flychess",
+      "label": "fly_chess, revision 831106b",
+      "attribution": "martialsystems",
+      "urls": [
+        "https://github.com/martialsystems/fly_chess/tree/831106b744c3c8103d41703cb941ec1764edc942"
+      ],
+      "doi": [],
+      "kind": "code_or_repository",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 68,
+      "key": "flycoin",
+      "label": "flycoinrh, revision 8748e5b",
+      "attribution": "fruitflydev",
+      "urls": [
+        "https://github.com/fruitflydev/flycoinrh/tree/8748e5bd30794d14afeb3441904221b52a002cac"
+      ],
+      "doi": [],
+      "kind": "code_or_repository",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 69,
+      "key": "thefly",
+      "label": "thefly-brain, revision 4e9f472",
+      "attribution": "theflyRH",
+      "urls": [
+        "https://github.com/theflyRH/thefly-brain/tree/4e9f4722c337e7d85cee3072ddb78bfa99234ca8"
+      ],
+      "doi": [],
+      "kind": "code_or_repository",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 70,
+      "key": "doomscroll",
+      "label": "Fruitfly-Doomscroller, revision b03ba91",
+      "attribution": "ranagwho",
+      "urls": [
+        "https://github.com/ranagwho/Fruitfly-Doomscroller/tree/b03ba91d89ce16f3cb7e974b2d10a917b1fc7cac"
+      ],
+      "doi": [],
+      "kind": "code_or_repository",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 71,
+      "key": "rojas",
+      "label": "fly-brain, revision 27cec28",
+      "attribution": "erojasoficial-byte",
+      "urls": [
+        "https://github.com/erojasoficial-byte/fly-brain/tree/27cec28d5d202eb004683fb4c1a1033eec8deea0"
+      ],
+      "doi": [],
+      "kind": "code_or_repository",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 72,
+      "key": "snedea",
+      "label": "flybrain, revision 9191824",
+      "attribution": "snedea",
+      "urls": [
+        "https://github.com/snedea/flybrain/tree/9191824d17871b7851645782d53d23f213ddb938"
+      ],
+      "doi": [],
+      "kind": "code_or_repository",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 73,
+      "key": "tutorial",
+      "label": "fly_connectome_data_tutorial, revision 85c6624",
+      "attribution": "SJCABS",
+      "urls": [
+        "https://github.com/sjcabs/fly_connectome_data_tutorial/tree/85c66244cfb2c02b2442905c4428b42a0d8e6656"
+      ],
+      "doi": [],
+      "kind": "code_or_repository",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 74,
+      "key": "index",
+      "label": "awesome-fruit-fly-connectome, revision a07fb02",
+      "attribution": "watthem",
+      "urls": [
+        "https://github.com/watthem/awesome-fruit-fly-connectome/tree/a07fb0280015821feccc7af2e043f806406f89bc"
+      ],
+      "doi": [],
+      "kind": "code_or_repository",
+      "use": "discovery_index_only"
+    },
+    {
+      "number": 75,
+      "key": "doomflyresults",
+      "label": "Doomfly v6 survival analysis",
+      "attribution": "nftechie",
+      "urls": [
+        "https://github.com/nftechie/doomfly/blob/71ecf53d78eaffaf1a57ed7b0ccf5d458abc9f33/outputs/doom-learning/physiology-v6/survival-pilot/analysis.json",
+        "https://github.com/nftechie/doomfly/blob/71ecf53d78eaffaf1a57ed7b0ccf5d458abc9f33/outputs/doom-learning/physiology-v6/survival-pilot/circuit.json"
+      ],
+      "doi": [],
+      "kind": "code_or_repository",
+      "use": "reviewed_reference"
+    },
+    {
+      "number": 76,
+      "key": "huang",
+      "label": "Dopamine-mediated interactions between short- and long-term memory dynamics",
+      "attribution": "Huang C, Luo J et al",
+      "urls": [
+        "https://doi.org/10.1038/s41586-024-07819-w"
+      ],
+      "doi": [
+        "10.1038/s41586-024-07819-w"
+      ],
+      "kind": "research_publication",
+      "use": "offline_reproduction_basis",
+      "article_license_record": "CC BY 4.0"
+    },
+    {
+      "number": 77,
+      "key": "huangcode",
+      "label": "Luo_Huang_2024_MB_model, revision 5d7c08a",
+      "attribution": "Schnitzer Lab",
+      "urls": [
+        "https://github.com/schnitzer-lab/Luo_Huang_2024_MB_model/tree/5d7c08a9a88f923169a0c3008aca68af421e9a7f"
+      ],
+      "doi": [],
+      "kind": "code_or_repository",
+      "use": "offline_reproduction"
+    },
+    {
+      "number": 78,
+      "key": "huangdata",
+      "label": "Publisher supplementary archive",
+      "attribution": "Huang/Luo et al",
+      "urls": [
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11525173/supplementaryFiles"
+      ],
+      "doi": [],
+      "kind": "dataset_or_data_release",
+      "use": "offline_reference_data"
+    },
+    {
+      "number": 79,
+      "key": "door",
+      "label": "DoOR 2.0—Comprehensive Mapping of Drosophila melanogaster Odorant Responses",
+      "attribution": "Münch D, Galizia CG",
+      "urls": [
+        "https://doi.org/10.1038/srep21841",
+        "https://github.com/ropensci/DoOR.data"
+      ],
+      "doi": [
+        "10.1038/srep21841"
+      ],
+      "kind": "paper_and_data_repository",
+      "use": "reviewed_reference"
+    }
+  ],
+  "simulator_review_repositories": [
+    {
+      "repository": "https://github.com/4R7I5T/flyloop",
+      "revision": "a033ba6c94bb0461cc3b5a8d20fd9834247b6642",
+      "pinned_url": "https://github.com/4R7I5T/flyloop/tree/a033ba6c94bb0461cc3b5a8d20fd9834247b6642",
+      "license_record": "MIT for original code; data and bundled third-party assets separately licensed",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/Brunton-Lab/DigitalSphinx2026",
+      "revision": "fd40f4540fac19fee9477a88d384d3a553e83c9a",
+      "pinned_url": "https://github.com/Brunton-Lab/DigitalSphinx2026/tree/fd40f4540fac19fee9477a88d384d3a553e83c9a",
+      "license_record": "github_classification: GPL-3.0",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/DenisSergeevitch/desktop-fly",
+      "revision": "32b00011e83c3dc85fa3ea0b3934155b04f1635d",
+      "pinned_url": "https://github.com/DenisSergeevitch/desktop-fly/tree/32b00011e83c3dc85fa3ea0b3934155b04f1635d",
+      "license_record": "MIT for original code; data and bundled third-party assets separately licensed",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/FlyBrainLab/EOScircuits",
+      "revision": "2ade33db402997f5001f1707f136370c660dce33",
+      "pinned_url": "https://github.com/FlyBrainLab/EOScircuits/tree/2ade33db402997f5001f1707f136370c660dce33",
+      "license_record": "BSD-3-Clause",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/FlyBrainLab/OlfTrans",
+      "revision": "3f873eafba3a21b8fcb27231b49835df1d3cbc0c",
+      "pinned_url": "https://github.com/FlyBrainLab/OlfTrans/tree/3f873eafba3a21b8fcb27231b49835df1d3cbc0c",
+      "license_record": "BSD-3-Clause",
+      "use": "offline_reproduction",
+      "scope": "OTP and source BSG functions reused for isolated odor/current/spike references; no CNS integration."
+    },
+    {
+      "repository": "https://github.com/FlyBrainLab/VisTrans",
+      "revision": "ba096778d4bd895a0e0fab02b9c519c5941bc82b",
+      "pinned_url": "https://github.com/FlyBrainLab/VisTrans/tree/ba096778d4bd895a0e0fab02b9c519c5941bc82b",
+      "license_record": "BSD-3-Clause",
+      "use": "reviewed_source",
+      "scope": "Photoreceptor source inspected; no original photon-to-voltage model execution."
+    },
+    {
+      "repository": "https://github.com/JNLiew/flylif_orientation_maps",
+      "revision": "d73b18712579c969feba625ecfd3df52f4d328f4",
+      "pinned_url": "https://github.com/JNLiew/flylif_orientation_maps/tree/d73b18712579c969feba625ecfd3df52f4d328f4",
+      "license_record": "Not established in the retained license records",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/JuusolaLab/Microsaccadic_Sampling_Paper",
+      "revision": "a4453f7e47abf2ea2a924c376d4c1c157c6011e2",
+      "pinned_url": "https://github.com/JuusolaLab/Microsaccadic_Sampling_Paper/tree/a4453f7e47abf2ea2a924c376d4c1c157c6011e2",
+      "license_record": "GNU GPL v3 in LICENCE.txt; corrects an earlier missed-file finding",
+      "use": "reviewed_source",
+      "scope": "Source and released response arrays inspected; model not executed."
+    },
+    {
+      "repository": "https://github.com/NeLy-EPFL/NeuroMechFly",
+      "revision": "6fdc6212bcf5b71fcd47bca119876c92092c2cd6",
+      "pinned_url": "https://github.com/NeLy-EPFL/NeuroMechFly/tree/6fdc6212bcf5b71fcd47bca119876c92092c2cd6",
+      "license_record": "Apache-2.0",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/NeLy-EPFL/antennal-grooming",
+      "revision": "65787ac7fa35aa5520addb6d3e4ac27887bbaf60",
+      "pinned_url": "https://github.com/NeLy-EPFL/antennal-grooming/tree/65787ac7fa35aa5520addb6d3e4ac27887bbaf60",
+      "license_record": "Apache-2.0",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/NeLy-EPFL/flygym",
+      "revision": "38c8ec61034cd59bc5ba0de20688d4a3c0000d60",
+      "pinned_url": "https://github.com/NeLy-EPFL/flygym/tree/38c8ec61034cd59bc5ba0de20688d4a3c0000d60",
+      "license_record": "Apache-2.0; retained iFish-derived retina code has separate MIT attribution",
+      "use": "runtime_dependency",
+      "scope": "Body composition and assets; CPG/hybrid stepping controller is not the CNS controller."
+    },
+    {
+      "repository": "https://github.com/NeLy-EPFL/flygym-gymnasium",
+      "revision": "d285260a1c8a7b3494150cd1590f2c9fe4b5e06b",
+      "pinned_url": "https://github.com/NeLy-EPFL/flygym-gymnasium/tree/d285260a1c8a7b3494150cd1590f2c9fe4b5e06b",
+      "license_record": "Apache-2.0",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/NeLy-EPFL/nmf2-paper",
+      "revision": "1597277deff6b97faf6e021f05afd12ff39fa23e",
+      "pinned_url": "https://github.com/NeLy-EPFL/nmf2-paper/tree/1597277deff6b97faf6e021f05afd12ff39fa23e",
+      "license_record": "Apache-2.0",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/Prattbuw/Hair_Plate_Paper",
+      "revision": "d0b1ca45e56477ece6f442fe940d97d6fc1104eb",
+      "pinned_url": "https://github.com/Prattbuw/Hair_Plate_Paper/tree/d0b1ca45e56477ece6f442fe940d97d6fc1104eb",
+      "license_record": "Not established in the retained license records",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/TK-21st/AntennalLobeLLY22",
+      "revision": "e6b795471a32bba8c70c670d6244d0edacc3b98c",
+      "pinned_url": "https://github.com/TK-21st/AntennalLobeLLY22/tree/e6b795471a32bba8c70c670d6244d0edacc3b98c",
+      "license_record": "BSD-3-Clause",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/TuragaLab/flybody",
+      "revision": "d015e9bfe441bd90ae431bac24c55cb74bdbce26",
+      "pinned_url": "https://github.com/TuragaLab/flybody/tree/d015e9bfe441bd90ae431bac24c55cb74bdbce26",
+      "license_record": "Apache-2.0",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/TuragaLab/flyvis",
+      "revision": "92b3845cc426dd309a1a0e1b3890156c42e14021",
+      "pinned_url": "https://github.com/TuragaLab/flyvis/tree/92b3845cc426dd309a1a0e1b3890156c42e14021",
+      "license_record": "MIT",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/alextitonis/fly.ai",
+      "revision": "088d06b428aa78f9990f21a6cfa716c70390dd8e",
+      "pinned_url": "https://github.com/alextitonis/fly.ai/tree/088d06b428aa78f9990f21a6cfa716c70390dd8e",
+      "license_record": "MIT",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/camellyc/connectomics_code",
+      "revision": "d30a3eb713a3683efe385241a6664a1d382d343b",
+      "pinned_url": "https://github.com/camellyc/connectomics_code/tree/d30a3eb713a3683efe385241a6664a1d382d343b",
+      "license_record": "Not established in the retained license records",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/eonsystemspbc/fly-brain",
+      "revision": "a3db62f9436074e485c0278290c2164ed6150808",
+      "pinned_url": "https://github.com/eonsystemspbc/fly-brain/tree/a3db62f9436074e485c0278290c2164ed6150808",
+      "license_record": "GPL-2.0-or-later per original README; nested code/paper-phil-drosophila retains MIT",
+      "use": "runtime_code_basis",
+      "scope": "GPU neural implementation underlying the embodied CNS."
+    },
+    {
+      "repository": "https://github.com/erojasoficial-byte/fly-brain",
+      "revision": "27cec28d5d202eb004683fb4c1a1033eec8deea0",
+      "pinned_url": "https://github.com/erojasoficial-byte/fly-brain/tree/27cec28d5d202eb004683fb4c1a1033eec8deea0",
+      "license_record": "github_classification: MIT; third_party_terms: not fully audited",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/flyconnectome/2025malecns",
+      "revision": "67767d2233657983993ff6c2be48e836a935863c",
+      "pinned_url": "https://github.com/flyconnectome/2025malecns/tree/67767d2233657983993ff6c2be48e836a935863c",
+      "license_record": "Not established in the retained license records",
+      "use": "runtime_data_reference",
+      "scope": "Official anatomical and optic-column source; not a physiological parameter inventory."
+    },
+    {
+      "repository": "https://github.com/flyconnectome/drosophila_neuropeptides",
+      "revision": "7a1416a5e244d415e8cabdd3172592dab7d65dc2",
+      "pinned_url": "https://github.com/flyconnectome/drosophila_neuropeptides/tree/7a1416a5e244d415e8cabdd3172592dab7d65dc2",
+      "license_record": "CC-BY-4.0",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/flyconnectome/drosophila_neurotransmitters",
+      "revision": "a9417412c8a70fcc9f80a65ca5bc6064eba07be3",
+      "pinned_url": "https://github.com/flyconnectome/drosophila_neurotransmitters/tree/a9417412c8a70fcc9f80a65ca5bc6064eba07be3",
+      "license_record": "CC-BY-4.0",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/fruitflydev/flycoinrh",
+      "revision": "8748e5bd30794d14afeb3441904221b52a002cac",
+      "pinned_url": "https://github.com/fruitflydev/flycoinrh/tree/8748e5bd30794d14afeb3441904221b52a002cac",
+      "license_record": "MIT code; DoOR files separately CC BY-SA 4.0",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/gizemozd/FlyMimic",
+      "revision": "9ea1131626cd76f7203b74076ef8f0e9cab30bef",
+      "pinned_url": "https://github.com/gizemozd/FlyMimic/tree/9ea1131626cd76f7203b74076ef8f0e9cab30bef",
+      "license_record": "Apache-2.0",
+      "use": "runtime_asset_basis",
+      "scope": "Foreleg muscle geometry incorporated through FlyGym; imitation policy not adopted."
+    },
+    {
+      "repository": "https://github.com/gizemozd/flyvis",
+      "revision": "8d2ca41b5bbb5917b11d3e838e77e5459123dab7",
+      "pinned_url": "https://github.com/gizemozd/flyvis/tree/8d2ca41b5bbb5917b11d3e838e77e5459123dab7",
+      "license_record": "GPL-3.0",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/htem/FANC_auto_recon",
+      "revision": "89d9769457583051e3ec9ec7b34a5f3575537bf5",
+      "pinned_url": "https://github.com/htem/FANC_auto_recon/tree/89d9769457583051e3ec9ec7b34a5f3575537bf5",
+      "license_record": "GPL-3.0",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/jasper-tms/the-BANC-fly-connectome",
+      "revision": "01d797a23beb5e79032e509d03b4218c3f5cc60e",
+      "pinned_url": "https://github.com/jasper-tms/the-BANC-fly-connectome/tree/01d797a23beb5e79032e509d03b4218c3f5cc60e",
+      "license_record": "GPL-3.0",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/martialsystems/fly_chess",
+      "revision": "831106b744c3c8103d41703cb941ec1764edc942",
+      "pinned_url": "https://github.com/martialsystems/fly_chess/tree/831106b744c3c8103d41703cb941ec1764edc942",
+      "license_record": "MIT",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/mutkuoz/flydoom",
+      "revision": "dffc37fc48f7736d6614f5bc240694971900c824",
+      "pinned_url": "https://github.com/mutkuoz/flydoom/tree/dffc37fc48f7736d6614f5bc240694971900c824",
+      "license_record": "Not established in the retained license records",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/neurokernel/retina",
+      "revision": "fdab351e6c5530c8f051193158856ba6ef11d715",
+      "pinned_url": "https://github.com/neurokernel/retina/tree/fdab351e6c5530c8f051193158856ba6ef11d715",
+      "license_record": "BSD-3-Clause",
+      "use": "reviewed_source",
+      "scope": "Photoreceptor source inspected; no original photon-to-voltage model execution."
+    },
+    {
+      "repository": "https://github.com/nftechie/doomfly",
+      "revision": "71ecf53d78eaffaf1a57ed7b0ccf5d458abc9f33",
+      "pinned_url": "https://github.com/nftechie/doomfly/tree/71ecf53d78eaffaf1a57ed7b0ccf5d458abc9f33",
+      "license_record": "MIT original project code; third-party terms separate",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/ornata/fly",
+      "revision": "f2f4114e53eaa326e54129f27a5383f93c6957af",
+      "pinned_url": "https://github.com/ornata/fly/tree/f2f4114e53eaa326e54129f27a5383f93c6957af",
+      "license_record": "No code license file found at pinned tree",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/philshiu/Drosophila_brain_model",
+      "revision": "91bdd1e7dcf193f3e7ca5a8933497fcef63b7960",
+      "pinned_url": "https://github.com/philshiu/Drosophila_brain_model/tree/91bdd1e7dcf193f3e7ca5a8933497fcef63b7960",
+      "license_record": "MIT",
+      "use": "legacy_neural_reference",
+      "scope": "Original circuit-assay implementation and antecedent of the Eon neural model."
+    },
+    {
+      "repository": "https://github.com/ranagwho/Fruitfly-Doomscroller",
+      "revision": "b03ba91d89ce16f3cb7e974b2d10a917b1fc7cac",
+      "pinned_url": "https://github.com/ranagwho/Fruitfly-Doomscroller/tree/b03ba91d89ce16f3cb7e974b2d10a917b1fc7cac",
+      "license_record": "MIT",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/schnitzer-lab/Luo_Huang_2024_MB_model",
+      "revision": "5d7c08a9a88f923169a0c3008aca68af421e9a7f",
+      "pinned_url": "https://github.com/schnitzer-lab/Luo_Huang_2024_MB_model/tree/5d7c08a9a88f923169a0c3008aca68af421e9a7f",
+      "license_record": "GPL-3.0-or-later; included customcolormap has separate BSD-style terms",
+      "use": "offline_reproduction",
+      "scope": "Reduced rate-model port checked against original MATLAB fit curves; not imported by CNS."
+    },
+    {
+      "repository": "https://github.com/sjcabs/fly_connectome_data_tutorial",
+      "revision": "85c66244cfb2c02b2442905c4428b42a0d8e6656",
+      "pinned_url": "https://github.com/sjcabs/fly_connectome_data_tutorial/tree/85c66244cfb2c02b2442905c4428b42a0d8e6656",
+      "license_record": "MIT tutorial; dataset terms separate",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/smpuglie/Pugliese_2026",
+      "revision": "faee4b06869855ae0164cbf217fb6ec28ef3521b",
+      "pinned_url": "https://github.com/smpuglie/Pugliese_2026/tree/faee4b06869855ae0164cbf217fb6ec28ef3521b",
+      "license_record": "github_classification: None; repository_license_file_identified: False; preprint_license_is_separate: CC BY-NC-ND",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/snedea/flybrain",
+      "revision": "9191824d17871b7851645782d53d23f213ddb938",
+      "pinned_url": "https://github.com/snedea/flybrain/tree/9191824d17871b7851645782d53d23f213ddb938",
+      "license_record": "MIT code; source data license separate",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/stanbot8/flygame",
+      "revision": "a09221de3a44290e0d98dc6da57566ebce12687e",
+      "pinned_url": "https://github.com/stanbot8/flygame/tree/a09221de3a44290e0d98dc6da57566ebce12687e",
+      "license_record": "MIT for original code; data and bundled third-party assets separately licensed",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/theflyRH/thefly-brain",
+      "revision": "4e9f4722c337e7d85cee3072ddb78bfa99234ca8",
+      "pinned_url": "https://github.com/theflyRH/thefly-brain/tree/4e9f4722c337e7d85cee3072ddb78bfa99234ca8",
+      "license_record": "MIT",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/tuthill-lab/elabbady_bristles_2026",
+      "revision": "69de9c9b5043e955c9dccb4c532b1dbee725136d",
+      "pinned_url": "https://github.com/tuthill-lab/elabbady_bristles_2026/tree/69de9c9b5043e955c9dccb4c532b1dbee725136d",
+      "license_record": "Not established in the retained license records",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/watthem/awesome-fruit-fly-connectome",
+      "revision": "a07fb0280015821feccc7af2e043f806406f89bc",
+      "pinned_url": "https://github.com/watthem/awesome-fruit-fly-connectome/tree/a07fb0280015821feccc7af2e043f806406f89bc",
+      "license_record": "CC0 index; linked resources separate",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    }
+  ],
+  "additional_repositories": [
+    {
+      "repository": "https://github.com/artxz/eyemap-archive",
+      "revisions": [
+        "503c7f055d5491a48b60b49ade8c71798d24d8f1"
+      ],
+      "versions_or_branches": [],
+      "cited_in": [
+        "research/malecns-sensory-mapping.md"
+      ],
+      "license_record": "CC BY-SA 4.0 for eye-map data and derived joins",
+      "use": "runtime_data_basis",
+      "scope": "Source optical directions and attributed eye-map joins."
+    },
+    {
+      "repository": "https://github.com/chungheng/neural",
+      "revisions": [
+        "bc4deffe611cdd72d510f744bf816aa56debe35d"
+      ],
+      "versions_or_branches": [],
+      "cited_in": [
+        "research/m3-bsg-source-adjudication.md"
+      ],
+      "license_record": "Historical setup.py says BSD; exact variant and complete license text not established",
+      "use": "offline_source_adjudication",
+      "scope": "Historical time/noise conventions checked; not installed as a runtime dependency."
+    },
+    {
+      "repository": "https://github.com/elifesciences-publications/FlySound",
+      "revisions": [
+        "559a86e1bdccaba0b64c17ab97d7d09fd830cfa9"
+      ],
+      "versions_or_branches": [],
+      "cited_in": [
+        "research/m2-foreleg-source-notes.md",
+        "research/peripheral-force-calibration.md"
+      ],
+      "license_record": "Not established in the retained license records",
+      "use": "offline_calibration_source",
+      "scope": "Original force-probe calibration source."
+    },
+    {
+      "repository": "https://github.com/elifesciences-publications/spikesort",
+      "revisions": [
+        "126a2b3178714032afc86bfd7e64068b6e1abd8c"
+      ],
+      "versions_or_branches": [],
+      "cited_in": [
+        "research/m3-acetate-dynamic-sources.md"
+      ],
+      "license_record": "GNU GPL v3; benchmark test report separately CC BY-NC-SA 4.0",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/EllenLesser/Azevedo_Lesser_Phelps_Mark_2023",
+      "revisions": [
+        "ff363505fd1236e63ee77966239e99280fe1ba12"
+      ],
+      "versions_or_branches": [],
+      "cited_in": [
+        "research/m1-peripheral-evidence.md"
+      ],
+      "license_record": "Not established in the retained license records",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/emonetlab/kontroller",
+      "revisions": [
+        "f5e57de887c47f2bd831c2a399a316d230499178"
+      ],
+      "versions_or_branches": [],
+      "cited_in": [
+        "research/m3-acetate-dynamic-sources.md"
+      ],
+      "license_record": "GNU GPL v3",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/emonetlab/spikesort",
+      "revisions": [
+        "c4d71c0a5f90a80186b93261b838ddfc087e4c24"
+      ],
+      "versions_or_branches": [],
+      "cited_in": [
+        "research/m3-acetate-dynamic-sources.md"
+      ],
+      "license_record": "GNU GPL v3; benchmark test report separately CC BY-NC-SA 4.0",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/flyconnectome/flywire_annotations",
+      "revisions": [
+        "8587524c1748ce5ef2080822a2fc890fc03bf597"
+      ],
+      "versions_or_branches": [],
+      "cited_in": [
+        "research/malecns-sensory-mapping.md"
+      ],
+      "license_record": "Not established in the retained license records",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/Gil-Mor/iFish",
+      "revisions": [],
+      "versions_or_branches": [],
+      "cited_in": [
+        "references.md"
+      ],
+      "license_record": "MIT; copyright (c) 2021 Gil Mor",
+      "use": "transitive_code_attribution",
+      "scope": "MIT code retained within the FlyGym retina implementation.",
+      "license_url": "https://raw.githubusercontent.com/Gil-Mor/iFish/master/LICENSE"
+    },
+    {
+      "repository": "https://github.com/google-deepmind/mujoco",
+      "revisions": [],
+      "versions_or_branches": [
+        "3.9.0"
+      ],
+      "cited_in": [
+        "research/m2-flight-instability-integrator-notes.md",
+        "research/mn9-mujoco-mechanics.md"
+      ],
+      "license_record": "Apache-2.0; version 3.9.0 metadata also identifies LICENSES_THIRD_PARTY.md",
+      "use": "runtime_dependency",
+      "scope": "Physics, native muscle and numerical integration implementation.",
+      "license_url": "https://github.com/google-deepmind/mujoco/blob/3.9.0/LICENSE"
+    },
+    {
+      "repository": "https://github.com/masonklein/neurophys",
+      "revisions": [],
+      "versions_or_branches": [],
+      "cited_in": [
+        "research/mn9-validation-temperature.md"
+      ],
+      "license_record": "Not established in the retained license records",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/nagellab/SuverEtAl2023",
+      "revisions": [],
+      "versions_or_branches": [],
+      "cited_in": [
+        "research/malecns-motor-mapping.md"
+      ],
+      "license_record": "Not established in the retained license records",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/serene-da1/Dhawan-et-al-2025-",
+      "revisions": [],
+      "versions_or_branches": [],
+      "cited_in": [
+        "research/malecns-motor-mapping.md"
+      ],
+      "license_record": "Not established in the retained license records",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/takashi310/VVD_Viewer",
+      "revisions": [],
+      "versions_or_branches": [],
+      "cited_in": [
+        "research/mn9-anatomy.md"
+      ],
+      "license_record": "Not established in the retained license records",
+      "use": "reviewed_source",
+      "scope": "Source, methods or dataset reference; no runtime incorporation asserted."
+    },
+    {
+      "repository": "https://github.com/tony-azevedo/FlyAnalysis",
+      "revisions": [
+        "c68159f1f7a4ecc957c708ae8411fd2550482f63"
+      ],
+      "versions_or_branches": [],
+      "cited_in": [
+        "research/m2-foreleg-source-notes.md"
+      ],
+      "license_record": "Not established in the retained license records",
+      "use": "offline_calibration_source",
+      "scope": "Original force/spike analysis and processing provenance."
+    },
+    {
+      "repository": "https://github.com/ttesileanu/OlfactoryReceptorDistribution",
+      "revisions": [
+        "a071b82519db371f85ebff750f21a3ba466cbbc0"
+      ],
+      "versions_or_branches": [],
+      "cited_in": [
+        "research/m3-odor-reference.md"
+      ],
+      "license_record": "Not established in the retained license records",
+      "use": "offline_data_reference",
+      "scope": "Preserved receptor-response tables; no receptor-physiology runtime integration."
+    },
+    {
+      "repository": "https://github.com/YijieYin/interpret_connectome",
+      "revisions": [
+        "a4df3b0d5345d2a34dac813f897d8427f6a6eb45"
+      ],
+      "versions_or_branches": [],
+      "cited_in": [
+        "research/m3-odor-reference.md"
+      ],
+      "license_record": "Not established in the retained license records",
+      "use": "offline_data_reference",
+      "scope": "Receptor-table preprocessing and correspondence evidence."
+    }
+  ],
+  "catalogue": [
+    {
+      "name": "MaleCNS",
+      "citation_key": "malecns",
+      "urls": [
+        "https://doi.org/10.1016/j.cell.2026.08.015"
+      ],
+      "review": "research/published-simulator-reuse-review.md",
+      "status": "Reviewed; no independent execution or biological validation implied by catalogue inclusion"
+    },
+    {
+      "name": "FlyWire",
+      "citation_key": "flywireoriginal",
+      "urls": [
+        "https://doi.org/10.1038/s41586-024-07558-y"
+      ],
+      "review": "research/published-simulator-reuse-review.md",
+      "status": "Reviewed; no independent execution or biological validation implied by catalogue inclusion"
+    },
+    {
+      "name": "Shiu model",
+      "citation_key": "shiu",
+      "urls": [
+        "https://doi.org/10.1038/s41586-024-07763-9"
+      ],
+      "review": "research/published-simulator-reuse-review.md",
+      "status": "Reviewed; no independent execution or biological validation implied by catalogue inclusion"
+    },
+    {
+      "name": "FlyVis",
+      "citation_key": "flyvis",
+      "urls": [
+        "https://doi.org/10.1038/s41586-024-07939-3"
+      ],
+      "review": "research/published-simulator-reuse-review.md",
+      "status": "Reviewed; no independent execution or biological validation implied by catalogue inclusion"
+    },
+    {
+      "name": "FlyBody",
+      "citation_key": "flybody",
+      "urls": [
+        "https://doi.org/10.1038/s41586-025-09029-4"
+      ],
+      "review": "research/published-simulator-reuse-review.md",
+      "status": "Reviewed; no independent execution or biological validation implied by catalogue inclusion"
+    },
+    {
+      "name": "NeuroMechFly/FlyGym",
+      "citation_key": "nmf2",
+      "urls": [
+        "https://doi.org/10.1038/s41592-024-02497-y"
+      ],
+      "review": "research/published-simulator-reuse-review.md",
+      "status": "Reviewed; no independent execution or biological validation implied by catalogue inclusion"
+    },
+    {
+      "name": "Eon",
+      "citation_key": "eon",
+      "urls": [
+        "https://eon.systems/updates/embodied-brain-emulation"
+      ],
+      "review": "research/published-simulator-reuse-review.md",
+      "status": "Reviewed; no independent execution or biological validation implied by catalogue inclusion"
+    },
+    {
+      "name": "erojasoficial-byte/fly-brain",
+      "citation_key": "rojas",
+      "urls": [
+        "https://github.com/erojasoficial-byte/fly-brain/tree/27cec28d5d202eb004683fb4c1a1033eec8deea0"
+      ],
+      "review": "research/published-simulator-reuse-review.md",
+      "status": "Reviewed; no independent execution or biological validation implied by catalogue inclusion"
+    },
+    {
+      "name": "stanbot8/flygame",
+      "citation_key": "flygame",
+      "urls": [
+        "https://github.com/stanbot8/flygame/tree/a09221de3a44290e0d98dc6da57566ebce12687e"
+      ],
+      "review": "research/published-simulator-reuse-review.md",
+      "status": "Reviewed; no independent execution or biological validation implied by catalogue inclusion"
+    },
+    {
+      "name": "DenisSergeevitch/desktop-fly",
+      "citation_key": "desktop",
+      "urls": [
+        "https://github.com/DenisSergeevitch/desktop-fly/tree/32b00011e83c3dc85fa3ea0b3934155b04f1635d"
+      ],
+      "review": "research/published-simulator-reuse-review.md",
+      "status": "Reviewed; no independent execution or biological validation implied by catalogue inclusion"
+    },
+    {
+      "name": "4R7I5T/flyloop",
+      "citation_key": "flyloop",
+      "urls": [
+        "https://github.com/4R7I5T/flyloop/tree/a033ba6c94bb0461cc3b5a8d20fd9834247b6642"
+      ],
+      "review": "research/published-simulator-reuse-review.md",
+      "status": "Reviewed; no independent execution or biological validation implied by catalogue inclusion"
+    },
+    {
+      "name": "nftechie/doomfly",
+      "citation_key": "doomfly",
+      "urls": [
+        "https://github.com/nftechie/doomfly/tree/71ecf53d78eaffaf1a57ed7b0ccf5d458abc9f33"
+      ],
+      "review": "research/published-simulator-reuse-review.md",
+      "status": "Reviewed; no independent execution or biological validation implied by catalogue inclusion"
+    },
+    {
+      "name": "ornata/fly",
+      "citation_key": "fly64",
+      "urls": [
+        "https://github.com/ornata/fly/tree/f2f4114e53eaa326e54129f27a5383f93c6957af"
+      ],
+      "review": "research/published-simulator-reuse-review.md",
+      "status": "Reviewed; no independent execution or biological validation implied by catalogue inclusion"
+    },
+    {
+      "name": "alextitonis/fly.ai",
+      "citation_key": "flyai",
+      "urls": [
+        "https://github.com/alextitonis/fly.ai/tree/088d06b428aa78f9990f21a6cfa716c70390dd8e"
+      ],
+      "review": "research/published-simulator-reuse-review.md",
+      "status": "Reviewed; no independent execution or biological validation implied by catalogue inclusion"
+    },
+    {
+      "name": "mutkuoz/flydoom",
+      "citation_key": "flydoom",
+      "urls": [
+        "https://github.com/mutkuoz/flydoom/tree/dffc37fc48f7736d6614f5bc240694971900c824"
+      ],
+      "review": "research/published-simulator-reuse-review.md",
+      "status": "Reviewed; no independent execution or biological validation implied by catalogue inclusion"
+    },
+    {
+      "name": "martialsystems/fly_chess",
+      "citation_key": "flychess",
+      "urls": [
+        "https://github.com/martialsystems/fly_chess/tree/831106b744c3c8103d41703cb941ec1764edc942"
+      ],
+      "review": "research/published-simulator-reuse-review.md",
+      "status": "Reviewed; no independent execution or biological validation implied by catalogue inclusion"
+    },
+    {
+      "name": "fruitflydev/flycoinrh",
+      "citation_key": "flycoin",
+      "urls": [
+        "https://github.com/fruitflydev/flycoinrh/tree/8748e5bd30794d14afeb3441904221b52a002cac"
+      ],
+      "review": "research/published-simulator-reuse-review.md",
+      "status": "Reviewed; no independent execution or biological validation implied by catalogue inclusion"
+    },
+    {
+      "name": "theflyRH/thefly-brain",
+      "citation_key": "thefly",
+      "urls": [
+        "https://github.com/theflyRH/thefly-brain/tree/4e9f4722c337e7d85cee3072ddb78bfa99234ca8"
+      ],
+      "review": "research/published-simulator-reuse-review.md",
+      "status": "Reviewed; no independent execution or biological validation implied by catalogue inclusion"
+    },
+    {
+      "name": "ranagwho/Fruitfly-Doomscroller",
+      "citation_key": "doomscroll",
+      "urls": [
+        "https://github.com/ranagwho/Fruitfly-Doomscroller/tree/b03ba91d89ce16f3cb7e974b2d10a917b1fc7cac"
+      ],
+      "review": "research/published-simulator-reuse-review.md",
+      "status": "Reviewed; no independent execution or biological validation implied by catalogue inclusion"
+    },
+    {
+      "name": "sjcabs/fly_connectome_data_tutorial",
+      "citation_key": "tutorial",
+      "urls": [
+        "https://github.com/sjcabs/fly_connectome_data_tutorial/tree/85c66244cfb2c02b2442905c4428b42a0d8e6656"
+      ],
+      "review": "research/published-simulator-reuse-review.md",
+      "status": "Reviewed; no independent execution or biological validation implied by catalogue inclusion"
+    },
+    {
+      "name": "watthem/awesome-fruit-fly-connectome",
+      "citation_key": "index",
+      "urls": [
+        "https://github.com/watthem/awesome-fruit-fly-connectome/tree/a07fb0280015821feccc7af2e043f806406f89bc"
+      ],
+      "review": "research/published-simulator-reuse-review.md",
+      "status": "Reviewed; no independent execution or biological validation implied by catalogue inclusion"
+    },
+    {
+      "name": "Slava S. Fly Atlas / pong",
+      "citation_key": "social",
+      "urls": [
+        "https://x.com/slvDev/status/2098506303064674742",
+        "https://x.com/slvDev/status/2098531088196911175"
+      ],
+      "review": "research/published-simulator-reuse-review.md",
+      "status": "Reviewed; no independent execution or biological validation implied by catalogue inclusion"
+    },
+    {
+      "name": "Shashank Jain Sudoku",
+      "citation_key": "social",
+      "urls": [
+        "https://x.com/smjain/status/2098596658913407380"
+      ],
+      "review": "research/published-simulator-reuse-review.md",
+      "status": "Reviewed; no independent execution or biological validation implied by catalogue inclusion"
+    },
+    {
+      "name": "Oguz gas-station tycoon",
+      "citation_key": "social",
+      "urls": [
+        "https://x.com/oguzthedev/status/2098454610998333574"
+      ],
+      "review": "research/published-simulator-reuse-review.md",
+      "status": "Reviewed; no independent execution or biological validation implied by catalogue inclusion"
+    },
+    {
+      "name": "KrauzerKrip Touhou",
+      "citation_key": "social",
+      "urls": [
+        "https://x.com/krauzerkrip/status/2098383504304132419",
+        "https://github.com/snedea/flybrain"
+      ],
+      "review": "research/published-simulator-reuse-review.md",
+      "status": "Reviewed; no independent execution or biological validation implied by catalogue inclusion"
+    },
+    {
+      "name": "VicVRad MindFly",
+      "citation_key": "social",
+      "urls": [
+        "https://x.com/VicVRad/status/2098451315969888636"
+      ],
+      "review": "research/published-simulator-reuse-review.md",
+      "status": "Reviewed; no independent execution or biological validation implied by catalogue inclusion"
+    },
+    {
+      "name": "Shmulik Cohen sound conditioning",
+      "citation_key": "social",
+      "urls": [
+        "https://x.com/shmulc8/status/2098424905037467809"
+      ],
+      "review": "research/published-simulator-reuse-review.md",
+      "status": "Reviewed; no independent execution or biological validation implied by catalogue inclusion"
+    },
+    {
+      "name": "NotWhoYouDream football",
+      "citation_key": "social",
+      "urls": [
+        "https://x.com/NotWhoYouDream/status/2098528126976262205"
+      ],
+      "review": "research/published-simulator-reuse-review.md",
+      "status": "Reviewed; no independent execution or biological validation implied by catalogue inclusion"
+    },
+    {
+      "name": "93.bitmap FlyOut",
+      "citation_key": "social",
+      "urls": [
+        "https://x.com/93bitmap/status/2098577395393647043"
+      ],
+      "review": "research/published-simulator-reuse-review.md",
+      "status": "Reviewed; no independent execution or biological validation implied by catalogue inclusion"
+    },
+    {
+      "name": "Google AI roundup",
+      "citation_key": "social",
+      "urls": [
+        "https://x.com/GoogleAI/status/2098109357624095155"
+      ],
+      "review": "research/published-simulator-reuse-review.md",
+      "status": "Reviewed; no independent execution or biological validation implied by catalogue inclusion"
+    }
+  ],
+  "data_terms": [
+    {
+      "name": "MaleCNS v1.0 bulk connectome",
+      "url": "https://male-cns.janelia.org/download/",
+      "terms": "CC-BY terms stated by the official release",
+      "use": "runtime anatomical input"
+    },
+    {
+      "name": "Arthur Zhao / Reiser Lab eye-map data",
+      "url": "https://github.com/artxz/eyemap-archive/tree/503c7f055d5491a48b60b49ade8c71798d24d8f1",
+      "terms": "CC BY-SA 4.0",
+      "use": "optical-direction data and attributed derived joins"
+    },
+    {
+      "name": "FFBO Antenna Electrophysiology alpha v0.1",
+      "url": "http://amacrine.ee.columbia.edu:15000/README.txt",
+      "terms": "ODbL 1.0 database; DbCL 1.0 individual contents",
+      "use": "offline odor reference data"
+    },
+    {
+      "name": "Huang/Luo publisher article and supplement",
+      "url": "https://doi.org/10.1038/s41586-024-07819-w",
+      "terms": "CC BY 4.0 article; model code separately GPL-3.0-or-later",
+      "use": "offline fitted-model/data reproduction"
+    },
+    {
+      "name": "Juusola 2017 response data",
+      "url": "https://doi.org/10.5061/dryad.12751",
+      "terms": "CC0 dedication reported by the article for the deposited data; source code separately GPL v3",
+      "use": "recorded/released response-array reference"
+    },
+    {
+      "name": "FlyBody Figshare dataset v4",
+      "url": "https://doi.org/10.25378/janelia.25309105.v4",
+      "terms": "Catalogue lists GPL 3.0+; distinguish specific Apache-2.0 mesh bundles",
+      "use": "reviewed dataset catalogue"
+    },
+    {
+      "name": "FlyBody full-size OBJ mesh bundle distributed with FlyGym",
+      "url": "https://github.com/NeLy-EPFL/flygym/tree/38c8ec61034cd59bc5ba0de20688d4a3c0000d60",
+      "terms": "Apache-2.0 in the asset bundle README",
+      "use": "body asset provenance; not the same terms as every FlyBody dataset"
+    },
+    {
+      "name": "Curated transmitter and peptide tables",
+      "url": "https://github.com/flyconnectome/drosophila_neurotransmitters/tree/a9417412c8a70fcc9f80a65ca5bc6064eba07be3",
+      "terms": "CC BY 4.0; peptide repository revision 7a1416a5e244d415e8cabdd3172592dab7d65dc2 carries the same terms",
+      "use": "molecular identity reference; no recipient kinetics inferred"
+    },
+    {
+      "name": "Taste companion preprint v2",
+      "url": "https://doi.org/10.1101/2025.08.25.671814",
+      "terms": "CC BY-NC-ND 4.0 in the retained source record",
+      "use": "interpretive biological citation; not blanket licensing for derived code or data"
+    }
+  ],
+  "additional_research_urls": [
+    {
+      "label": "Jürgens et al. 2024",
+      "url": "https://academic.oup.com/genetics/article/228/2/iyae129/7750380",
+      "cited_in": [
+        "research/m2-salivary-source-notes.md",
+        "research/whole-body-flight-mechanics.md"
+      ]
+    },
+    {
+      "label": "Chaabouni et al., 2020",
+      "url": "https://aclanthology.org/2020.acl-main.407/",
+      "cited_in": [
+        "research/plan-scientific-review.md"
+      ]
+    },
+    {
+      "label": "author-hosted notebook",
+      "url": "https://antenna.neuronlp.fruitflybrain.org/notebook.html",
+      "cited_in": [
+        "research/m3-bsg-source-adjudication.md"
+      ]
+    },
+    {
+      "label": "Publisher metadata",
+      "url": "https://api.elifesciences.org/articles/27670",
+      "cited_in": [
+        "research/m3-acetate-dynamic-sources.md"
+      ]
+    },
+    {
+      "label": "Publisher metadata",
+      "url": "https://api.elifesciences.org/articles/43735",
+      "cited_in": [
+        "research/m3-acetate-dynamic-sources.md"
+      ]
+    },
+    {
+      "label": "Reviewed API",
+      "url": "https://api.elifesciences.org/reviewed-preprints/106548",
+      "cited_in": [
+        "research/m1-peripheral-evidence.md"
+      ]
+    },
+    {
+      "label": "official CDN attachment",
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0092867406003631-mmc1.pdf",
+      "cited_in": [
+        "research/m3-odor-reference.md"
+      ]
+    },
+    {
+      "label": "publisher supplement",
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0960982223000209-mmc1.pdf",
+      "cited_in": [
+        "research/m1-peripheral-evidence.md"
+      ]
+    },
+    {
+      "label": "publisher protocol",
+      "url": "https://bio-protocol.org/en/bpdetail?id=2401&type=0",
+      "cited_in": [
+        "research/mn9-validation-temperature.md"
+      ]
+    },
+    {
+      "label": "public code/data repository",
+      "url": "https://bitbucket.org/stephenhuston/code_data_gorko_et_al/src/master/",
+      "cited_in": [
+        "research/malecns-motor-mapping.md"
+      ]
+    },
+    {
+      "label": "elife-26117-fig1-data1-v2.xlsx",
+      "url": "https://cdn.elifesciences.org/articles/26117/elife-26117-fig1-data1-v2.xlsx",
+      "cited_in": [
+        "research/m3-photoreceptor-reference.md"
+      ]
+    },
+    {
+      "label": "elife-26117-fig3-data1-v2.xlsx",
+      "url": "https://cdn.elifesciences.org/articles/26117/elife-26117-fig3-data1-v2.xlsx",
+      "cited_in": [
+        "research/m3-photoreceptor-reference.md"
+      ]
+    },
+    {
+      "label": "elife-26117-fig3-data2-v2.xlsx",
+      "url": "https://cdn.elifesciences.org/articles/26117/elife-26117-fig3-data2-v2.xlsx",
+      "cited_in": [
+        "research/m3-photoreceptor-reference.md"
+      ]
+    },
+    {
+      "label": "Fig. 6B",
+      "url": "https://cdn.elifesciences.org/articles/54978/elife-54978-fig6-v2.tif",
+      "cited_in": [
+        "research/mn9-anatomy.md"
+      ]
+    },
+    {
+      "label": "Fig. 7",
+      "url": "https://cdn.elifesciences.org/articles/54978/elife-54978-fig7-v2.tif",
+      "cited_in": [
+        "research/mn9-anatomy.md"
+      ]
+    },
+    {
+      "label": "transparent reporting form",
+      "url": "https://cdn.elifesciences.org/articles/54978/elife-54978-transrepform-v2.docx",
+      "cited_in": [
+        "research/mn9-anatomy.md"
+      ]
+    },
+    {
+      "label": "Motor table",
+      "url": "https://cdn.elifesciences.org/articles/96084/elife-96084-supp3-v2.csv",
+      "cited_in": [
+        "research/m1-peripheral-evidence.md",
+        "research/malecns-motor-mapping.md"
+      ]
+    },
+    {
+      "label": "serial table",
+      "url": "https://cdn.elifesciences.org/articles/96084/elife-96084-supp6-v2.csv",
+      "cited_in": [
+        "research/m1-peripheral-evidence.md",
+        "research/malecns-motor-mapping.md",
+        "research/whole-body-muscle-mechanics.md"
+      ]
+    },
+    {
+      "label": "authors' resource page",
+      "url": "https://connectomics.hms.harvard.edu/x-ray-holographic-nano-tomography-datasets",
+      "cited_in": [
+        "research/whole-body-muscle-mechanics.md"
+      ]
+    },
+    {
+      "label": "CC BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "cited_in": [
+        "research/m3-bsg-source-adjudication.md"
+      ]
+    },
+    {
+      "label": "Melis dataset",
+      "url": "https://data.caltech.edu/records/aypcy-ck464",
+      "cited_in": [
+        "research/whole-body-flight-mechanics.md"
+      ]
+    },
+    {
+      "label": "Dryad dataset",
+      "url": "https://datadryad.org/dataset/doi:10.5061/dryad.12751",
+      "cited_in": [
+        "research/m3-photoreceptor-reference.md"
+      ]
+    },
+    {
+      "label": "Lindsay, Sustar & Dickinson dataset",
+      "url": "https://datadryad.org/dataset/doi:10.5061/dryad.23nm1",
+      "cited_in": [
+        "research/whole-body-flight-mechanics.md"
+      ]
+    },
+    {
+      "label": "Dryad dataset 10.5061/dryad.76hdr7stb",
+      "url": "https://datadryad.org/dataset/doi:10.5061/dryad.76hdr7stb",
+      "cited_in": [
+        "research/m2-foreleg-source-notes.md"
+      ]
+    },
+    {
+      "label": "Dryad dataset",
+      "url": "https://datadryad.org/dataset/doi:10.5061/dryad.k3j9kd55t",
+      "cited_in": [
+        "research/m4-m7-evidence.md"
+      ]
+    },
+    {
+      "label": "Figure 1 (all responses to stimuli).opj",
+      "url": "https://datadryad.org/downloads/file_stream/58484",
+      "cited_in": [
+        "research/m3-photoreceptor-reference.md"
+      ]
+    },
+    {
+      "label": "Figure 3 (all WN simulations final).opj",
+      "url": "https://datadryad.org/downloads/file_stream/58491",
+      "cited_in": [
+        "research/m3-photoreceptor-reference.md"
+      ]
+    },
+    {
+      "label": "PyTorch reproducibility documentation",
+      "url": "https://docs.pytorch.org/docs/stable/notes/randomness.html",
+      "cited_in": [
+        "research/whole-cns-visual-dynamics.md"
+      ]
+    },
+    {
+      "label": "DOI",
+      "url": "https://doi.org/10.1002/cne.21966",
+      "cited_in": [
+        "research/m4-transmitter-primary-adjudication.md"
+      ]
+    },
+    {
+      "label": "DOI",
+      "url": "https://doi.org/10.1002/cne.22405",
+      "cited_in": [
+        "research/m4-transmitter-primary-adjudication.md"
+      ]
+    },
+    {
+      "label": "2015 DOI",
+      "url": "https://doi.org/10.1002/cne.23705",
+      "cited_in": [
+        "research/m4-transmitter-primary-adjudication.md"
+      ]
+    },
+    {
+      "label": "2018 DOI",
+      "url": "https://doi.org/10.1002/cne.24512",
+      "cited_in": [
+        "research/m4-transmitter-primary-adjudication.md"
+      ]
+    },
+    {
+      "label": "lamina cartridge reconstruction",
+      "url": "https://doi.org/10.1002/cne.903050206",
+      "cited_in": [
+        "research/malecns-sensory-mapping.md"
+      ]
+    },
+    {
+      "label": "Bacon and Strausfeld 1986",
+      "url": "https://doi.org/10.1007/BF00603798",
+      "cited_in": [
+        "research/whole-body-muscle-mechanics.md"
+      ]
+    },
+    {
+      "label": "DOI",
+      "url": "https://doi.org/10.1016/j.cell.2009.08.035",
+      "cited_in": [
+        "research/m4-transmitter-primary-adjudication.md"
+      ]
+    },
+    {
+      "label": "Wu et al. 2024",
+      "url": "https://doi.org/10.1016/j.cell.2024.07.047",
+      "cited_in": [
+        "research/m4-ms-wed-response-reference.md",
+        "research/m4-transmitter-primary-adjudication.md"
+      ]
+    },
+    {
+      "label": "DOI",
+      "url": "https://doi.org/10.1016/j.celrep.2017.03.034",
+      "cited_in": [
+        "research/m4-transmitter-primary-adjudication.md"
+      ]
+    },
+    {
+      "label": "DOI",
+      "url": "https://doi.org/10.1016/j.celrep.2017.06.043",
+      "cited_in": [
+        "research/m4-transmitter-primary-adjudication.md"
+      ]
+    },
+    {
+      "label": "DOI",
+      "url": "https://doi.org/10.1016/j.cub.2019.02.053",
+      "cited_in": [
+        "research/m4-transmitter-primary-adjudication.md"
+      ]
+    },
+    {
+      "label": "published correction",
+      "url": "https://doi.org/10.1016/j.cub.2020.04.084",
+      "cited_in": [
+        "research/mn9-validation-temperature.md"
+      ]
+    },
+    {
+      "label": "Suver primary anatomy",
+      "url": "https://doi.org/10.1016/j.cub.2023.01.020",
+      "cited_in": [
+        "research/m1-peripheral-evidence.md",
+        "research/malecns-motor-mapping.md"
+      ]
+    },
+    {
+      "label": "Dhawan et al., final publication 2026",
+      "url": "https://doi.org/10.1016/j.cub.2025.12.024",
+      "cited_in": [
+        "research/m3-sensory-evidence.md",
+        "research/malecns-motor-mapping.md"
+      ]
+    },
+    {
+      "label": "electrical-coupling experiments",
+      "url": "https://doi.org/10.1016/j.neuron.2010.08.041",
+      "cited_in": [
+        "research/whole-cns-neural-physiology.md"
+      ]
+    },
+    {
+      "label": "DOI",
+      "url": "https://doi.org/10.1016/j.pneurobio.2010.04.010",
+      "cited_in": [
+        "research/m4-transmitter-primary-adjudication.md"
+      ]
+    },
+    {
+      "label": "Published DOI",
+      "url": "https://doi.org/10.1038/s41467-024-54694-0",
+      "cited_in": [
+        "research/m4-transmitter-primary-adjudication.md"
+      ]
+    },
+    {
+      "label": "Fenk",
+      "url": "https://doi.org/10.1038/s41586-022-05317-5",
+      "cited_in": [
+        "research/m1-peripheral-evidence.md",
+        "research/malecns-motor-mapping.md"
+      ]
+    },
+    {
+      "label": "Gorko Fig. 4 and supplementary anatomy",
+      "url": "https://doi.org/10.1038/s41586-024-07222-5",
+      "cited_in": [
+        "research/malecns-motor-mapping.md"
+      ]
+    },
+    {
+      "label": "Nern et al., Nature 2025",
+      "url": "https://doi.org/10.1038/s41586-025-08746-0",
+      "cited_in": [
+        "research/m4-metu1-adjudication.md",
+        "research/malecns-sensory-mapping.md"
+      ]
+    },
+    {
+      "label": "DOI",
+      "url": "https://doi.org/10.1073/pnas.1310676110",
+      "cited_in": [
+        "research/m4-transmitter-primary-adjudication.md"
+      ]
+    },
+    {
+      "label": "Miyan & Ewing",
+      "url": "https://doi.org/10.1098/rstb.1985.0154",
+      "cited_in": [
+        "research/whole-body-flight-mechanics.md"
+      ]
+    },
+    {
+      "label": "Lau et al., 2014",
+      "url": "https://doi.org/10.1109/TRO.2014.2333112",
+      "cited_in": [
+        "research/whole-body-flight-mechanics.md"
+      ]
+    },
+    {
+      "label": "Primary paper",
+      "url": "https://doi.org/10.1177/07487304251349887",
+      "cited_in": [
+        "research/m4-transmitter-primary-adjudication.md"
+      ]
+    },
+    {
+      "label": "DOI",
+      "url": "https://doi.org/10.1523/JNEUROSCI.3556-13.2014",
+      "cited_in": [
+        "research/mn9-validation-temperature.md"
+      ]
+    },
+    {
+      "label": "DOI",
+      "url": "https://doi.org/10.3389/fendo.2012.00109",
+      "cited_in": [
+        "research/m4-transmitter-primary-adjudication.md"
+      ]
+    },
+    {
+      "label": "DOI",
+      "url": "https://doi.org/10.3389/fnsys.2017.00076",
+      "cited_in": [
+        "research/m4-transmitter-primary-adjudication.md"
+      ]
+    },
+    {
+      "label": "DOI",
+      "url": "https://doi.org/10.3389/neuro.04.005.2009",
+      "cited_in": [
+        "research/m4-transmitter-primary-adjudication.md"
+      ]
+    },
+    {
+      "label": "analysis archive",
+      "url": "https://doi.org/10.5281/zenodo.4527659",
+      "cited_in": [
+        "research/m2-calibration-results.md",
+        "research/m2-foreleg-source-notes.md"
+      ]
+    },
+    {
+      "label": "Falt",
+      "url": "https://doi.org/10.64898/2026.08.11.744090",
+      "cited_in": [
+        "research/m1-peripheral-evidence.md",
+        "research/malecns-motor-mapping.md"
+      ]
+    },
+    {
+      "label": "Kim et al. 2015",
+      "url": "https://doi.org/10.7554/eLife.06651",
+      "cited_in": [
+        "research/m3-olftrans-reference.md"
+      ]
+    },
+    {
+      "label": "Figure 1 supplement 1, PID calibration",
+      "url": "https://doi.org/10.7554/eLife.27670.004",
+      "cited_in": [
+        "research/m3-acetate-dynamic-sources.md"
+      ]
+    },
+    {
+      "label": "Figure 8",
+      "url": "https://doi.org/10.7554/eLife.27670.021",
+      "cited_in": [
+        "research/m3-acetate-dynamic-sources.md"
+      ]
+    },
+    {
+      "label": "Figure 8 supplement 2",
+      "url": "https://doi.org/10.7554/eLife.27670.023",
+      "cited_in": [
+        "research/m3-acetate-dynamic-sources.md"
+      ]
+    },
+    {
+      "label": "DOI",
+      "url": "https://doi.org/10.7554/eLife.43079",
+      "cited_in": [
+        "research/m4-transmitter-primary-adjudication.md"
+      ]
+    },
+    {
+      "label": "DOI",
+      "url": "https://doi.org/10.7554/eLife.66039",
+      "cited_in": [
+        "research/m4-transmitter-primary-adjudication.md"
+      ]
+    },
+    {
+      "label": "DOI",
+      "url": "https://doi.org/10.7554/eLife.88143.3",
+      "cited_in": [
+        "research/m4-transmitter-primary-adjudication.md"
+      ]
+    },
+    {
+      "label": "Primary paper",
+      "url": "https://doi.org/10.7554/eLife.97043.3",
+      "cited_in": [
+        "research/m4-transmitter-primary-adjudication.md"
+      ]
+    },
+    {
+      "label": "author manuscript",
+      "url": "https://dr.ntu.edu.sg/server/api/core/bitstreams/965dc82f-a5d9-42ab-906b-b8784d09ad84/content",
+      "cited_in": [
+        "research/whole-body-flight-mechanics.md"
+      ]
+    },
+    {
+      "label": "Lesser, Moussa and Tuthill, version of record March 2026",
+      "url": "https://elifesciences.org/articles/107867",
+      "cited_in": [
+        "research/m3-sensory-evidence.md"
+      ]
+    },
+    {
+      "label": "Schwarz Fig. 4 and clone analysis",
+      "url": "https://elifesciences.org/articles/19892",
+      "cited_in": [
+        "research/m1-peripheral-evidence.md",
+        "research/malecns-motor-mapping.md",
+        "research/mn9-validation-temperature.md"
+      ]
+    },
+    {
+      "label": "Schwarz et al., 2017, Fig. 3C and Discussion",
+      "url": "https://elifesciences.org/articles/19892#fig3",
+      "cited_in": [
+        "research/mn9-anatomy.md"
+      ]
+    },
+    {
+      "label": "2017 eLife paper",
+      "url": "https://elifesciences.org/articles/26117",
+      "cited_in": [
+        "research/m3-photoreceptor-reference.md"
+      ]
+    },
+    {
+      "label": "receptor-distribution study",
+      "url": "https://elifesciences.org/articles/39279",
+      "cited_in": [
+        "research/m3-odor-reference.md"
+      ]
+    },
+    {
+      "label": "Deora et al., 2021",
+      "url": "https://elifesciences.org/articles/53824",
+      "cited_in": [
+        "research/whole-body-flight-mechanics.md"
+      ]
+    },
+    {
+      "label": "McKellar Tables 1–2 and Figs. 4–5",
+      "url": "https://elifesciences.org/articles/54978",
+      "cited_in": [
+        "research/m1-peripheral-evidence.md",
+        "research/malecns-motor-mapping.md",
+        "research/mn9-anatomy.md",
+        "research/review-and-implementation-summary.md",
+        "research/whole-proboscis-mechanics.md"
+      ]
+    },
+    {
+      "label": "2020 Fig. 1B–C",
+      "url": "https://elifesciences.org/articles/54978#fig1",
+      "cited_in": [
+        "research/mn9-anatomy.md"
+      ]
+    },
+    {
+      "label": "2020 motor-neuron inventory",
+      "url": "https://elifesciences.org/articles/54978#fig4",
+      "cited_in": [
+        "research/mn9-anatomy.md"
+      ]
+    },
+    {
+      "label": "Fig. 4 supplement 2",
+      "url": "https://elifesciences.org/articles/54978#fig4s2",
+      "cited_in": [
+        "research/mn9-anatomy.md"
+      ]
+    },
+    {
+      "label": "2020 Fig. 6B",
+      "url": "https://elifesciences.org/articles/54978#fig6",
+      "cited_in": [
+        "research/mn9-anatomy.md"
+      ]
+    },
+    {
+      "label": "McKellar et al., 2020, Results and Fig. 7",
+      "url": "https://elifesciences.org/articles/54978#fig7",
+      "cited_in": [
+        "research/mn9-anatomy.md"
+      ]
+    },
+    {
+      "label": "supplement 2",
+      "url": "https://elifesciences.org/articles/54978#fig7s2",
+      "cited_in": [
+        "research/mn9-anatomy.md"
+      ]
+    },
+    {
+      "label": "Fig. 8O–P",
+      "url": "https://elifesciences.org/articles/54978#fig8",
+      "cited_in": [
+        "research/mn9-anatomy.md"
+      ]
+    },
+    {
+      "label": "McKellar Table 1",
+      "url": "https://elifesciences.org/articles/54978#table1",
+      "cited_in": [
+        "research/malecns-motor-mapping.md",
+        "research/mn9-anatomy.md"
+      ]
+    },
+    {
+      "label": "McKellar Table 2",
+      "url": "https://elifesciences.org/articles/54978#table2",
+      "cited_in": [
+        "research/mn9-anatomy.md"
+      ]
+    },
+    {
+      "label": "Video 10",
+      "url": "https://elifesciences.org/articles/54978#video10",
+      "cited_in": [
+        "research/mn9-anatomy.md"
+      ]
+    },
+    {
+      "label": "Video 16",
+      "url": "https://elifesciences.org/articles/54978#video16",
+      "cited_in": [
+        "research/mn9-anatomy.md"
+      ]
+    },
+    {
+      "label": "Video 3",
+      "url": "https://elifesciences.org/articles/54978#video3",
+      "cited_in": [
+        "research/mn9-anatomy.md"
+      ]
+    },
+    {
+      "label": "Video 9",
+      "url": "https://elifesciences.org/articles/54978#video9",
+      "cited_in": [
+        "research/mn9-anatomy.md"
+      ]
+    },
+    {
+      "label": "Azevedo paper",
+      "url": "https://elifesciences.org/articles/56754",
+      "cited_in": [
+        "research/m2-calibration-results.md",
+        "research/next-biological-mechanism-decision.md",
+        "research/peripheral-force-calibration.md"
+      ]
+    },
+    {
+      "label": "paper's Methods",
+      "url": "https://elifesciences.org/articles/56754#s4",
+      "cited_in": [
+        "research/m2-foreleg-source-notes.md"
+      ]
+    },
+    {
+      "label": "Agrawal et al. 2020",
+      "url": "https://elifesciences.org/articles/60299",
+      "cited_in": [
+        "research/m4-m7-evidence.md",
+        "research/whole-cns-neural-physiology.md"
+      ]
+    },
+    {
+      "label": "Task et al.'s primary receptor/co-receptor study",
+      "url": "https://elifesciences.org/articles/72599",
+      "cited_in": [
+        "research/m3-odor-reference.md"
+      ]
+    },
+    {
+      "label": "Cheong Fig. 7 and matching methods",
+      "url": "https://elifesciences.org/articles/96084",
+      "cited_in": [
+        "research/m1-peripheral-evidence.md",
+        "research/whole-body-flight-mechanics.md"
+      ]
+    },
+    {
+      "label": "McKim neurosecretory study",
+      "url": "https://elifesciences.org/reviewed-preprints/102684v2",
+      "cited_in": [
+        "research/m3-sensory-evidence.md"
+      ]
+    },
+    {
+      "label": "Ehrhardt's current resource",
+      "url": "https://elifesciences.org/reviewed-preprints/106548v1",
+      "cited_in": [
+        "research/malecns-motor-mapping.md"
+      ]
+    },
+    {
+      "label": "primary companion workbook",
+      "url": "https://europepmc.org/api/fulltextRepo?pprId=PPR1072256&type=FILE&fileName=EMS208214-supplement-Supplemental_table_2.xlsx&mimeType=application/vnd.openxmlformats-officedocument.spreadsheetml.sheet&version=2",
+      "cited_in": [
+        "research/m3-sensory-evidence.md",
+        "research/malecns-sensory-mapping.md"
+      ]
+    },
+    {
+      "label": "taste companion, version 2, Results and Figure 2E/G",
+      "url": "https://europepmc.org/article/PPR/PPR1072256#S6",
+      "cited_in": [
+        "research/malecns-sensory-mapping.md"
+      ]
+    },
+    {
+      "label": "Primary anatomy PDF, Fig. 4",
+      "url": "https://faculty.washington.edu/tuthill/docs/gorko%202024.pdf",
+      "cited_in": [
+        "research/malecns-motor-mapping.md",
+        "research/whole-head-mechanics.md"
+      ]
+    },
+    {
+      "label": "image collection",
+      "url": "https://figshare.com/projects/An_anatomical_atlas_of_Drosophila_melanogaster_-_the_wildtype/218623",
+      "cited_in": [
+        "research/whole-body-flight-mechanics.md"
+      ]
+    },
+    {
+      "label": "authorized anatomical figure",
+      "url": "https://flybase.org/reports/FBim0000045",
+      "cited_in": [
+        "research/m2-salivary-source-notes.md"
+      ]
+    },
+    {
+      "label": "Ferris's adult leg/pretarsus figure",
+      "url": "https://flybase.org/reports/FBim0000796.html",
+      "cited_in": [
+        "research/whole-body-muscle-mechanics.md"
+      ]
+    },
+    {
+      "label": "Miller 1950's primary record",
+      "url": "https://flybase.org/reports/FBrf0007735.html",
+      "cited_in": [
+        "research/m2-salivary-source-notes.md"
+      ]
+    },
+    {
+      "label": "pinned author scenes",
+      "url": "https://github.com/EllenLesser/Azevedo_Lesser_Phelps_Mark_2023/tree/ff363505fd1236e63ee77966239e99280fe1ba12/jsons",
+      "cited_in": [
+        "research/m1-peripheral-evidence.md"
+      ]
+    },
+    {
+      "label": "OlfTrans CPU model at `3f873eaf`",
+      "url": "https://github.com/FlyBrainLab/OlfTrans/blob/3f873eafba3a21b8fcb27231b49835df1d3cbc0c/olftrans/cpu/model.py",
+      "cited_in": [
+        "research/m3-olftrans-reference.md"
+      ]
+    },
+    {
+      "label": "Juusola MATLAB model",
+      "url": "https://github.com/JuusolaLab/Microsaccadic_Sampling_Paper/tree/a4453f7e47abf2ea2a924c376d4c1c157c6011e2/BiophysicalPhotoreceptorModel",
+      "cited_in": [
+        "research/m3-photoreceptor-reference.md"
+      ]
+    },
+    {
+      "label": "asset",
+      "url": "https://github.com/NeLy-EPFL/flygym/blob/main/src/flygym/assets/model/musculoskeletal/best_combined_arm_damping_stiff_cvt3.xml",
+      "cited_in": [
+        "research/mn9-mujoco-mechanics.md"
+      ]
+    },
+    {
+      "label": "FlyGym musculoskeletal implementation",
+      "url": "https://github.com/NeLy-EPFL/flygym/blob/main/src/flygym/compose/fly/musculoskeletal.py",
+      "cited_in": [
+        "research/mn9-mujoco-mechanics.md"
+      ]
+    },
+    {
+      "label": "versioned primary notebook source",
+      "url": "https://github.com/NeLy-EPFL/flygym/blob/v2.1.0/tutorials/1b_advanced_model_composition.ipynb",
+      "cited_in": [
+        "research/mn9-mujoco-mechanics.md"
+      ]
+    },
+    {
+      "label": "its preprocessing repository",
+      "url": "https://github.com/YijieYin/interpret_connectome/tree/a4df3b0d5345d2a34dac813f897d8427f6a6eb45",
+      "cited_in": [
+        "research/m3-odor-reference.md"
+      ]
+    },
+    {
+      "label": "Arthur Zhao's Eyemap Archive",
+      "url": "https://github.com/artxz/eyemap-archive",
+      "cited_in": [
+        "research/malecns-sensory-mapping.md"
+      ]
+    },
+    {
+      "label": "`chungheng/neural`",
+      "url": "https://github.com/chungheng/neural",
+      "cited_in": [
+        "research/m3-bsg-source-adjudication.md"
+      ]
+    },
+    {
+      "label": "`bc4deffe611cdd72d510f744bf816aa56debe35d`",
+      "url": "https://github.com/chungheng/neural/tree/bc4deffe611cdd72d510f744bf816aa56debe35d",
+      "cited_in": [
+        "research/m3-bsg-source-adjudication.md"
+      ]
+    },
+    {
+      "label": "publication code",
+      "url": "https://github.com/elifesciences-publications/FlySound",
+      "cited_in": [
+        "research/peripheral-force-calibration.md"
+      ]
+    },
+    {
+      "label": "Archived FlySound calibration",
+      "url": "https://github.com/elifesciences-publications/FlySound/blob/559a86e1bdccaba0b64c17ab97d7d09fd830cfa9/FlySoundDevices/forceProbeCalibration.m#L77-L109",
+      "cited_in": [
+        "research/m2-foreleg-source-notes.md"
+      ]
+    },
+    {
+      "label": "Publisher's spikesort archive",
+      "url": "https://github.com/elifesciences-publications/spikesort/tree/126a2b3178714032afc86bfd7e64068b6e1abd8c",
+      "cited_in": [
+        "research/m3-acetate-dynamic-sources.md"
+      ]
+    },
+    {
+      "label": "Kontroller",
+      "url": "https://github.com/emonetlab/kontroller/tree/f5e57de887c47f2bd831c2a399a316d230499178",
+      "cited_in": [
+        "research/m3-acetate-dynamic-sources.md"
+      ]
+    },
+    {
+      "label": "Original spikesort",
+      "url": "https://github.com/emonetlab/spikesort/tree/c4d71c0a5f90a80186b93261b838ddfc087e4c24",
+      "cited_in": [
+        "research/m3-acetate-dynamic-sources.md"
+      ]
+    },
+    {
+      "label": "official optic-column table",
+      "url": "https://github.com/flyconnectome/2025malecns/blob/67767d2233657983993ff6c2be48e836a935863c/supplemental_data/optic-column-type-assignments-v1.0.xlsx",
+      "cited_in": [
+        "research/malecns-sensory-mapping.md"
+      ]
+    },
+    {
+      "label": "MaleCNS training source",
+      "url": "https://github.com/flyconnectome/drosophila_neurotransmitters/blob/a9417412c8a70fcc9f80a65ca5bc6064eba07be3/gt_sources/male_cns/202509-male_cns_gt_data.csv",
+      "cited_in": [
+        "research/m4-metu1-adjudication.md"
+      ]
+    },
+    {
+      "label": "official FlyWire annotation snapshot",
+      "url": "https://github.com/flyconnectome/flywire_annotations/blob/8587524c1748ce5ef2080822a2fc890fc03bf597/supplemental_files/Supplemental_file1_neuron_annotations.tsv",
+      "cited_in": [
+        "research/malecns-sensory-mapping.md"
+      ]
+    },
+    {
+      "label": "donor femur mesh",
+      "url": "https://github.com/gizemozd/FlyMimic/blob/main/flymimic/assets/models/meshes/stl/LFFemur.stl",
+      "cited_in": [
+        "research/whole-body-muscle-mechanics.md"
+      ]
+    },
+    {
+      "label": "donor trochanter mesh",
+      "url": "https://github.com/gizemozd/FlyMimic/blob/main/flymimic/assets/models/meshes/stl/LFTrochanter.stl",
+      "cited_in": [
+        "research/whole-body-muscle-mechanics.md"
+      ]
+    },
+    {
+      "label": "Original OpenSim file",
+      "url": "https://github.com/gizemozd/FlyMimic/blob/main/flymimic/assets/models/opensim/best_combined.osim",
+      "cited_in": [
+        "research/mn9-mujoco-mechanics.md"
+      ]
+    },
+    {
+      "label": "3.9 `mjData` layout",
+      "url": "https://github.com/google-deepmind/mujoco/blob/3.9.0/include/mujoco/mjdata.h",
+      "cited_in": [
+        "research/mn9-mujoco-mechanics.md"
+      ]
+    },
+    {
+      "label": "Derivative implementation",
+      "url": "https://github.com/google-deepmind/mujoco/blob/3.9.0/src/engine/engine_derivative.c#L1983-L2004",
+      "cited_in": [
+        "research/m2-flight-instability-integrator-notes.md"
+      ]
+    },
+    {
+      "label": "Forward/step implementation",
+      "url": "https://github.com/google-deepmind/mujoco/blob/3.9.0/src/engine/engine_forward.c#L2075-L2105",
+      "cited_in": [
+        "research/m2-flight-instability-integrator-notes.md"
+      ]
+    },
+    {
+      "label": "Value-check implementation",
+      "url": "https://github.com/google-deepmind/mujoco/blob/3.9.0/src/engine/engine_util_misc.c#L1833-L1836",
+      "cited_in": [
+        "research/m2-flight-instability-integrator-notes.md"
+      ]
+    },
+    {
+      "label": "3.9 force implementation",
+      "url": "https://github.com/google-deepmind/mujoco/blob/3.9.0/src/engine/engine_util_misc.c#L757-L879",
+      "cited_in": [
+        "research/mn9-mujoco-mechanics.md"
+      ]
+    },
+    {
+      "label": "Versioned activation implementation",
+      "url": "https://github.com/google-deepmind/mujoco/blob/3.9.0/src/engine/engine_util_misc.c#L882-L916",
+      "cited_in": [
+        "research/mn9-mujoco-mechanics.md"
+      ]
+    },
+    {
+      "label": "FANC source repository",
+      "url": "https://github.com/htem/FANC_auto_recon",
+      "cited_in": [
+        "research/malecns-motor-mapping.md"
+      ]
+    },
+    {
+      "label": "analysis code",
+      "url": "https://github.com/masonklein/neurophys/",
+      "cited_in": [
+        "research/mn9-validation-temperature.md"
+      ]
+    },
+    {
+      "label": "code repository",
+      "url": "https://github.com/nagellab/SuverEtAl2023",
+      "cited_in": [
+        "research/malecns-motor-mapping.md"
+      ]
+    },
+    {
+      "label": "Authors’ version guidance",
+      "url": "https://github.com/philshiu/Drosophila_brain_model#version-783",
+      "cited_in": [
+        "research/mn9-anatomy.md"
+      ]
+    },
+    {
+      "label": "Pinned notebook",
+      "url": "https://github.com/philshiu/Drosophila_brain_model/blob/91bdd1e7dcf193f3e7ca5a8933497fcef63b7960/figures.ipynb",
+      "cited_in": [
+        "research/mn9-anatomy.md"
+      ]
+    },
+    {
+      "label": "author data repository",
+      "url": "https://github.com/serene-da1/Dhawan-et-al-2025-",
+      "cited_in": [
+        "research/malecns-motor-mapping.md"
+      ]
+    },
+    {
+      "label": "default experiment",
+      "url": "https://github.com/smpuglie/Pugliese_2026/blob/faee4b06869855ae0164cbf217fb6ec28ef3521b/configs/experiment/DNg100_Stim.yaml",
+      "cited_in": [
+        "research/whole-cns-neural-physiology.md"
+      ]
+    },
+    {
+      "label": "neuron defaults",
+      "url": "https://github.com/smpuglie/Pugliese_2026/blob/faee4b06869855ae0164cbf217fb6ec28ef3521b/configs/neuron_params/default.yaml",
+      "cited_in": [
+        "research/whole-cns-neural-physiology.md"
+      ]
+    },
+    {
+      "label": "simulation defaults",
+      "url": "https://github.com/smpuglie/Pugliese_2026/blob/faee4b06869855ae0164cbf217fb6ec28ef3521b/configs/sim/default.yaml",
+      "cited_in": [
+        "research/whole-cns-neural-physiology.md"
+      ]
+    },
+    {
+      "label": "W_20260210_vncRoisOnly.csv",
+      "url": "https://github.com/smpuglie/Pugliese_2026/blob/faee4b06869855ae0164cbf217fb6ec28ef3521b/data/imac%20t1%20connectome%20data/W_20260210_vncRoisOnly.csv",
+      "cited_in": [
+        "research/whole-cns-neural-physiology.md"
+      ]
+    },
+    {
+      "label": "wTable_20260210_vncRoisOnly.csv",
+      "url": "https://github.com/smpuglie/Pugliese_2026/blob/faee4b06869855ae0164cbf217fb6ec28ef3521b/data/imac%20t1%20connectome%20data/wTable_20260210_vncRoisOnly.csv",
+      "cited_in": [
+        "research/whole-cns-neural-physiology.md"
+      ]
+    },
+    {
+      "label": "Pinned Pugliese MANC source",
+      "url": "https://github.com/smpuglie/Pugliese_2026/blob/faee4b06869855ae0164cbf217fb6ec28ef3521b/data/manc%20full%20vnc%20data/wTable_20260522_allSynapses.feather",
+      "cited_in": [
+        "research/malecns-motor-mapping.md"
+      ]
+    },
+    {
+      "label": "data structures",
+      "url": "https://github.com/smpuglie/Pugliese_2026/blob/faee4b06869855ae0164cbf217fb6ec28ef3521b/src/data/data_classes.py",
+      "cited_in": [
+        "research/whole-cns-neural-physiology.md"
+      ]
+    },
+    {
+      "label": "source LIF implementation",
+      "url": "https://github.com/smpuglie/Pugliese_2026/blob/faee4b06869855ae0164cbf217fb6ec28ef3521b/src/lif_model/lif_dynamics.py",
+      "cited_in": [
+        "research/whole-cns-neural-physiology.md"
+      ]
+    },
+    {
+      "label": "simulation functions",
+      "url": "https://github.com/smpuglie/Pugliese_2026/blob/faee4b06869855ae0164cbf217fb6ec28ef3521b/src/simulation/vnc_sim.py",
+      "cited_in": [
+        "research/whole-cns-neural-physiology.md"
+      ]
+    },
+    {
+      "label": "`adjustStimI`",
+      "url": "https://github.com/smpuglie/Pugliese_2026/blob/faee4b06869855ae0164cbf217fb6ec28ef3521b/src/simulation/vnc_sim.py#L1143",
+      "cited_in": [
+        "research/whole-cns-neural-physiology.md"
+      ]
+    },
+    {
+      "label": "parameter preparation",
+      "url": "https://github.com/smpuglie/Pugliese_2026/blob/faee4b06869855ae0164cbf217fb6ec28ef3521b/src/simulation/vnc_sim.py#L1683",
+      "cited_in": [
+        "research/whole-cns-neural-physiology.md"
+      ]
+    },
+    {
+      "label": "rate equation",
+      "url": "https://github.com/smpuglie/Pugliese_2026/blob/faee4b06869855ae0164cbf217fb6ec28ef3521b/src/simulation/vnc_sim.py#L35",
+      "cited_in": [
+        "research/whole-cns-neural-physiology.md"
+      ]
+    },
+    {
+      "label": "loaders/input helper",
+      "url": "https://github.com/smpuglie/Pugliese_2026/blob/faee4b06869855ae0164cbf217fb6ec28ef3521b/src/utils/sim_utils.py#L330",
+      "cited_in": [
+        "research/whole-cns-neural-physiology.md"
+      ]
+    },
+    {
+      "label": "size normalization",
+      "url": "https://github.com/smpuglie/Pugliese_2026/blob/faee4b06869855ae0164cbf217fb6ec28ef3521b/src/utils/sim_utils.py#L73",
+      "cited_in": [
+        "research/whole-cns-neural-physiology.md"
+      ]
+    },
+    {
+      "label": "VVDViewer",
+      "url": "https://github.com/takashi310/VVD_Viewer",
+      "cited_in": [
+        "research/mn9-anatomy.md"
+      ]
+    },
+    {
+      "label": "Author analysis, pinned commit",
+      "url": "https://github.com/tony-azevedo/FlyAnalysis/blob/c68159f1f7a4ecc957c708ae8411fd2550482f63/Records/Azevedo_2020_Records/Methods_BarRelaxation.m#L419-L471",
+      "cited_in": [
+        "research/m2-foreleg-source-notes.md"
+      ]
+    },
+    {
+      "label": "pinned data documentation",
+      "url": "https://github.com/ttesileanu/OlfactoryReceptorDistribution/blob/a071b82519db371f85ebff750f21a3ba466cbbc0/README.md",
+      "cited_in": [
+        "research/m3-odor-reference.md"
+      ]
+    },
+    {
+      "label": "The retained MATLAB file",
+      "url": "https://github.com/ttesileanu/OlfactoryReceptorDistribution/blob/a071b82519db371f85ebff750f21a3ba466cbbc0/data/flyResponsesWithNames.mat",
+      "cited_in": [
+        "research/m3-odor-reference.md"
+      ]
+    },
+    {
+      "label": "Walker et al., 2014",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001823",
+      "cited_in": [
+        "research/whole-body-flight-mechanics.md"
+      ]
+    },
+    {
+      "label": "official publisher S1 Notebook",
+      "url": "https://journals.plos.org/ploscompbiol/article/file?type=supplementary&id=10.1371/journal.pcbi.1007751.s004",
+      "cited_in": [
+        "research/m3-bsg-source-adjudication.md"
+      ]
+    },
+    {
+      "label": "Yu et al., 2023, Figs. 2 and 5",
+      "url": "https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1010562",
+      "cited_in": [
+        "research/mn9-anatomy.md"
+      ]
+    },
+    {
+      "label": "Dinges campaniform atlas",
+      "url": "https://kups.ub.uni-koeln.de/25156/",
+      "cited_in": [
+        "research/m3-sensory-evidence.md"
+      ]
+    },
+    {
+      "label": "public MaleCNS catalog",
+      "url": "https://male-cns.janelia.org/download/",
+      "cited_in": [
+        "research/m4-m7-evidence.md",
+        "research/malecns-motor-mapping.md",
+        "research/malecns-sensory-mapping.md"
+      ]
+    },
+    {
+      "label": "publisher's supplementary-table archive",
+      "url": "https://media.springernature.com/full/springer-static/esm/art%3A10.1038%2Fs41586-025-08746-0/MediaObjects/41586_2025_8746_MOESM4_ESM.zip",
+      "cited_in": [
+        "research/m4-metu1-adjudication.md"
+      ]
+    },
+    {
+      "label": "original supplement",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-024-07222-5/MediaObjects/41586_2024_7222_MOESM1_ESM.pdf",
+      "cited_in": [
+        "research/m1-banc-neck-adjudication.md",
+        "research/m1-peripheral-evidence.md",
+        "research/malecns-motor-mapping.md",
+        "research/whole-head-mechanics.md"
+      ]
+    },
+    {
+      "label": "Publisher supplement",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-024-07389-x/MediaObjects/41586_2024_7389_MOESM1_ESM.pdf",
+      "cited_in": [
+        "research/m1-peripheral-evidence.md"
+      ]
+    },
+    {
+      "label": "Publisher supplement",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41593-026-02412-y/MediaObjects/41593_2026_2412_MOESM1_ESM.pdf",
+      "cited_in": [
+        "research/m1-peripheral-evidence.md"
+      ]
+    },
+    {
+      "label": "MuJoCo 3.9 data structures",
+      "url": "https://mujoco.readthedocs.io/en/3.9.0/APIreference/APItypes.html#mjdata",
+      "cited_in": [
+        "research/mn9-mujoco-mechanics.md"
+      ]
+    },
+    {
+      "label": "MuJoCo 3.9.0 integration",
+      "url": "https://mujoco.readthedocs.io/en/3.9.0/computation/index.html#numerical-integration",
+      "cited_in": [
+        "research/m2-flight-instability-integrator-notes.md"
+      ]
+    },
+    {
+      "label": "MuJoCo 3.9 simulation pipeline",
+      "url": "https://mujoco.readthedocs.io/en/3.9.0/computation/index.html#simulation-pipeline",
+      "cited_in": [
+        "research/plan-implementation-review.md"
+      ]
+    },
+    {
+      "label": "MuJoCo 3.9 state and reproducibility documentation",
+      "url": "https://mujoco.readthedocs.io/en/3.9.0/computation/index.html#state",
+      "cited_in": [
+        "research/plan-implementation-review.md"
+      ]
+    },
+    {
+      "label": "State and diagnostics",
+      "url": "https://mujoco.readthedocs.io/en/3.9.0/programming/simulation.html#state-and-control",
+      "cited_in": [
+        "research/m2-flight-instability-integrator-notes.md"
+      ]
+    },
+    {
+      "label": "MuJoCo collision geometry",
+      "url": "https://mujoco.readthedocs.io/en/stable/",
+      "cited_in": [
+        "research/whole-body-flight-mechanics.md"
+      ]
+    },
+    {
+      "label": "Function reference",
+      "url": "https://mujoco.readthedocs.io/en/stable/APIreference/APIfunctions.html#mju-musclegain",
+      "cited_in": [
+        "research/mn9-mujoco-mechanics.md"
+      ]
+    },
+    {
+      "label": "XML parameter descriptions",
+      "url": "https://mujoco.readthedocs.io/en/stable/XMLreference.html#actuator-muscle",
+      "cited_in": [
+        "research/mn9-mujoco-mechanics.md"
+      ]
+    },
+    {
+      "label": "sensor definitions",
+      "url": "https://mujoco.readthedocs.io/en/stable/XMLreference.html#sensor",
+      "cited_in": [
+        "research/mn9-mujoco-mechanics.md"
+      ]
+    },
+    {
+      "label": "Spatial tendon reference",
+      "url": "https://mujoco.readthedocs.io/en/stable/XMLreference.html#tendon-spatial",
+      "cited_in": [
+        "research/mn9-mujoco-mechanics.md"
+      ]
+    },
+    {
+      "label": "MuJoCo fluid model",
+      "url": "https://mujoco.readthedocs.io/en/stable/computation/fluid.html",
+      "cited_in": [
+        "research/whole-body-flight-mechanics.md"
+      ]
+    },
+    {
+      "label": "Transmission equations",
+      "url": "https://mujoco.readthedocs.io/en/stable/computation/index.html#actuation-model",
+      "cited_in": [
+        "research/mn9-mujoco-mechanics.md"
+      ]
+    },
+    {
+      "label": "Range computation",
+      "url": "https://mujoco.readthedocs.io/en/stable/modeling.html#length-range",
+      "cited_in": [
+        "research/mn9-mujoco-mechanics.md"
+      ]
+    },
+    {
+      "label": "MuJoCo muscle overview",
+      "url": "https://mujoco.readthedocs.io/en/stable/modeling.html#muscle-actuators",
+      "cited_in": [
+        "research/mn9-mujoco-mechanics.md",
+        "research/peripheral-force-calibration.md"
+      ]
+    },
+    {
+      "label": "native model editing",
+      "url": "https://mujoco.readthedocs.io/en/stable/programming/modeledit.html",
+      "cited_in": [
+        "research/mn9-mujoco-mechanics.md"
+      ]
+    },
+    {
+      "label": "Native state contract",
+      "url": "https://mujoco.readthedocs.io/en/stable/programming/simulation.html#state-and-control",
+      "cited_in": [
+        "research/m6-individual-persistence.md"
+      ]
+    },
+    {
+      "label": "MaleCNS matching documentation",
+      "url": "https://natverse.org/malecns/reference/mcns_predict_group.html",
+      "cited_in": [
+        "research/malecns-motor-mapping.md"
+      ]
+    },
+    {
+      "label": "author abdominal candidate workflow",
+      "url": "https://natverse.org/neuronbridger/articles/abdominal_peripheral_targets.html",
+      "cited_in": [
+        "research/malecns-motor-mapping.md"
+      ]
+    },
+    {
+      "label": "Official tutorial, model/units discussion",
+      "url": "https://neuromechfly.org/tutorials/1b_advanced_model_composition/",
+      "cited_in": [
+        "research/mn9-mujoco-mechanics.md",
+        "research/review-and-implementation-summary.md",
+        "research/whole-body-muscle-mechanics.md"
+      ]
+    },
+    {
+      "label": "Database Contents License 1.0",
+      "url": "https://opendatacommons.org/licenses/dbcl/1-0/",
+      "cited_in": [
+        "research/m3-olftrans-reference.md"
+      ]
+    },
+    {
+      "label": "Open Database License 1.0",
+      "url": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "cited_in": [
+        "research/m3-olftrans-reference.md"
+      ]
+    },
+    {
+      "label": "Fenk et al., 2022, Figure 1",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10103069/#F1",
+      "cited_in": [
+        "research/whole-head-mechanics.md"
+      ]
+    },
+    {
+      "label": "PMC full text/supplements",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10312520/",
+      "cited_in": [
+        "research/m1-peripheral-evidence.md"
+      ]
+    },
+    {
+      "label": "Mechanical feature selectivity",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10644877/",
+      "cited_in": [
+        "research/whole-cns-body-feedback.md"
+      ]
+    },
+    {
+      "label": "Pons, 2023",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10645510/",
+      "cited_in": [
+        "research/whole-body-flight-mechanics.md"
+      ]
+    },
+    {
+      "label": "Primary paper",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10665042/",
+      "cited_in": [
+        "research/m4-transmitter-primary-adjudication.md"
+      ]
+    },
+    {
+      "label": "Primary text/data statement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11068490/",
+      "cited_in": [
+        "research/m4-m7-evidence.md"
+      ]
+    },
+    {
+      "label": "classification paper",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11106717/",
+      "cited_in": [
+        "research/m4-m7-evidence.md",
+        "research/whole-cns-neural-physiology.md"
+      ]
+    },
+    {
+      "label": "Primary paper, Fig. 4d",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11348827/",
+      "cited_in": [
+        "research/m1-peripheral-evidence.md",
+        "research/whole-body-muscle-mechanics.md"
+      ]
+    },
+    {
+      "label": "Yang et al. 2024",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11398398/",
+      "cited_in": [
+        "research/m2-internal-state-evidence.md",
+        "research/malecns-motor-mapping.md",
+        "research/whole-proboscis-mechanics.md"
+      ]
+    },
+    {
+      "label": "Umezaki et al. (2024)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11611295/",
+      "cited_in": [
+        "research/mn9-validation-temperature.md"
+      ]
+    },
+    {
+      "label": "accessible primary preprint",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12154908/",
+      "cited_in": [
+        "research/m3-sensory-evidence.md"
+      ]
+    },
+    {
+      "label": "The adult capillary-feeding protocol",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12274911/",
+      "cited_in": [
+        "research/m2-salivary-source-notes.md"
+      ]
+    },
+    {
+      "label": "MaleCNS primary preparation and annotation methods",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12636603/",
+      "cited_in": [
+        "research/m3-sensory-evidence.md"
+      ]
+    },
+    {
+      "label": "MaleCNS methods",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12636603/#:~:text=Assignment%20of%20neurotransmitter%20predictions%20to%20neurons",
+      "cited_in": [
+        "research/m4-metu1-adjudication.md"
+      ]
+    },
+    {
+      "label": "APN2 full text and Table S2",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13131640/",
+      "cited_in": [
+        "research/m1-peripheral-evidence.md",
+        "research/malecns-motor-mapping.md"
+      ]
+    },
+    {
+      "label": "Pugliese et al., bioRxiv version 2, 30 April 2026",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13142387/",
+      "cited_in": [
+        "research/whole-cns-neural-physiology.md"
+      ]
+    },
+    {
+      "label": "Cheong et al., Figure 7",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13384506/",
+      "cited_in": [
+        "research/whole-body-muscle-mechanics.md"
+      ]
+    },
+    {
+      "label": "network feedback experiments",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2628722/",
+      "cited_in": [
+        "research/whole-cns-visual-dynamics.md"
+      ]
+    },
+    {
+      "label": "Gordon and Scott, 2009, Fig. 6 and imaging methods",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2650400/",
+      "cited_in": [
+        "research/mn9-dynamics.md"
+      ]
+    },
+    {
+      "label": "Eldred et al., Tables 2–3",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2849092/",
+      "cited_in": [
+        "research/m2-calibration-results.md",
+        "research/mn9-validation-temperature.md",
+        "research/peripheral-force-calibration.md",
+        "research/whole-body-muscle-mechanics.md"
+      ]
+    },
+    {
+      "label": "Cameron et al. 2010",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2865571/",
+      "cited_in": [
+        "research/m3-sensory-evidence.md"
+      ]
+    },
+    {
+      "label": "Neely et al. (2011)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3164203/",
+      "cited_in": [
+        "research/mn9-validation-temperature.md"
+      ]
+    },
+    {
+      "label": "Wang, Zhao & Swank, 2011",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3207158/",
+      "cited_in": [
+        "research/whole-body-flight-mechanics.md"
+      ]
+    },
+    {
+      "label": "quantitative cartridge connectivity",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3244492/",
+      "cited_in": [
+        "research/malecns-sensory-mapping.md"
+      ]
+    },
+    {
+      "label": "Manzo et al. 2012",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3341050/",
+      "cited_in": [
+        "research/m2-internal-state-evidence.md",
+        "research/m2-salivary-source-notes.md"
+      ]
+    },
+    {
+      "label": "Rawson et al., 2012, Fig. 3",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3350605/",
+      "cited_in": [
+        "research/mn9-dynamics.md",
+        "research/peripheral-force-calibration.md"
+      ]
+    },
+    {
+      "label": "Yoshihara, 2012, Fig. 9",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3466644/",
+      "cited_in": [
+        "research/mn9-dynamics.md"
+      ]
+    },
+    {
+      "label": "FlyAtlas epithelial transcriptome analysis",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3734111/",
+      "cited_in": [
+        "research/m2-salivary-source-notes.md"
+      ]
+    },
+    {
+      "label": "Mahoney et al. 2014",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3913865/",
+      "cited_in": [
+        "research/m2-calibration-results.md",
+        "research/mn9-dynamics.md",
+        "research/mn9-validation-temperature.md",
+        "research/peripheral-force-calibration.md",
+        "research/review-and-implementation-summary.md"
+      ]
+    },
+    {
+      "label": "Wells & Andrew 2015, Fig. 4",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4667400/",
+      "cited_in": [
+        "research/m2-salivary-source-notes.md"
+      ]
+    },
+    {
+      "label": "Primary text",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4674068/",
+      "cited_in": [
+        "research/m4-m7-evidence.md"
+      ]
+    },
+    {
+      "label": "Graded histaminergic retinal signaling",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4801898/",
+      "cited_in": [
+        "research/malecns-sensory-mapping.md",
+        "research/whole-cns-visual-dynamics.md"
+      ]
+    },
+    {
+      "label": "Barnstedt et al. 2016",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4819445/",
+      "cited_in": [
+        "research/m4-m7-evidence.md"
+      ]
+    },
+    {
+      "label": "Mahoney et al. 2016",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5012858/",
+      "cited_in": [
+        "research/m2-calibration-results.md",
+        "research/mn9-dynamics.md",
+        "research/peripheral-force-calibration.md"
+      ]
+    },
+    {
+      "label": "Kreko-Pierce et al., Table 1",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5207075/",
+      "cited_in": [
+        "research/mn9-dynamics.md",
+        "research/peripheral-force-calibration.md"
+      ]
+    },
+    {
+      "label": "Lehnert et al. 2017",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5247492/",
+      "cited_in": [
+        "research/m2-salivary-source-notes.md"
+      ]
+    },
+    {
+      "label": "archived primary article",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5315463/",
+      "cited_in": [
+        "research/mn9-validation-temperature.md"
+      ]
+    },
+    {
+      "label": "Solari et al. 2017",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5363830/",
+      "cited_in": [
+        "research/m2-internal-state-evidence.md"
+      ]
+    },
+    {
+      "label": "Glasheen et al., 2017, Tables 2–3",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5814588/",
+      "cited_in": [
+        "research/whole-body-flight-mechanics.md"
+      ]
+    },
+    {
+      "label": "Mamiya et al.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6481666/",
+      "cited_in": [
+        "research/malecns-sensory-mapping.md",
+        "research/whole-cns-body-feedback.md"
+      ]
+    },
+    {
+      "label": "Zhou et al., 2019",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6531006/",
+      "cited_in": [
+        "research/mn9-anatomy.md",
+        "research/mn9-dynamics.md",
+        "research/mn9-validation-temperature.md"
+      ]
+    },
+    {
+      "label": "Budelli et al. (2019), Figures 1 and 3; supplement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6709853/",
+      "cited_in": [
+        "research/mn9-validation-temperature.md",
+        "research/whole-cns-body-feedback.md"
+      ]
+    },
+    {
+      "label": "insect activation-model comparison",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6812852/",
+      "cited_in": [
+        "research/peripheral-force-calibration.md"
+      ]
+    },
+    {
+      "label": "Three-dimensional wing structure study",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7115228/",
+      "cited_in": [
+        "research/whole-body-flight-mechanics.md"
+      ]
+    },
+    {
+      "label": "McKellar et al., 2020, Table 1 and Fig. 7",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7316511/",
+      "cited_in": [
+        "research/mn9-dynamics.md",
+        "research/mn9-validation-temperature.md"
+      ]
+    },
+    {
+      "label": "Figure 7",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7316511/#fig7",
+      "cited_in": [
+        "research/mn9-validation-temperature.md"
+      ]
+    },
+    {
+      "label": "Video 14",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7316511/#video14",
+      "cited_in": [
+        "research/mn9-validation-temperature.md"
+      ]
+    },
+    {
+      "label": "Figures 1–3",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7329267/",
+      "cited_in": [
+        "research/mn9-validation-temperature.md",
+        "research/review-and-implementation-summary.md"
+      ]
+    },
+    {
+      "label": "Marin thermo/hygrosensory paper",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7443704/",
+      "cited_in": [
+        "research/m3-sensory-evidence.md",
+        "research/malecns-sensory-mapping.md",
+        "research/mn9-validation-temperature.md",
+        "research/whole-cns-body-feedback.md"
+      ]
+    },
+    {
+      "label": "Hadjieconomou et al. 2020",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7610780/",
+      "cited_in": [
+        "research/m2-internal-state-evidence.md"
+      ]
+    },
+    {
+      "label": "L1/L2 recording study",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8018773/",
+      "cited_in": [
+        "research/whole-cns-visual-dynamics.md"
+      ]
+    },
+    {
+      "label": "Wang et al. 2020",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8386590/",
+      "cited_in": [
+        "research/m2-internal-state-evidence.md"
+      ]
+    },
+    {
+      "label": "Eaton and Mahoney, 2017, procedure D",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8413541/",
+      "cited_in": [
+        "research/mn9-dynamics.md",
+        "research/mn9-validation-temperature.md",
+        "research/peripheral-force-calibration.md"
+      ]
+    },
+    {
+      "label": "Chen et al.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8665017/",
+      "cited_in": [
+        "research/malecns-sensory-mapping.md"
+      ]
+    },
+    {
+      "label": "Li et al. 2022",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8960802/",
+      "cited_in": [
+        "research/m2-salivary-source-notes.md"
+      ]
+    },
+    {
+      "label": "Primary text/data statement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9012144/",
+      "cited_in": [
+        "research/m4-m7-evidence.md"
+      ]
+    },
+    {
+      "label": "Ormerod et al., larval preparation",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9044916/",
+      "cited_in": [
+        "research/mn9-dynamics.md",
+        "research/peripheral-force-calibration.md"
+      ]
+    },
+    {
+      "label": "Alpert et al. (2022), Figure 1",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9529852/",
+      "cited_in": [
+        "research/mn9-validation-temperature.md"
+      ]
+    },
+    {
+      "label": "Whitehead et al., 2022",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9750141/",
+      "cited_in": [
+        "research/whole-body-flight-mechanics.md"
+      ]
+    },
+    {
+      "label": "Suver, Medina and Nagel, 2023, Figure 2",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9992063/#F2",
+      "cited_in": [
+        "research/whole-head-mechanics.md"
+      ]
+    },
+    {
+      "label": "original movie download",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7316511/bin/elife-54978-video14.mp4",
+      "cited_in": [
+        "research/mn9-validation-temperature.md"
+      ]
+    },
+    {
+      "label": "supplementary PDF",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7329267/bin/NIHMS1582605-supplement-2.pdf",
+      "cited_in": [
+        "research/mn9-validation-temperature.md"
+      ]
+    },
+    {
+      "label": "Soler et al. 2004",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15537687/",
+      "cited_in": [
+        "research/whole-body-muscle-mechanics.md"
+      ]
+    },
+    {
+      "label": "Xu et al. (2006)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17081265/",
+      "cited_in": [
+        "research/mn9-validation-temperature.md"
+      ]
+    },
+    {
+      "label": "Harvey et al. 2008",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18443837/",
+      "cited_in": [
+        "research/peripheral-force-calibration.md"
+      ]
+    },
+    {
+      "label": "Kawasaki and Ordway 2009, Figure 3F",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19706552/",
+      "cited_in": [
+        "research/peripheral-force-calibration.md"
+      ]
+    },
+    {
+      "label": "2012 method",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22037247/",
+      "cited_in": [
+        "research/m2-calibration-results.md",
+        "research/peripheral-force-calibration.md"
+      ]
+    },
+    {
+      "label": "Johnston's-organ vibration/deflection study",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24847281/",
+      "cited_in": [
+        "research/m3-sensory-evidence.md"
+      ]
+    },
+    {
+      "label": "Hige et al., 2015, abstract and Figures 1, 5–7",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26637800/",
+      "cited_in": [
+        "research/plan-scientific-review.md"
+      ]
+    },
+    {
+      "label": "Swale et al. 2017",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28911739/",
+      "cited_in": [
+        "research/m2-salivary-source-notes.md"
+      ]
+    },
+    {
+      "label": "Dickerson et al., 2019",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31607538/",
+      "cited_in": [
+        "research/whole-body-flight-mechanics.md"
+      ]
+    },
+    {
+      "label": "Sanfilippo et al. 2024",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38262414/",
+      "cited_in": [
+        "research/m4-m7-evidence.md"
+      ]
+    },
+    {
+      "label": "Original FlyWire paper, Fig. 2d",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39358518/",
+      "cited_in": [
+        "research/m1-banc-neck-adjudication.md"
+      ]
+    },
+    {
+      "label": "Teoh et al., preprint 2025",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41279419/",
+      "cited_in": [
+        "research/whole-body-flight-mechanics.md"
+      ]
+    },
+    {
+      "label": "Riparbelli, Callaini & Dallai 1993",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8296309/",
+      "cited_in": [
+        "research/m2-salivary-source-notes.md"
+      ]
+    },
+    {
+      "label": "MPG metadata",
+      "url": "https://pure.mpg.de/rest/items/item_3728048",
+      "cited_in": [
+        "research/m1-peripheral-evidence.md"
+      ]
+    },
+    {
+      "label": "601725",
+      "url": "https://radagast.hms.harvard.edu/catmaidvnc/61/skeletons/601725/compact-detail",
+      "cited_in": [
+        "research/whole-body-muscle-mechanics.md"
+      ]
+    },
+    {
+      "label": "602225",
+      "url": "https://radagast.hms.harvard.edu/catmaidvnc/61/skeletons/602225/compact-detail",
+      "cited_in": [
+        "research/whole-body-muscle-mechanics.md"
+      ]
+    },
+    {
+      "label": "603329",
+      "url": "https://radagast.hms.harvard.edu/catmaidvnc/61/skeletons/603329/compact-detail",
+      "cited_in": [
+        "research/whole-body-muscle-mechanics.md"
+      ]
+    },
+    {
+      "label": "603409",
+      "url": "https://radagast.hms.harvard.edu/catmaidvnc/61/skeletons/603409/compact-detail",
+      "cited_in": [
+        "research/whole-body-muscle-mechanics.md"
+      ]
+    },
+    {
+      "label": "606022",
+      "url": "https://radagast.hms.harvard.edu/catmaidvnc/61/skeletons/606022/compact-detail",
+      "cited_in": [
+        "research/whole-body-muscle-mechanics.md"
+      ]
+    },
+    {
+      "label": "609813",
+      "url": "https://radagast.hms.harvard.edu/catmaidvnc/61/skeletons/609813/compact-detail",
+      "cited_in": [
+        "research/whole-body-muscle-mechanics.md"
+      ]
+    },
+    {
+      "label": "609856",
+      "url": "https://radagast.hms.harvard.edu/catmaidvnc/61/skeletons/609856/compact-detail",
+      "cited_in": [
+        "research/whole-body-muscle-mechanics.md"
+      ]
+    },
+    {
+      "label": "volume 111",
+      "url": "https://radagast.hms.harvard.edu/catmaidvnc/61/volumes/111/",
+      "cited_in": [
+        "research/whole-body-muscle-mechanics.md"
+      ]
+    },
+    {
+      "label": "volume 112",
+      "url": "https://radagast.hms.harvard.edu/catmaidvnc/61/volumes/112/",
+      "cited_in": [
+        "research/whole-body-muscle-mechanics.md"
+      ]
+    },
+    {
+      "label": "volume 113",
+      "url": "https://radagast.hms.harvard.edu/catmaidvnc/61/volumes/113/",
+      "cited_in": [
+        "research/whole-body-muscle-mechanics.md"
+      ]
+    },
+    {
+      "label": "upstream XML",
+      "url": "https://raw.githubusercontent.com/NeLy-EPFL/flygym/main/src/flygym/assets/model/musculoskeletal/best_combined_arm_damping_stiff_cvt3.xml",
+      "cited_in": [
+        "research/mn9-mujoco-mechanics.md"
+      ]
+    },
+    {
+      "label": "left CSV",
+      "url": "https://raw.githubusercontent.com/artxz/eyemap-archive/503c7f055d5491a48b60b49ade8c71798d24d8f1/docs/data/eyemap_mcns_f20240701/left.csv",
+      "cited_in": [
+        "research/malecns-sensory-mapping.md"
+      ]
+    },
+    {
+      "label": "right CSV",
+      "url": "https://raw.githubusercontent.com/artxz/eyemap-archive/503c7f055d5491a48b60b49ade8c71798d24d8f1/docs/data/eyemap_mcns_f20240701/right.csv",
+      "cited_in": [
+        "research/malecns-sensory-mapping.md"
+      ]
+    },
+    {
+      "label": "author's coordinate documentation",
+      "url": "https://raw.githubusercontent.com/artxz/eyemap-archive/503c7f055d5491a48b60b49ade8c71798d24d8f1/docs/index.html",
+      "cited_in": [
+        "research/malecns-sensory-mapping.md"
+      ]
+    },
+    {
+      "label": "manifest",
+      "url": "https://raw.githubusercontent.com/artxz/eyemap-archive/503c7f055d5491a48b60b49ade8c71798d24d8f1/docs/manifest.json",
+      "cited_in": [
+        "research/malecns-sensory-mapping.md"
+      ]
+    },
+    {
+      "label": "Publisher’s full XML",
+      "url": "https://raw.githubusercontent.com/elifesciences/elife-article-xml/master/articles/elife-54978-v2.xml",
+      "cited_in": [
+        "research/mn9-anatomy.md",
+        "research/whole-proboscis-mechanics.md"
+      ]
+    },
+    {
+      "label": "publisher XML",
+      "url": "https://raw.githubusercontent.com/elifesciences/elife-article-xml/master/articles/elife-56754-v2.xml",
+      "cited_in": [
+        "research/peripheral-force-calibration.md"
+      ]
+    },
+    {
+      "label": "author-institution record",
+      "url": "https://repository.lsu.edu/entomology_pubs/164/",
+      "cited_in": [
+        "research/m2-salivary-source-notes.md"
+      ]
+    },
+    {
+      "label": "Walker & Chabokdast, four-bar thorax measurements",
+      "url": "https://sicb.org/abstracts/amplification-and-transmission-of-muscle-strains-in-the-dipteran-flight-motor/",
+      "cited_in": [
+        "research/whole-body-flight-mechanics.md"
+      ]
+    },
+    {
+      "label": "liborigin 3.0.4",
+      "url": "https://sourceforge.net/projects/liborigin/files/liborigin/3.0/",
+      "cited_in": [
+        "research/m3-photoreceptor-reference.md"
+      ]
+    },
+    {
+      "label": "Janelia split-GAL4 image resource",
+      "url": "https://splitgal4.janelia.org/",
+      "cited_in": [
+        "research/malecns-motor-mapping.md"
+      ]
+    },
+    {
+      "label": "MB080C",
+      "url": "https://splitgal4.janelia.org/cgi-bin/view_splitgal4_imagery.cgi?line=MB080C",
+      "cited_in": [
+        "research/m1-peripheral-evidence.md"
+      ]
+    },
+    {
+      "label": "MB430C",
+      "url": "https://splitgal4.janelia.org/cgi-bin/view_splitgal4_imagery.cgi?line=MB430C",
+      "cited_in": [
+        "research/m1-peripheral-evidence.md"
+      ]
+    },
+    {
+      "label": "MB564C",
+      "url": "https://splitgal4.janelia.org/cgi-bin/view_splitgal4_imagery.cgi?line=MB564C",
+      "cited_in": [
+        "research/m1-peripheral-evidence.md"
+      ]
+    },
+    {
+      "label": "SS41027",
+      "url": "https://splitgal4.janelia.org/cgi-bin/view_splitgal4_imagery.cgi?line=SS41027",
+      "cited_in": [
+        "research/m1-peripheral-evidence.md"
+      ]
+    },
+    {
+      "label": "SS47195",
+      "url": "https://splitgal4.janelia.org/cgi-bin/view_splitgal4_imagery.cgi?line=SS47195",
+      "cited_in": [
+        "research/m1-peripheral-evidence.md"
+      ]
+    },
+    {
+      "label": "SS48247",
+      "url": "https://splitgal4.janelia.org/cgi-bin/view_splitgal4_imagery.cgi?line=SS48247",
+      "cited_in": [
+        "research/m1-peripheral-evidence.md"
+      ]
+    },
+    {
+      "label": "current 20-line release",
+      "url": "https://splitgal4.janelia.org/precomputed/Gorko%20et%20al%202024.html",
+      "cited_in": [
+        "research/m1-peripheral-evidence.md"
+      ]
+    },
+    {
+      "label": "author's publication entry",
+      "url": "https://srinivas.gs/",
+      "cited_in": [
+        "research/m3-acetate-dynamic-sources.md"
+      ]
+    },
+    {
+      "label": "author-hosted PDF, Table 2 visually checked",
+      "url": "https://static1.squarespace.com/static/543205c7e4b0e99376e323aa/t/5469f2eee4b02ed9bcbd884a/1416229614488/The%2BMechanical%2BProperties%2Bof%2BDrosophila%2BJump%2BMuscle%2BExpressing%2BWild-Type%2Band%2BEmbryonic%2BMyosin%2BIsoforms.pdf",
+      "cited_in": [
+        "research/peripheral-force-calibration.md"
+      ]
+    },
+    {
+      "label": "official MaleCNS v1.0 annotation",
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "cited_in": [
+        "research/m1-banc-neck-adjudication.md"
+      ]
+    },
+    {
+      "label": "Europe PMC primary full-text endpoint",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13142387/fullTextXML",
+      "cited_in": [
+        "research/whole-cns-neural-physiology.md"
+      ]
+    },
+    {
+      "label": "original Europe PMC package",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3420010/supplementaryFiles",
+      "cited_in": [
+        "research/m3-photoreceptor-reference.md"
+      ]
+    },
+    {
+      "label": "Lowe et al., 2019",
+      "url": "https://www.ifaamas.org/Proceedings/aamas2019/pdfs/p693.pdf",
+      "cited_in": [
+        "research/plan-scientific-review.md"
+      ]
+    },
+    {
+      "label": "Itskov et al. 2014",
+      "url": "https://www.nature.com/articles/ncomms5560",
+      "cited_in": [
+        "research/m2-internal-state-evidence.md"
+      ]
+    },
+    {
+      "label": "Hürkey et al., 2023",
+      "url": "https://www.nature.com/articles/s41586-023-06099-0",
+      "cited_in": [
+        "research/whole-body-flight-mechanics.md"
+      ]
+    },
+    {
+      "label": "R8 cotransmission study",
+      "url": "https://www.nature.com/articles/s41586-023-06681-6",
+      "cited_in": [
+        "research/whole-cns-neural-physiology.md"
+      ]
+    },
+    {
+      "label": "Gorko et al., 2024, Nature",
+      "url": "https://www.nature.com/articles/s41586-024-07222-5",
+      "cited_in": [
+        "research/whole-head-mechanics.md"
+      ]
+    },
+    {
+      "label": "Extended Data Fig. 7",
+      "url": "https://www.nature.com/articles/s41586-024-07222-5/figures/11",
+      "cited_in": [
+        "research/whole-head-mechanics.md"
+      ]
+    },
+    {
+      "label": "OH-to-TH tendon coupling in Extended Data Fig. 8",
+      "url": "https://www.nature.com/articles/s41586-024-07222-5/figures/12",
+      "cited_in": [
+        "research/whole-head-mechanics.md"
+      ]
+    },
+    {
+      "label": "Melis, Siwanowicz & Dickinson, 2024, Fig. 1",
+      "url": "https://www.nature.com/articles/s41586-024-07293-4/figures/1",
+      "cited_in": [
+        "research/whole-body-flight-mechanics.md"
+      ]
+    },
+    {
+      "label": "Shiu et al., 2024",
+      "url": "https://www.nature.com/articles/s41586-024-07763-9",
+      "cited_in": [
+        "research/mn9-anatomy.md"
+      ]
+    },
+    {
+      "label": "Vaxenburg et al., 2025",
+      "url": "https://www.nature.com/articles/s41586-025-09029-4",
+      "cited_in": [
+        "research/whole-body-flight-mechanics.md"
+      ]
+    },
+    {
+      "label": "Zhao et al. 2025",
+      "url": "https://www.nature.com/articles/s41586-025-09276-5",
+      "cited_in": [
+        "research/malecns-sensory-mapping.md"
+      ]
+    },
+    {
+      "label": "Kuan/Phelps publication",
+      "url": "https://www.nature.com/articles/s41593-020-0704-9",
+      "cited_in": [
+        "research/whole-body-muscle-mechanics.md"
+      ]
+    },
+    {
+      "label": "Sui, Yi, Zhou et al. 2026, Extended Data Figure 5",
+      "url": "https://www.nature.com/articles/s41593-026-02412-y/figures/12",
+      "cited_in": [
+        "research/m4-m7-evidence.md"
+      ]
+    },
+    {
+      "label": "coauthor-uploaded manuscript",
+      "url": "https://www.researchgate.net/publication/5408237_Neuromuscular_control_of_a_single_twitch_muscle_in_wild_type_and_mutant_Drosophila_measured_with_an_ergometer",
+      "cited_in": [
+        "research/m2-calibration-results.md"
+      ]
+    },
+    {
+      "label": "Hallem–Carlson primary study",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0092867406003631",
+      "cited_in": [
+        "research/m3-odor-reference.md"
+      ]
+    },
+    {
+      "label": "2026 TMC paper",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0965174826000639",
+      "cited_in": [
+        "research/m2-internal-state-evidence.md"
+      ]
+    },
+    {
+      "label": "Virtual Fly Brain adult-duct entry",
+      "url": "https://www.virtualflybrain.org/blog/2022/01/01/adult-salivary-gland-duct-fbbt_00003136/",
+      "cited_in": [
+        "research/m2-salivary-source-notes.md"
+      ]
+    },
+    {
+      "label": "archived Dataset3 script",
+      "url": "https://zenodo.org/api/records/4527659/files/Dataset3_SlowInterFast_ForcePerSpike.m/content",
+      "cited_in": [
+        "research/m2-foreleg-source-notes.md"
+      ]
+    },
+    {
+      "label": "Methods_BarRelaxation.m in the archived Zenodo companion deposit",
+      "url": "https://zenodo.org/api/records/4527659/files/Methods_BarRelaxation.m/content",
+      "cited_in": [
+        "research/m2-foreleg-source-notes.md"
+      ]
+    },
+    {
+      "label": "archived README",
+      "url": "https://zenodo.org/api/records/4527659/files/README.txt/content",
+      "cited_in": [
+        "research/m2-foreleg-source-notes.md"
+      ]
+    },
+    {
+      "label": "Eckstein/Bates 2024 ground-truth and type tables",
+      "url": "https://zenodo.org/records/10593546",
+      "cited_in": [
+        "research/m4-m7-evidence.md"
+      ]
+    },
+    {
+      "label": "data",
+      "url": "https://zenodo.org/records/12701489",
+      "cited_in": [
+        "research/m4-transmitter-primary-adjudication.md"
+      ]
+    },
+    {
+      "label": "July 2026 deposit",
+      "url": "https://zenodo.org/records/20795211",
+      "cited_in": [
+        "research/m3-sensory-evidence.md"
+      ]
+    },
+    {
+      "label": "public Zenodo mirror",
+      "url": "https://zenodo.org/records/5000357",
+      "cited_in": [
+        "research/whole-body-flight-mechanics.md"
+      ]
+    },
+    {
+      "label": "verified archive inventory",
+      "url": "https://zenodo.org/records/7508037",
+      "cited_in": [
+        "research/malecns-motor-mapping.md"
+      ]
+    }
+  ],
+  "research_reports": [
+    {
+      "title": "M1 adjudication of four published BANC neck correspondences",
+      "path": "research/m1-banc-neck-adjudication.md"
+    },
+    {
+      "title": "M1 peripheral correspondence: evidence and exact remaining data",
+      "path": "research/m1-peripheral-evidence.md"
+    },
+    {
+      "title": "M2 independent force-calibration results",
+      "path": "research/m2-calibration-results.md"
+    },
+    {
+      "title": "M2 flight instability: integrator evidence",
+      "path": "research/m2-flight-instability-integrator-notes.md"
+    },
+    {
+      "title": "M2 foreleg source recovery",
+      "path": "research/m2-foreleg-source-notes.md"
+    },
+    {
+      "title": "M2 crop, filling and internal transport evidence",
+      "path": "research/m2-internal-state-evidence.md"
+    },
+    {
+      "title": "M2 adult salivary supply and dry proboscis evidence",
+      "path": "research/m2-salivary-source-notes.md"
+    },
+    {
+      "title": "Dynamic physiology sources for the two acetates",
+      "path": "research/m3-acetate-dynamic-sources.md"
+    },
+    {
+      "title": "M3 — Original BSG source adjudication",
+      "path": "research/m3-bsg-source-adjudication.md"
+    },
+    {
+      "title": "M3 — Finite author-model current-to-spike reference",
+      "path": "research/m3-bsg-source-reference.md"
+    },
+    {
+      "title": "M3 — Composed odor concentration-to-spike source reference",
+      "path": "research/m3-composed-odor-reference.md"
+    },
+    {
+      "title": "M3 distinct-odor reference",
+      "path": "research/m3-odor-reference.md"
+    },
+    {
+      "title": "M3 — Published OlfTrans deterministic reference",
+      "path": "research/m3-olftrans-reference.md"
+    },
+    {
+      "title": "M3 R1-R6 photoreceptor reference",
+      "path": "research/m3-photoreceptor-reference.md"
+    },
+    {
+      "title": "M0/M3 sensory evidence and expanded peripheral inventory",
+      "path": "research/m3-sensory-evidence.md"
+    },
+    {
+      "title": "M4/M7 central physiology and plasticity evidence",
+      "path": "research/m4-m7-evidence.md"
+    },
+    {
+      "title": "MeTu1 body 43034: transmitter and import adjudication",
+      "path": "research/m4-metu1-adjudication.md"
+    },
+    {
+      "title": "M4 MS-WED electrical response reference",
+      "path": "research/m4-ms-wed-response-reference.md"
+    },
+    {
+      "title": "M4 primary adjudication of 57 transmitter candidates",
+      "path": "research/m4-transmitter-primary-adjudication.md"
+    },
+    {
+      "title": "M6 individual persistence and isolated execution",
+      "path": "research/m6-individual-persistence.md"
+    },
+    {
+      "title": "M7: original Huang/Luo rate-model reference",
+      "path": "research/m7-huang-reference.md"
+    },
+    {
+      "title": "MaleCNS v1.0 motor-to-muscle mapping",
+      "path": "research/malecns-motor-mapping.md"
+    },
+    {
+      "title": "MaleCNS v1 sensory identities and physical-input coverage",
+      "path": "research/malecns-sensory-mapping.md"
+    },
+    {
+      "title": "Adult MN9 → muscle 9: anatomical evidence and attachment geometry",
+      "path": "research/mn9-anatomy.md"
+    },
+    {
+      "title": "Current implementation baseline",
+      "path": "research/mn9-current-baseline.md"
+    },
+    {
+      "title": "Adult Drosophila MN9: transmission and activation dynamics",
+      "path": "research/mn9-dynamics.md"
+    },
+    {
+      "title": "MN9 replacement: reusable MuJoCo mechanics",
+      "path": "research/mn9-mujoco-mechanics.md"
+    },
+    {
+      "title": "MN9–muscle-9: falsifiable validation and thermal-sensory plan",
+      "path": "research/mn9-validation-temperature.md"
+    },
+    {
+      "title": "Next biological mechanism: adult fast tibia-flexor spike-to-force reference",
+      "path": "research/next-biological-mechanism-decision.md"
+    },
+    {
+      "title": "Peripheral force calibration: independent physiology review",
+      "path": "research/peripheral-force-calibration.md"
+    },
+    {
+      "title": "Implementation, data, and compute review",
+      "path": "research/plan-implementation-review.md"
+    },
+    {
+      "title": "Scientific coherence review of the fruit-fly program",
+      "path": "research/plan-scientific-review.md"
+    },
+    {
+      "title": "Full-program acceptance inventory",
+      "path": "research/program-acceptance-inventory.md"
+    },
+    {
+      "title": "Published fly simulators and reusable brain–body interfaces",
+      "path": "research/published-simulator-reuse-review.md"
+    },
+    {
+      "title": "Fruit-fly research and implementation review",
+      "path": "research/review-and-implementation-summary.md"
+    },
+    {
+      "title": "Whole-body flight and haltere mechanics",
+      "path": "research/whole-body-flight-mechanics.md"
+    },
+    {
+      "title": "Leg musculature: implemented mechanics and remaining evidence gaps",
+      "path": "research/whole-body-muscle-mechanics.md"
+    },
+    {
+      "title": "Body feedback and fluid coupling in the expanded CNS model",
+      "path": "research/whole-cns-body-feedback.md"
+    },
+    {
+      "title": "Whole-CNS neural physiology: Pugliese rate dynamics versus current Eon LIF",
+      "path": "research/whole-cns-neural-physiology.md"
+    },
+    {
+      "title": "Registered light input and estimated graded visual dynamics",
+      "path": "research/whole-cns-visual-dynamics.md"
+    },
+    {
+      "title": "Head, antenna and retinal mechanics",
+      "path": "research/whole-head-mechanics.md"
+    },
+    {
+      "title": "Whole proboscis and crop-entry mechanics",
+      "path": "research/whole-proboscis-mechanics.md"
+    }
+  ],
+  "interpretation": [
+    "Article, software and dataset licenses are recorded separately.",
+    "Unknown license records remain unknown; visibility is not treated as a reuse license.",
+    "Versions and source statements describe the recorded research, not a claim that these are the latest releases.",
+    "Source URLs and research-document names identify the cited public materials."
+  ]
+}

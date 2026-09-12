@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "files": [
+    {
+      "group": "malecns",
+      "path": "data/raw/malecns/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "url": "https://github.com/blevlabs/fruit-fly-lab/releases/download/v0.2.0/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+      "license": "CC-BY-4.0",
+      "source": "https://male-cns.janelia.org/download/",
+      "upstream_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-annotations-male-cns-v1.0-minconf-0.5.feather"
+    },
+    {
+      "group": "malecns",
+      "path": "data/raw/malecns/body-neurotransmitters-male-cns-v1.0.feather",
+      "url": "https://github.com/blevlabs/fruit-fly-lab/releases/download/v0.2.0/body-neurotransmitters-male-cns-v1.0.feather",
+      "sha256": "95c9289220663abeb3409f3ad9e5a7f8a53f8093f5139d15502cd08da8879621",
+      "license": "CC-BY-4.0",
+      "source": "https://male-cns.janelia.org/download/",
+      "upstream_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-neurotransmitters-male-cns-v1.0.feather"
+    },
+    {
+      "group": "malecns",
+      "path": "data/raw/malecns/connectome-weights.feather",
+      "url": "https://github.com/blevlabs/fruit-fly-lab/releases/download/v0.2.0/connectome-weights.feather",
+      "sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1",
+      "license": "CC-BY-4.0",
+      "source": "https://male-cns.janelia.org/download/",
+      "upstream_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/connectome-weights.feather"
+    },
+    {
+      "group": "prepared",
+      "path": "runtime/malecns-v1/manifest.json",
+      "url": "https://github.com/blevlabs/fruit-fly-lab/releases/download/v0.2.0/malecns-v1-manifest.json",
+      "sha256": "b9e1142f5af7c30ebc7b9a0cbb36d9be7e5328395c474d070cc6e6a68c114ef3",
+      "license": "CC-BY-4.0",
+      "source": "https://male-cns.janelia.org/download/"
+    },
+    {
+      "group": "prepared",
+      "path": "runtime/malecns-v1/neurons.feather",
+      "url": "https://github.com/blevlabs/fruit-fly-lab/releases/download/v0.2.0/malecns-v1-neurons.feather",
+      "sha256": "10fa864a4de8e9c857e0a9bfcb78e70910818047bd632b51db8cb3a7692a0e71",
+      "license": "CC-BY-4.0",
+      "source": "https://male-cns.janelia.org/download/"
+    },
+    {
+      "group": "prepared",
+      "path": "runtime/malecns-v1/connectome.npz",
+      "url": "https://github.com/blevlabs/fruit-fly-lab/releases/download/v0.2.0/malecns-v1-connectome.npz",
+      "sha256": "8a48ac6232523652ff21efdc65b2e6986aa9e584b3cf25a121f72f53d5d32652",
+      "license": "CC-BY-4.0",
+      "source": "https://male-cns.janelia.org/download/"
+    },
+    {
+      "group": "flywire-cpu",
+      "path": "runtime/shiu-brain/Completeness_783.csv",
+      "url": "https://github.com/blevlabs/fruit-fly-lab/releases/download/v0.2.0/Completeness_783.csv",
+      "sha256": "bbb847a4cc2caaa7a16349722d220c087317b946d148d4d592d94d250617a311",
+      "license": "CC-BY-NC-4.0",
+      "source": "https://flywire.ai/guidelines"
+    },
+    {
+      "group": "flywire-cpu",
+      "path": "runtime/shiu-brain/Connectivity_783.parquet",
+      "url": "https://github.com/blevlabs/fruit-fly-lab/releases/download/v0.2.0/Connectivity_783.parquet",
+      "sha256": "efeb23fb99098e9c390f6869969b2a121a2ee92c833cfc45ecb2c1d8e1af0347",
+      "license": "CC-BY-NC-4.0",
+      "source": "https://flywire.ai/guidelines"
+    },
+    {
+      "group": "flywire-eon",
+      "path": "runtime/eon-brain/data/2025_Completeness_783.csv",
+      "url": "https://github.com/blevlabs/fruit-fly-lab/releases/download/v0.2.0/2025_Completeness_783.csv",
+      "sha256": "52b0ac6094cd32c546f8d4c341e094376f48f4e791f8db9b166de5dff8199ea4",
+      "license": "CC-BY-NC-4.0",
+      "source": "https://flywire.ai/guidelines"
+    },
+    {
+      "group": "flywire-eon",
+      "path": "runtime/eon-brain/data/2025_Connectivity_783.parquet",
+      "url": "https://github.com/blevlabs/fruit-fly-lab/releases/download/v0.2.0/Connectivity_783.parquet",
+      "sha256": "efeb23fb99098e9c390f6869969b2a121a2ee92c833cfc45ecb2c1d8e1af0347",
+      "license": "CC-BY-NC-4.0",
+      "source": "https://flywire.ai/guidelines"
+    }
+  ],
+  "notes": "Data downloads are explicit. Reference datasets have separate source terms; see data/README.md."
+}

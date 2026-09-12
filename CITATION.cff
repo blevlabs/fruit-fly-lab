@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, cite its exact release and the original studies and code listed in docs/references.md."
+title: "Fruit Fly Lab"
+type: software
+authors:
+  - name: "blevlabs"
+version: 0.2.0
+date-released: 2026-09-12
+repository-code: "https://github.com/blevlabs/fruit-fly-lab"
+license: GPL-3.0-or-later

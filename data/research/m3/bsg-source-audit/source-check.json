@@ -1,0 +1,432 @@
+{
+  "source_adjudication": "PASS publisher/author notebook identity, historical driver scaling and gate differences",
+  "source_transition_check": "PASS one explicit Euler/clipping/post step at six voltages with prescribed nonzero innovations",
+  "author_reference": "EXECUTABLE transition law for pinned source; native CUDA notebook not run",
+  "paper_figure_A2_reproduction": "OPEN: printed equations/noise differ; figure-specific version/protocol/seed absent",
+  "biological_validation": "NOT_RUN",
+  "runtime_integration": "NONE",
+  "M3_full_gate": "OPEN",
+  "source_sha256": {
+    "author-notebook.html": "e8af6ba236fd0e56d37e90320499e80b736cf5c897384fab0b69a35e0743f0ef",
+    "publisher-S1-notebook.html": "e8af6ba236fd0e56d37e90320499e80b736cf5c897384fab0b69a35e0743f0ef",
+    "sources/S1-NoisyConnorStevens.py": "37976324b038bce7c859e9fbe4148f0c2e722bd286c698b6fc0dfca938f5ccb5",
+    "sources/S1-notebook-code-cells.json": "c4b0d84bc23e3a673f43d559c8e03a9946b0a5931b841dba1deba205762b4956",
+    "sources/neural-20191016-neural-basemodel.py": "6138bcdbe28caf2e862695b49328cbefd95bd2cf43952c8b9fc667417db3a1ed",
+    "sources/neural-20191016-neural-backend.py": "24fddc88740d02a04ede596cd66fd0d7e613106a0c0f58d6603ffb69290a83c1",
+    "sources/neural-20191016-neural-codegen-cuda.py": "f9252a84040af8cfbc904e52d94bfa660627f9776db2475a2c1bc6fd08fd1c6e",
+    "sources/neural-20191016-setup.py": "ee90f5a941d3646ca47b954499fdf51c088d33c776ae05c3ceb439499598d724",
+    "../../publication-review/flybrainlab-sources/odor-appendix.pdf": "dce7294403597ca6e7b40073e2147b8a91fa27bc010f5884ff1d4ac9a31ce6f7"
+  },
+  "source_driver_revision": "bc4deffe611cdd72d510f744bf816aa56debe35d",
+  "timestep_noise": [
+    {
+      "dt_s": 1e-05,
+      "notebook_sigma_parameter": 0.6008327554319921,
+      "notebook_step_sd": 0.0060083275543199215,
+      "notebook_diffusion_per_sqrt_s": 1.9000000000000001,
+      "notebook_variance_per_s": 3.6100000000000008,
+      "fixed_sigma_2_05_step_sd": 0.020499999999999997,
+      "fixed_sigma_2_05_diffusion_per_sqrt_s": 6.482669203345177,
+      "fixed_sigma_2_05_variance_per_s": 42.024999999999984,
+      "fixed_over_notebook_noise_sd": 3.4119311596553556
+    },
+    {
+      "dt_s": 3e-05,
+      "notebook_sigma_parameter": 0.34689095308660517,
+      "notebook_step_sd": 0.010406728592598155,
+      "notebook_diffusion_per_sqrt_s": 1.8999999999999997,
+      "notebook_variance_per_s": 3.609999999999999,
+      "fixed_sigma_2_05_step_sd": 0.0615,
+      "fixed_sigma_2_05_diffusion_per_sqrt_s": 11.228312428855904,
+      "fixed_sigma_2_05_variance_per_s": 126.075,
+      "fixed_over_notebook_noise_sd": 5.909638120450477
+    },
+    {
+      "dt_s": 0.0001,
+      "notebook_sigma_parameter": 0.19,
+      "notebook_step_sd": 0.019000000000000003,
+      "notebook_diffusion_per_sqrt_s": 1.9000000000000004,
+      "notebook_variance_per_s": 3.6100000000000008,
+      "fixed_sigma_2_05_step_sd": 0.205,
+      "fixed_sigma_2_05_diffusion_per_sqrt_s": 20.5,
+      "fixed_sigma_2_05_variance_per_s": 420.2499999999999,
+      "fixed_over_notebook_noise_sd": 10.789473684210524
+    }
+  ],
+  "gates": [
+    {
+      "voltage_mV": -70.0,
+      "notebook": {
+        "n_inf": 0.13565622869979493,
+        "tau_n": 3.0436362930883365,
+        "m_inf": 0.007732244563749294,
+        "tau_m": 0.02790197731346716,
+        "h_inf": 0.9745743267670166,
+        "tau_h": 1.2195774898318161,
+        "a_inf": 0.5301807094987238,
+        "tau_a": 1.136399766893121,
+        "b_inf": 0.33230154958548425,
+        "tau_b": 3.320632252838074
+      },
+      "printed_appendix": {
+        "n_inf": 0.24458654944007166,
+        "tau_n": 29.87980055919994,
+        "m_inf": 0.028905534475191907,
+        "tau_m": 0.4839277592199554,
+        "h_inf": 0.9684179694192799,
+        "tau_h": 2.835355913248703,
+        "a_inf": 0.5302143525133622,
+        "tau_a": 1.136399766893121,
+        "b_inf": 0.33230154958548425,
+        "tau_b": 3.320632252838074
+      },
+      "notebook_over_printed_tau": {
+        "n": 0.10186267097258807,
+        "m": 0.057657319262780955,
+        "h": 0.4301320635385223
+      },
+      "max_p_or_a_inf_absolute_difference": 3.3643014638484736e-05
+    },
+    {
+      "voltage_mV": -60.0,
+      "notebook": {
+        "n_inf": 0.25432229014346897,
+        "tau_n": 2.975392190530417,
+        "m_inf": 0.027850617652949022,
+        "tau_m": 0.04764461470108513,
+        "h_inf": 0.896193170433952,
+        "tau_h": 1.8490272185043228,
+        "a_inf": 0.5819818564177154,
+        "tau_a": 1.0001356916057786,
+        "b_inf": 0.14138986220135083,
+        "tau_b": 2.983687896253744
+      },
+      "printed_appendix": {
+        "n_inf": 0.3962682484560505,
+        "tau_n": 27.059751755423495,
+        "m_inf": 0.0936419512641728,
+        "tau_m": 0.7872153682106973,
+        "h_inf": 0.8778488045849593,
+        "tau_h": 4.237519462767061,
+        "a_inf": 0.5820133608798252,
+        "tau_a": 1.0001356916057786,
+        "b_inf": 0.14138986220135083,
+        "tau_b": 2.983687896253744
+      },
+      "notebook_over_printed_tau": {
+        "n": 0.10995637422778903,
+        "m": 0.06052297328668653,
+        "h": 0.43634660200402364
+      },
+      "max_p_or_a_inf_absolute_difference": 3.1504462109865905e-05
+    },
+    {
+      "voltage_mV": -50.0,
+      "notebook": {
+        "n_inf": 0.40743337734186813,
+        "tau_n": 2.679273529028208,
+        "m_inf": 0.09059849223979369,
+        "tau_m": 0.07768035411579634,
+        "h_inf": 0.663893416369745,
+        "tau_h": 2.258329341049144,
+        "a_inf": 0.6362358880552323,
+        "tau_a": 0.857065163588688,
+        "b_inf": 0.038688638587224294,
+        "tau_b": 2.5789999999999997
+      },
+      "printed_appendix": {
+        "n_inf": 0.5508143140840531,
+        "tau_n": 22.81353102984113,
+        "m_inf": 0.25081207825378865,
+        "tau_m": 1.1341206221619293,
+        "h_inf": 0.6444515994748675,
+        "tau_h": 5.128962581933682,
+        "a_inf": 0.6362646583949122,
+        "tau_a": 0.857065163588688,
+        "b_inf": 0.038688638587224294,
+        "tau_b": 2.5789999999999997
+      },
+      "notebook_over_printed_tau": {
+        "n": 0.1174422988499061,
+        "m": 0.06849390849424583,
+        "h": 0.44030918630678056
+      },
+      "max_p_or_a_inf_absolute_difference": 2.8770339679851098e-05
+    },
+    {
+      "voltage_mV": -40.0,
+      "notebook": {
+        "n_inf": 0.5608482670169612,
+        "tau_n": 2.2499935805015614,
+        "m_inf": 0.24444772080191948,
+        "tau_m": 0.11248503789126126,
+        "h_inf": 0.3199118969647598,
+        "tau_h": 1.7941822141402177,
+        "a_inf": 0.6919013197023725,
+        "tau_a": 0.7238860616431675,
+        "b_inf": 0.006693894617477717,
+        "tau_b": 2.174312103746256
+      },
+      "printed_appendix": {
+        "n_inf": 0.6785909741451827,
+        "tau_n": 18.49743373364523,
+        "m_inf": 0.5006486315783902,
+        "tau_m": 1.3174963988905006,
+        "h_inf": 0.3469216919288549,
+        "tau_h": 4.552164226370772,
+        "a_inf": 0.6919268037230701,
+        "tau_a": 0.7238860616431675,
+        "b_inf": 0.006693894617477717,
+        "tau_b": 2.174312103746256
+      },
+      "notebook_over_printed_tau": {
+        "n": 0.12163814791286522,
+        "m": 0.08537787123060674,
+        "h": 0.3941382878382302
+      },
+      "max_p_or_a_inf_absolute_difference": 2.548402069768585e-05
+    },
+    {
+      "voltage_mV": -30.0,
+      "notebook": {
+        "n_inf": 0.6862042452381736,
+        "tau_n": 1.82179938955225,
+        "m_inf": 0.4927231041912131,
+        "tau_m": 0.13162853075678574,
+        "h_inf": 0.1094883953070892,
+        "tau_h": 1.0123984877176637,
+        "a_inf": 0.7475307017427317,
+        "tau_a": 0.6131069016807706,
+        "b_inf": 0.0007897100160184676,
+        "tau_b": 1.8373677471619265
+      },
+      "printed_appendix": {
+        "n_inf": 0.77141135091916,
+        "tau_n": 14.90715897348423,
+        "m_inf": 0.7343537313596489,
+        "tau_m": 1.2215791869602572,
+        "h_inf": 0.1634747775345225,
+        "tau_h": 3.536587940825581,
+        "a_inf": 0.7475524537002325,
+        "tau_a": 0.6131069016807706,
+        "b_inf": 0.0007897100160184676,
+        "tau_b": 1.8373677471619265
+      },
+      "notebook_over_printed_tau": {
+        "n": 0.12220969755489522,
+        "m": 0.10775276147617284,
+        "h": 0.28626419154766714
+      },
+      "max_p_or_a_inf_absolute_difference": 2.1751957500759644e-05
+    },
+    {
+      "voltage_mV": 0.0,
+      "notebook": {
+        "n_inf": 0.8811150124344231,
+        "tau_n": 1.004247908129728,
+        "m_inf": 0.9423410959924056,
+        "tau_m": 0.07921281927221216,
+        "h_inf": 0.007345590129260997,
+        "tau_h": 0.3044050211080598,
+        "a_inf": 0.8958015875289813,
+        "tau_a": 0.4307605308543234,
+        "b_inf": 3.8730579474073506e-07,
+        "tau_b": 1.3532807066373072
+      },
+      "printed_appendix": {
+        "n_inf": 0.9087278279671391,
+        "tau_n": 8.660421674970962,
+        "m_inf": 0.9741586073227078,
+        "tau_m": 0.6291554408227847,
+        "h_inf": 0.027200979367032155,
+        "tau_h": 2.6373026464523095,
+        "a_inf": 0.8958114446553938,
+        "tau_a": 0.4307605308543234,
+        "b_inf": 3.8730579474073506e-07,
+        "tau_b": 1.3532807066373072
+      },
+      "notebook_over_printed_tau": {
+        "n": 0.11595831540536335,
+        "m": 0.1259034161233999,
+        "h": 0.11542286264245948
+      },
+      "max_p_or_a_inf_absolute_difference": 9.857126412438078e-06
+    }
+  ],
+  "source_transition_examples": [
+    {
+      "initial_voltage_mV": -70.0,
+      "prescribed_standard_normal_innovations": [
+        0.5,
+        -0.25,
+        1.0,
+        -1.5,
+        0.75
+      ],
+      "preclip_noise_increments": [
+        0.0052033642962990775,
+        -0.0026016821481495388,
+        0.010406728592598157,
+        -0.015610092888897234,
+        0.007805046444448618
+      ],
+      "clipped_gates": {
+        "n": 0.006540477692612404,
+        "m": 0.005711970117653056,
+        "h": 1.0,
+        "a": 0.9719870721883428,
+        "b": 1.0
+      },
+      "post_voltage_mV": -76.378,
+      "spike": 0.0
+    },
+    {
+      "initial_voltage_mV": -60.0,
+      "prescribed_standard_normal_innovations": [
+        0.5,
+        -0.25,
+        1.0,
+        -1.5,
+        0.75
+      ],
+      "preclip_noise_increments": [
+        0.0052033642962990775,
+        -0.002601682148149537,
+        0.010406728592598157,
+        -0.015610092888897236,
+        0.007805046444448617
+      ],
+      "clipped_gates": {
+        "n": 0.007767620776028543,
+        "m": 0.014934791487546404,
+        "h": 1.0,
+        "a": 0.9718510642193608,
+        "b": 0.9991720040386725
+      },
+      "post_voltage_mV": -80.0,
+      "spike": 0.0
+    },
+    {
+      "initial_voltage_mV": -50.0,
+      "prescribed_standard_normal_innovations": [
+        0.5,
+        -0.25,
+        1.0,
+        -1.5,
+        0.75
+      ],
+      "preclip_noise_increments": [
+        0.005203364296299078,
+        -0.0026016821481495422,
+        0.010406728592598155,
+        -0.015610092888897234,
+        0.007805046444448618
+      ],
+      "clipped_gates": {
+        "n": 0.00976542232726444,
+        "m": 0.032387277391635994,
+        "h": 1.0,
+        "a": 0.9716570090515799,
+        "b": 0.9966226731050212
+      },
+      "post_voltage_mV": -80.0,
+      "spike": 0.0
+    },
+    {
+      "initial_voltage_mV": -40.0,
+      "prescribed_standard_normal_innovations": [
+        0.5,
+        -0.25,
+        1.0,
+        -1.5,
+        0.75
+      ],
+      "preclip_noise_increments": [
+        0.005203364296299078,
+        -0.0026016821481495422,
+        0.010406728592598157,
+        -0.015610092888897236,
+        0.007805046444448618
+      ],
+      "clipped_gates": {
+        "n": 0.01268136252541321,
+        "m": 0.06259304740465355,
+        "h": 0.9990351728329541,
+        "a": 0.9716213777821252,
+        "b": 0.9940999380057232
+      },
+      "post_voltage_mV": -80.0,
+      "spike": 0.0
+    },
+    {
+      "initial_voltage_mV": -30.0,
+      "prescribed_standard_normal_innovations": [
+        0.5,
+        -0.25,
+        1.0,
+        -1.5,
+        0.75
+      ],
+      "preclip_noise_increments": [
+        0.005203364296299079,
+        -0.0026016821481495422,
+        0.010406728592598155,
+        -0.015610092888897234,
+        0.007805046444448616
+      ],
+      "clipped_gates": {
+        "n": 0.016503251361364314,
+        "m": 0.10969686772360283,
+        "h": 0.9840185539114862,
+        "a": 0.9720363046203226,
+        "b": 0.991490234809259
+      },
+      "post_voltage_mV": -80.0,
+      "spike": 0.0
+    },
+    {
+      "initial_voltage_mV": 0.0,
+      "prescribed_standard_normal_innovations": [
+        0.5,
+        -0.25,
+        1.0,
+        -1.5,
+        0.75
+      ],
+      "preclip_noise_increments": [
+        0.0052033642962990775,
+        -0.0026016821481495422,
+        0.010406728592598169,
+        -0.015610092888897234,
+        0.007805046444448618
+      ],
+      "clipped_gates": {
+        "n": 0.03152500276728312,
+        "m": 0.3542879367230394,
+        "h": 0.9125777499912537,
+        "a": 0.9771330853964232,
+        "b": 0.985636705291214
+      },
+      "post_voltage_mV": -80.0,
+      "spike": 0.0
+    }
+  ],
+  "algebra": {
+    "notebook": "delta_gate_noise = 1000*h*(0.0019/sqrt(h))*Z = 1.9*sqrt(h)*Z",
+    "fixed_sigma": "delta_gate_noise = 2050*h*Z; diffusion = 2050*sqrt(h)",
+    "printed_if_t_seconds": "sigma=2.05 implies diffusion 2.05/sqrt(s), distinct from 1.9",
+    "printed_if_t_milliseconds": "sigma=2.05 implies diffusion 2.05*sqrt(1000)/sqrt(s)",
+    "limit": "Preclipping moments only; clipping and spike rates need separate timestep checks"
+  },
+  "source_execution_boundaries": [
+    "S1 notebook is a 50 x 50 population illustration, binding-rate sweep and dr=10; not Fig A2/Fig4 configuration",
+    "No neural/CUDA/cuRAND version pin in notebook; selected historical commit is a compatible prepublication candidate",
+    "Clock64 cuRAND seeds unrecorded; curand_normal uses its own precision even with float64 states",
+    "Gate [0,1] and voltage [-80,80] clipping, local maximum >-30 mV, 1 ms refractory are source conventions",
+    "Printed appendix uses .38 tau factors, .7 alpha_h and different voltage offsets; notebook/CPU use3.8,.07 and shifts",
+    "Printed p_inf exponent .3333 differs slightly from exact cube root in notebook/CPU",
+    "Original native imports require PyCUDA/compatible historical Python/compiler; not installed or executed here",
+    "Setup metadata says BSD; exact neural license text/variant is not recovered"
+  ],
+  "check_sha256": "5e2b4c35bdcc1d1b5897aa09086eb7cdf8a4890954fe3fb712db2bd990a72780"
+}

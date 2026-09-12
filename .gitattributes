@@ -1,0 +1,9 @@
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.toml text eol=lf
+# Preserve verbatim upstream sources and fixed-hash reference inputs.
+runtime/eon-brain/code/** -text -whitespace
+runtime/shiu-brain/model.py -text -whitespace
+data/research/** -text -whitespace
+licenses/** -text -whitespace

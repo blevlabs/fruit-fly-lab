@@ -1,0 +1,54 @@
+#!/usr/bin/env python3
+"""Small repository launcher; never starts a simulation without a command."""
+import os
+from pathlib import Path
+import subprocess
+import sys
+
+ROOT = Path(__file__).resolve().parent
+COMMANDS = {
+    'backend': 'runtime/cns_live.py',
+    'experiment': 'runtime/experiment.py',
+    'prepare': 'runtime/prepare_cns.py',
+    'viewer': 'runtime/viewer.py',
+    'mn9': 'runtime/mn9_worker.py',
+    'gpu': 'runtime/run.py',
+    'fetch': 'scripts/fetch_data.py',
+    'restore-data': 'scripts/restore_reference_data.py',
+    'check': 'scripts/check_repository.py',
+    'huang': 'research/huang_reference.py',
+    'odor': 'research/odor_reference.py',
+    'olftrans': 'research/olftrans_reference.py',
+    'bsg': 'research/bsg_reference.py',
+    'water': 'research/water_reference.py',
+    'brain': 'examples/brain.py',
+    'walk': 'examples/walk.py',
+}
+
+def main():
+    command = sys.argv[1] if len(sys.argv) > 1 else 'help'
+    if command in ('help', '--help', '-h'):
+        print('Usage: ./fly COMMAND [arguments]\n\n' + '\n'.join(
+            f'  {name:12} {path}' for name, path in COMMANDS.items()))
+        print('\nSee docs/setup.md. backend/experiment/viewer/mn9/gpu run simulations; check does not.')
+        return
+    if command not in COMMANDS:
+        raise SystemExit(f'Unknown command {command!r}; use ./fly help')
+    python = ROOT / '.venv/bin/python'
+    executable = str(python) if python.is_file() else sys.executable
+    if command == 'viewer' and sys.platform == 'darwin':
+        executable = str(ROOT / '.venv/bin/mjpython')
+        if not Path(executable).is_file():
+            raise SystemExit('Install the viewer extra first; see docs/setup.md')
+    env = dict(os.environ)
+    env['PYTHONPATH'] = os.pathsep.join(map(str, (ROOT/'runtime', ROOT/'tests', ROOT/'research')))
+    for key, suffix in [('MPLCONFIGDIR', 'matplotlib'), ('XDG_CACHE_HOME', ''), ('FLYGYM_ASSET_CACHE_DIR', 'flygym')]:
+        env.setdefault(key, str(ROOT / '.cache' / suffix))
+    args = sys.argv[2:]
+    if command == 'backend' and any(a in ('--help', '-h') for a in args):
+        print('Line-oriented JSON worker; no CLI options. Use experiment for a finite history. See docs/architecture.md.')
+        return
+    raise SystemExit(subprocess.call([executable, '-B', str(ROOT/COMMANDS[command]), *args], cwd=ROOT/'runtime' if command in ('backend','mn9','gpu') else ROOT, env=env))
+
+if __name__ == '__main__':
+    main()

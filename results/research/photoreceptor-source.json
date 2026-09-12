@@ -1,0 +1,263 @@
+{
+  "status": "PASS_SOURCE_ARRAY_CHECK_ONLY",
+  "model_executed": false,
+  "matched_photon_to_voltage_assay_ready": false,
+  "source_file_hashes_checked": 28,
+  "sheets_checked": 15,
+  "python_version": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "numpy_version": "2.3.5",
+  "executables": {
+    "matlab": null,
+    "octave": null
+  },
+  "unresolved": [
+    "2012 original stimulus and physiological trial arrays not recovered",
+    "2017 exact photon stimulus vectors absent from retained XLSX/source",
+    "Figure 3 data 1 publisher BG0 versus worksheet BG05 identity conflict",
+    "2017 original figure OPJ downloads return public 403 / API 401",
+    "2012-to-released-code figure parameters and RNG protocol not established"
+  ],
+  "arrays": [
+    {
+      "file": "elife-26117-fig1-data1-v2.xlsx",
+      "sheet": "20HzBG0",
+      "publisher_background": "BG0",
+      "samples": 2000,
+      "runs": 20,
+      "time_ms": [
+        1,
+        2000
+      ],
+      "step_ms": 1,
+      "max_mean_error": 1.0658141036401503e-14,
+      "max_sample_sd_error": 1.2478351685274447e-12,
+      "max_absolute_trial_mean": 1.0999999959793172e-07,
+      "stimulus_columns_present": false
+    },
+    {
+      "file": "elife-26117-fig1-data1-v2.xlsx",
+      "sheet": "50HzBG0",
+      "publisher_background": "BG0",
+      "samples": 2000,
+      "runs": 20,
+      "time_ms": [
+        1,
+        2000
+      ],
+      "step_ms": 1,
+      "max_mean_error": 7.105427357601002e-15,
+      "max_sample_sd_error": 4.5236037138352003e-13,
+      "max_absolute_trial_mean": 1.6500000011410165e-07,
+      "stimulus_columns_present": false
+    },
+    {
+      "file": "elife-26117-fig1-data1-v2.xlsx",
+      "sheet": "100HzBG0",
+      "publisher_background": "BG0",
+      "samples": 2000,
+      "runs": 20,
+      "time_ms": [
+        1,
+        2000
+      ],
+      "step_ms": 1,
+      "max_mean_error": 7.105427357601002e-15,
+      "max_sample_sd_error": 2.7045032879868813e-13,
+      "max_absolute_trial_mean": 1.2000000028850044e-07,
+      "stimulus_columns_present": false
+    },
+    {
+      "file": "elife-26117-fig1-data1-v2.xlsx",
+      "sheet": "200HzBG0",
+      "publisher_background": "BG0",
+      "samples": 2000,
+      "runs": 20,
+      "time_ms": [
+        1,
+        2000
+      ],
+      "step_ms": 1,
+      "max_mean_error": 7.105427357601002e-15,
+      "max_sample_sd_error": 2.078337502098293e-13,
+      "max_absolute_trial_mean": 1.400000009965652e-07,
+      "stimulus_columns_present": false
+    },
+    {
+      "file": "elife-26117-fig1-data1-v2.xlsx",
+      "sheet": "500HzBG0",
+      "publisher_background": "BG0",
+      "samples": 2000,
+      "runs": 20,
+      "time_ms": [
+        1,
+        2000
+      ],
+      "step_ms": 1,
+      "max_mean_error": 3.552713678800501e-15,
+      "max_sample_sd_error": 7.016609515630989e-14,
+      "max_absolute_trial_mean": 1.2999999996399226e-07,
+      "stimulus_columns_present": false
+    },
+    {
+      "file": "elife-26117-fig3-data1-v2.xlsx",
+      "sheet": "20HzBG05",
+      "publisher_background": "BG0",
+      "samples": 2000,
+      "runs": 20,
+      "time_ms": [
+        1,
+        2000
+      ],
+      "step_ms": 1,
+      "max_mean_error": 6.750155989720952e-14,
+      "max_sample_sd_error": 1.9761969838327786e-14,
+      "max_absolute_trial_mean": 1.7141044139634688e-13,
+      "stimulus_columns_present": false
+    },
+    {
+      "file": "elife-26117-fig3-data1-v2.xlsx",
+      "sheet": "50HzBG05",
+      "publisher_background": "BG0",
+      "samples": 2000,
+      "runs": 20,
+      "time_ms": [
+        1,
+        2000
+      ],
+      "step_ms": 1,
+      "max_mean_error": 6.750155989720952e-14,
+      "max_sample_sd_error": 2.0095036745715333e-14,
+      "max_absolute_trial_mean": 1.5771817185594727e-13,
+      "stimulus_columns_present": false
+    },
+    {
+      "file": "elife-26117-fig3-data1-v2.xlsx",
+      "sheet": "100HzBG05",
+      "publisher_background": "BG0",
+      "samples": 2000,
+      "runs": 20,
+      "time_ms": [
+        1,
+        2000
+      ],
+      "step_ms": 1,
+      "max_mean_error": 6.394884621840902e-14,
+      "max_sample_sd_error": 1.8735013540549517e-14,
+      "max_absolute_trial_mean": 1.74789516194096e-13,
+      "stimulus_columns_present": false
+    },
+    {
+      "file": "elife-26117-fig3-data1-v2.xlsx",
+      "sheet": "200HzBG05",
+      "publisher_background": "BG0",
+      "samples": 2000,
+      "runs": 20,
+      "time_ms": [
+        1,
+        2000
+      ],
+      "step_ms": 1,
+      "max_mean_error": 5.861977570020827e-14,
+      "max_sample_sd_error": 1.7291723608536813e-14,
+      "max_absolute_trial_mean": 1.6728263219079054e-13,
+      "stimulus_columns_present": false
+    },
+    {
+      "file": "elife-26117-fig3-data1-v2.xlsx",
+      "sheet": "500HzBG05",
+      "publisher_background": "BG0",
+      "samples": 2000,
+      "runs": 20,
+      "time_ms": [
+        1,
+        2000
+      ],
+      "step_ms": 1,
+      "max_mean_error": 4.618527782440651e-14,
+      "max_sample_sd_error": 1.6153745008296028e-14,
+      "max_absolute_trial_mean": 1.544611660797557e-13,
+      "stimulus_columns_present": false
+    },
+    {
+      "file": "elife-26117-fig3-data2-v2.xlsx",
+      "sheet": "20HzBG05",
+      "publisher_background": "BG0.5",
+      "samples": 2000,
+      "runs": 20,
+      "time_ms": [
+        1,
+        2000
+      ],
+      "step_ms": 1,
+      "max_mean_error": 6.217248937900877e-14,
+      "max_sample_sd_error": 1.8207657603852567e-14,
+      "max_absolute_trial_mean": 1.4346124288522332e-13,
+      "stimulus_columns_present": false
+    },
+    {
+      "file": "elife-26117-fig3-data2-v2.xlsx",
+      "sheet": "50HzBG05",
+      "publisher_background": "BG0.5",
+      "samples": 2000,
+      "runs": 20,
+      "time_ms": [
+        1,
+        2000
+      ],
+      "step_ms": 1,
+      "max_mean_error": 6.039613253960852e-14,
+      "max_sample_sd_error": 1.5681900222830336e-14,
+      "max_absolute_trial_mean": 2.475628591014356e-13,
+      "stimulus_columns_present": false
+    },
+    {
+      "file": "elife-26117-fig3-data2-v2.xlsx",
+      "sheet": "100HzBG05",
+      "publisher_background": "BG0.5",
+      "samples": 2000,
+      "runs": 20,
+      "time_ms": [
+        1,
+        2000
+      ],
+      "step_ms": 1,
+      "max_mean_error": 6.394884621840902e-14,
+      "max_sample_sd_error": 1.782601843913767e-14,
+      "max_absolute_trial_mean": 1.5717294132855387e-13,
+      "stimulus_columns_present": false
+    },
+    {
+      "file": "elife-26117-fig3-data2-v2.xlsx",
+      "sheet": "200HzBG05",
+      "publisher_background": "BG0.5",
+      "samples": 2000,
+      "runs": 20,
+      "time_ms": [
+        1,
+        2000
+      ],
+      "step_ms": 1,
+      "max_mean_error": 4.973799150320701e-14,
+      "max_sample_sd_error": 1.5164952626989248e-14,
+      "max_absolute_trial_mean": 1.1345457906486445e-13,
+      "stimulus_columns_present": false
+    },
+    {
+      "file": "elife-26117-fig3-data2-v2.xlsx",
+      "sheet": "500HzBG05",
+      "publisher_background": "BG0.5",
+      "samples": 2000,
+      "runs": 20,
+      "time_ms": [
+        1,
+        2000
+      ],
+      "step_ms": 1,
+      "max_mean_error": 5.3290705182007514e-14,
+      "max_sample_sd_error": 1.14960124752983e-14,
+      "max_absolute_trial_mean": 1.5320542057217778e-13,
+      "stimulus_columns_present": false
+    }
+  ],
+  "publication_scope": "Historical study summary; full method and limitations in docs/research. Not a fresh execution of this public tree."
+}

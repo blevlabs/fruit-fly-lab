@@ -1,0 +1,65 @@
+{
+  "scope": "Original scientific source identity before portable organization; path/import/doc changes alter source hashes.",
+  "sources": [
+    {
+      "file": "runtime/proboscis_muscles.py",
+      "original_sha256": "b025c187ddf6ba8d74d754a411cacf769d59f1e2577246a3416136444cb28979"
+    },
+    {
+      "file": "runtime/body.py",
+      "original_sha256": "ec10ad0391fd5dd6f61de7801d614ea8d555dd58d8c227c40f676631b343ffb5"
+    },
+    {
+      "file": "runtime/cns_senses.py",
+      "original_sha256": "4c6ede4eb2287f31b78cfd24f469ab1a2c67d2f3f84d715ffa04c9358ee495a8"
+    },
+    {
+      "file": "runtime/flight_mechanics.py",
+      "original_sha256": "5086bfe04b0b255b575c15dc6fb3de97e738e8fcb589270d3865bd3a5dd8e628"
+    },
+    {
+      "file": "runtime/head_muscles.py",
+      "original_sha256": "6e4ca12a4bb453ea22e4dd2c75ffe99113f8df20aa219d74179e567314f42da1"
+    },
+    {
+      "file": "runtime/cns_body.py",
+      "original_sha256": "75cb74206da969a00be271ef5a5c13db3661d6cf231bf323f2867af2e08ae29f"
+    },
+    {
+      "file": "runtime/leg_muscles.py",
+      "original_sha256": "6422e7299880b2e271a71d6d5bb30dab0cfe5231a34ae4980906abacc5a5965f"
+    },
+    {
+      "file": "runtime/cns_proprio.py",
+      "original_sha256": "8d8269f22406f8a9c9cfc1d0979f84a009287b215ed7d9d834fc0ca5f4f373d7"
+    },
+    {
+      "file": "runtime/neuromuscular.py",
+      "original_sha256": "5f7b4057e05d0a8e8aedea8072356d8fa2fb52672f6b67fb5b158dc00a4fde55"
+    },
+    {
+      "file": "runtime/cns_thermal.py",
+      "original_sha256": "1bd12cf526ef99faa45151b7ff070f8bc39c2ff9a0c5288c4dadf9a52f87f8db"
+    },
+    {
+      "file": "runtime/cns_vision.py",
+      "original_sha256": "686ca6dff553646f0a2a4fc035a41251f01dffc6068e7427e48242ea29f43e16"
+    },
+    {
+      "file": "runtime/flight_integration.py",
+      "original_sha256": "a192cfa406bdf42dd99a211f2d3aac42bb11b0886b6bfb00b93806975a9a172d"
+    },
+    {
+      "file": "runtime/arena_ui.py",
+      "original_sha256": "1f549f090dc613bb13699fc59ae6319ebf5c5cf231b05d728ce3f1fbba847a1f"
+    },
+    {
+      "file": "runtime/arena.py",
+      "original_sha256": "7176fa6b6d2ff22352bb68b4f64020b7d47d6047778c0b4981772188bad480d5"
+    }
+  ],
+  "upstream": {
+    "eon": "a3db62f9436074e485c0278290c2164ed6150808",
+    "flygym": "38c8ec61034cd59bc5ba0de20688d4a3c0000d60"
+  }
+}

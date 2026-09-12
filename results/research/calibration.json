@@ -1,0 +1,309 @@
+{
+  "kind": "isolated-independent-reference-assays",
+  "mujoco": "3.9.0",
+  "source_sha256": {
+    "neural-motor/peripheral-calibration-data.json": "e581603983e17a5889e963543ae6ddeba64ee555b1601d95114c11f555eecea6",
+    "check_peripheral_calibration.py": "0e6cb56cf652f59ce47de8b5a6ed352ac3055e24dd2d13e5c2317bb574eb5c87",
+    "neuromuscular.py": "5f7b4057e05d0a8e8aedea8072356d8fa2fb52672f6b67fb5b158dc00a4fde55",
+    "cns-model.json": "4687a044525a71997e75774b8fefa8b039a51f948f3632068efd7bdb1ffff305",
+    "neural-motor/malecns-motor-map.json": "b3e17e97f26b0e85df88777fbda0eb2109292ed0e78658a2eb6bbe5095b72964"
+  },
+  "initial_state": "fresh scalar states, x=1 e=a=0; no RNG/body/scene/individual",
+  "foreleg_probe": {
+    "implementation": "PASS: 42-point source calibration replay",
+    "measured_data_fit": {
+      "stiffness_N_m": 0.22341945095875296,
+      "intercept_N": 4.4207476893360514e-08,
+      "R_squared": 0.9933627602778354
+    },
+    "instrument_column_holdout": {
+      "calibration_points": 28,
+      "held_out_points": 14,
+      "calibration_stiffness_N_m": 0.2289553488372093,
+      "rmse_N": 4.451854281845039e-06,
+      "status": "diagnostic only, no acceptance margin; not muscle/specimen holdout"
+    },
+    "source_dynamic_consistency": {
+      "mass_kg": 1.702e-07,
+      "damping_kg_s": 0.0001377,
+      "relaxation_s": 0.002472040668119099,
+      "damped_period_s": 0.005861818719726955
+    },
+    "biological_validation": "OPEN: instrument calibration is not spike-to-force validation; zero motor-unit trial bytes obtained",
+    "capability": "NOT TESTED"
+  },
+  "TDT": {
+    "implementation": "PASS: units, endpoints, domain rejection, native shape identity",
+    "numerical": {
+      "native_shape_max_abs_error": 2.220446049250313e-16,
+      "peak_velocity_grid_ML_s": [
+        1.3603333333333334,
+        1.3629
+      ],
+      "peak_velocity_exact_ML_s": 1.3620334581489726
+    },
+    "source_fit_reconstruction_not_validation": {
+      "Ca50_uM": 2.3988329190194895,
+      "Hill_vmax_ML_s": 5.133333333333334,
+      "Hill_peak_power_velocity_ML_s": 1.3620334581489726,
+      "Hill_peak_power_force_fraction": 0.26533119314590375,
+      "Hill_peak_power_normalized_s_inv": 0.36138996255530825,
+      "published_derived_quantities": {
+        "extrapolated_vmax_ML_s": {
+          "mean": 5.1,
+          "se": 0.34,
+          "n": 10
+        },
+        "peak_power_velocity_ML_s": {
+          "mean": 1.34,
+          "se": 0.08,
+          "n": 10
+        },
+        "peak_power_force_fraction": {
+          "mean": 0.26,
+          "se": 0.01,
+          "n": 10
+        },
+        "peak_power_normalized_s_inv": {
+          "mean": 0.35,
+          "se": 0.03,
+          "n": 10
+        }
+      },
+      "representative_bundle_capacity_uN_not_individual_force": 183.15
+    },
+    "comparisons": {
+      "native_peak_power_force_fraction": 0.44444444444444453,
+      "measured_peak_power_force_fraction": {
+        "mean": 0.26,
+        "se": 0.01,
+        "n": 10
+      },
+      "shape_verdict": "INCOMPATIBLE with source mean: native 4/9 vs TDT .26; gain or vmax scaling cannot change the dimensionless optimum. Descriptive comparison, not prespecified biological equivalence test.",
+      "reserved_slack_measured": {
+        "mean": 6.1,
+        "se": 0.3,
+        "n": 10,
+        "kind": "separate_slack_test; not used for Hill reference constants; specimen overlap unknown"
+      },
+      "Hill_minus_slack_ML_s": -0.9666666666666659,
+      "holdout_status": "OPEN: separate assay was not used for constants; individual overlap and covariance unavailable; not an untouched prospective biological validation set"
+    },
+    "biological_validation": "OPEN: source-fitted material reference only; raw specimens, transfer conditions and living excitation-force link absent",
+    "capability": "NOT TESTED",
+    "curves": [
+      {
+        "pCa": 8,
+        "shortening_ML_s": 0,
+        "active_stress_Pa": 1.9597556717971302e-20
+      },
+      {
+        "pCa": 8,
+        "shortening_ML_s": 1.3620334581489726,
+        "active_stress_Pa": 5.199843106723847e-21
+      },
+      {
+        "pCa": 8,
+        "shortening_ML_s": 5.133333333333334,
+        "active_stress_Pa": 0.0
+      },
+      {
+        "pCa": 6,
+        "shortening_ML_s": 0,
+        "active_stress_Pa": 4.922028827561223
+      },
+      {
+        "pCa": 6,
+        "shortening_ML_s": 1.3620334581489726,
+        "active_stress_Pa": 1.3059677815153532
+      },
+      {
+        "pCa": 6,
+        "shortening_ML_s": 5.133333333333334,
+        "active_stress_Pa": 0.0
+      },
+      {
+        "pCa": 5.7,
+        "shortening_ML_s": 0,
+        "active_stress_Pa": 4903.027288969439
+      },
+      {
+        "pCa": 5.7,
+        "shortening_ML_s": 1.3620334581489726,
+        "active_stress_Pa": 1300.926080609187
+      },
+      {
+        "pCa": 5.7,
+        "shortening_ML_s": 5.133333333333334,
+        "active_stress_Pa": 0.0
+      },
+      {
+        "pCa": 5.62,
+        "shortening_ML_s": 0,
+        "active_stress_Pa": 18500.008773476726
+      },
+      {
+        "pCa": 5.62,
+        "shortening_ML_s": 1.3620334581489726,
+        "active_stress_Pa": 4908.629401076267
+      },
+      {
+        "pCa": 5.62,
+        "shortening_ML_s": 5.133333333333334,
+        "active_stress_Pa": 0.0
+      },
+      {
+        "pCa": 5.5,
+        "shortening_ML_s": 0,
+        "active_stress_Pa": 34915.442429258095
+      },
+      {
+        "pCa": 5.5,
+        "shortening_ML_s": 1.3620334581489726,
+        "active_stress_Pa": 9264.155998972163
+      },
+      {
+        "pCa": 5.5,
+        "shortening_ML_s": 5.133333333333334,
+        "active_stress_Pa": 0.0
+      },
+      {
+        "pCa": 5,
+        "shortening_ML_s": 0,
+        "active_stress_Pa": 37000.0
+      },
+      {
+        "pCa": 5,
+        "shortening_ML_s": 1.3620334581489726,
+        "active_stress_Pa": 9817.254146398438
+      },
+      {
+        "pCa": 5,
+        "shortening_ML_s": 5.133333333333334,
+        "active_stress_Pa": 0.0
+      }
+    ]
+  },
+  "NMJ_CM9": {
+    "implementation": "PASS: actual NMJ event increments, periodic controls, native activation primitive",
+    "numerical": {
+      "max_abs_half_step_activation_error": 6.477868473117598e-06
+    },
+    "parameters": {
+      "delay_s": 0.001,
+      "tau_exc_s": 0.008,
+      "tau_recovery_s": 0.1,
+      "spike_gain": 0.2,
+      "depression": 0.2
+    },
+    "parameter_status": "unchanged effective-drive estimates; not voltage or calcium",
+    "model_output": [
+      {
+        "dt_s": 1e-05,
+        "rate_Hz": 20,
+        "periodic_formula_max_abs_error": 1.0519363158323358e-14,
+        "mean_control": 0.022754483277420995,
+        "mean_activation": 0.060948260788470904,
+        "peak_activation": 0.0748688780799556,
+        "stationary_event_efficacy": 0.7643513755287226
+      },
+      {
+        "dt_s": 5e-06,
+        "rate_Hz": 20,
+        "periodic_formula_max_abs_error": 3.699818229563334e-14,
+        "mean_control": 0.022754484174964403,
+        "mean_activation": 0.060941782919997786,
+        "peak_activation": 0.07485955134728346,
+        "stationary_event_efficacy": 0.7643513755287226
+      },
+      {
+        "dt_s": 1e-05,
+        "rate_Hz": 40,
+        "periodic_formula_max_abs_error": 2.2412627309620348e-15,
+        "mean_control": 0.03532956520197841,
+        "mean_activation": 0.06708548421278818,
+        "peak_activation": 0.0721923681390835,
+        "stationary_event_efficacy": 0.5867985582892942
+      },
+      {
+        "dt_s": 5e-06,
+        "rate_Hz": 40,
+        "periodic_formula_max_abs_error": 3.660960423701454e-14,
+        "mean_control": 0.03532956664016286,
+        "mean_activation": 0.0670807019469449,
+        "peak_activation": 0.07218668244955115,
+        "stationary_event_efficacy": 0.5867985582892942
+      },
+      {
+        "dt_s": 1e-05,
+        "rate_Hz": 100,
+        "periodic_formula_max_abs_error": 3.4139358007223564e-15,
+        "mean_control": 0.05193296240260095,
+        "mean_activation": 0.06968770842845719,
+        "peak_activation": 0.07073020485223956,
+        "stationary_event_efficacy": 0.34462955624617286
+      },
+      {
+        "dt_s": 5e-06,
+        "rate_Hz": 100,
+        "periodic_formula_max_abs_error": 4.6629367034256575e-14,
+        "mean_control": 0.051932964516930795,
+        "mean_activation": 0.06968530268540352,
+        "peak_activation": 0.07072764152690594,
+        "stationary_event_efficacy": 0.34462955624617286
+      },
+      {
+        "dt_s": 1e-05,
+        "rate_Hz": 500,
+        "periodic_formula_max_abs_error": 3.982925100842749e-15,
+        "mean_control": 0.06835146488770447,
+        "mean_activation": 0.0726740992911742,
+        "peak_activation": 0.07272294656869686,
+        "stationary_event_efficacy": 0.09174031377057593
+      },
+      {
+        "dt_s": 5e-06,
+        "rate_Hz": 500,
+        "periodic_formula_max_abs_error": 5.875855357828641e-14,
+        "mean_control": 0.06835146756938199,
+        "mean_activation": 0.07267354949508566,
+        "peak_activation": 0.07272238774845442,
+        "stationary_event_efficacy": 0.09174031377057593
+      }
+    ],
+    "model_50_ms_increment_ratio": 0.8786938680574738,
+    "CM9_measured_electrical_reference": {
+      "epsp_mV": {
+        "mean": 9.03,
+        "sem": 0.33,
+        "n": 13
+      },
+      "mepsp_mV": {
+        "mean": 1.12,
+        "sem": 0.08,
+        "n": 13
+      },
+      "quantal_content": {
+        "mean": 8.55,
+        "sem": 0.61,
+        "n": 13,
+        "kind": "mean of per-NMJ EPSP/mEPSP ratios, not ratio of aggregate means"
+      }
+    },
+    "CM9_reserved_protocol": {
+      "rates_Hz": [
+        20,
+        40
+      ],
+      "duration_s": 15,
+      "n_per_condition": 8,
+      "readouts": "initial, halfway and final; average nearest three EPSP amplitudes",
+      "published_result": "only 42-day 40-Hz condition significantly depressed under reported ANOVA; young 7-day condition not significantly depressed",
+      "raw_amplitudes_available": false
+    },
+    "biological_validation": "OPEN: non-significant train depression is not a zero-depression datum; EPSP/mEPSP means do not identify force or both depression/recovery constants",
+    "capability": "NOT TESTED"
+  },
+  "wall_time_s": 0.4659332919982262,
+  "publication_scope": "Historical study summary; full method and limitations in docs/research. Not a fresh execution of this public tree."
+}

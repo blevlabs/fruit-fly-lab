@@ -1,0 +1,43 @@
+{
+  "repository": "https://github.com/schnitzer-lab/Luo_Huang_2024_MB_model",
+  "revision": "5d7c08a9a88f923169a0c3008aca68af421e9a7f",
+  "scope": "Original generated MATLAB model-fitting figures, preserved without running MATLAB or any model. These correspond to the 17-Apr-2024 fitted models; inspecting line XData/YData is a data-read task.",
+  "files": [
+    {
+      "file": "Dx_steady_state_nonlinear_3_17-Apr-2024_2modules_attractive.fig",
+      "source_path": "matlab_code/model_fitting/figures/Dx_steady_state_nonlinear_3_17-Apr-2024_2modules_attractive.fig",
+      "source_url": "https://github.com/schnitzer-lab/Luo_Huang_2024_MB_model/blob/5d7c08a9a88f923169a0c3008aca68af421e9a7f/matlab_code/model_fitting/figures/Dx_steady_state_nonlinear_3_17-Apr-2024_2modules_attractive.fig",
+      "git_blob": "3a446d935bf62e9cc16c33e35a3963f3c41940d6",
+      "bytes": 89381,
+      "sha256": "157f06136723d3981bd29ae40f21662d8bce9f558269d81546d711bef4e17c51",
+      "unchanged": true
+    },
+    {
+      "file": "Dx_steady_state_nonlinear_3_17-Apr-2024_2modules_repulsive.fig",
+      "source_path": "matlab_code/model_fitting/figures/Dx_steady_state_nonlinear_3_17-Apr-2024_2modules_repulsive.fig",
+      "source_url": "https://github.com/schnitzer-lab/Luo_Huang_2024_MB_model/blob/5d7c08a9a88f923169a0c3008aca68af421e9a7f/matlab_code/model_fitting/figures/Dx_steady_state_nonlinear_3_17-Apr-2024_2modules_repulsive.fig",
+      "git_blob": "3f80935496335637dc5336fbb6c3230e6ef91b31",
+      "bytes": 88586,
+      "sha256": "12a4db736abd4526653f769b7155903cbb013206619fa0b0939c1d2ca2db7981",
+      "unchanged": true
+    },
+    {
+      "file": "Dx_steady_state_nonlinear_3_17-Apr-2024_3modules_attractive.fig",
+      "source_path": "matlab_code/model_fitting/figures/Dx_steady_state_nonlinear_3_17-Apr-2024_3modules_attractive.fig",
+      "source_url": "https://github.com/schnitzer-lab/Luo_Huang_2024_MB_model/blob/5d7c08a9a88f923169a0c3008aca68af421e9a7f/matlab_code/model_fitting/figures/Dx_steady_state_nonlinear_3_17-Apr-2024_3modules_attractive.fig",
+      "git_blob": "6edc9917e1e10fcb46270e6f9859fcffcaeaa5d6",
+      "bytes": 129393,
+      "sha256": "83d6f70999340384c4a81394fe4c84baf744c8c220a46c9cfd4495785167dfa4",
+      "unchanged": true
+    },
+    {
+      "file": "Dx_steady_state_nonlinear_3_17-Apr-2024_3modules_repulsive.fig",
+      "source_path": "matlab_code/model_fitting/figures/Dx_steady_state_nonlinear_3_17-Apr-2024_3modules_repulsive.fig",
+      "source_url": "https://github.com/schnitzer-lab/Luo_Huang_2024_MB_model/blob/5d7c08a9a88f923169a0c3008aca68af421e9a7f/matlab_code/model_fitting/figures/Dx_steady_state_nonlinear_3_17-Apr-2024_3modules_repulsive.fig",
+      "git_blob": "a4f79320efffc786fe889615749823f23922220b",
+      "bytes": 128285,
+      "sha256": "536ea92b56d0def9629b8c8c6ec259b6ac0365a0df23c14a12d8bdbd627d00b2",
+      "unchanged": true
+    }
+  ]
+}

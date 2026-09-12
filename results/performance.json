@@ -1,0 +1,14 @@
+{
+  "scope": "Historical fixed saved-state replay; no biological acceptance or new-tree benchmark",
+  "baseline_100_neural_steps_seconds": 7.687083103926852,
+  "optimized_100_neural_steps_seconds": 6.420237749116495,
+  "single_step_median_seconds": 0.0635961014777422,
+  "rpc_median_seconds": 0.07438000000547618,
+  "observed_native_updates_per_second": 14,
+  "neural_step_s": 0.0001,
+  "physics_step_s": 2.5e-06,
+  "exact_state_and_frame": true,
+  "packet_schedules_exact": true,
+  "guarded_fallback_checked": true,
+  "native_cadence_scope": "Instantaneous displayed value; each update advances 100 microseconds"
+}

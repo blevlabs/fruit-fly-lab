@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "dataset": "male-cns:v1.0",
+  "license": "CC-BY-SA-4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "attribution": [
+    {
+      "creator": "Arthur Zhao / Reiser Lab",
+      "material": "Standard maleCNS eye-map viewing vectors",
+      "license": "CC-BY-SA-4.0",
+      "citations": [
+        "https://doi.org/10.1038/s41586-025-09276-5",
+        "https://doi.org/10.1038/s41586-025-08746-0"
+      ]
+    },
+    {
+      "creator": "FlyEM / HHMI Janelia Research Campus and MaleCNS collaborators",
+      "material": "MaleCNS v1 annotations, optic-column assignments and synapse counts",
+      "license": "CC-BY-4.0",
+      "citation": "https://doi.org/10.1101/2025.10.09.680999",
+      "release": "https://male-cns.janelia.org/download/"
+    }
+  ],
+  "annotations": {
+    "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+    "sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+    "license": "CC-BY-4.0",
+    "license_source": "https://male-cns.janelia.org/download/"
+  },
+  "optical_data": {
+    "path": "data/optical-map.json",
+    "sha256": "697beb8b56a6795ad3213a7dcb55b4a875464be3c72a002e605d406ae3d05fe2",
+    "license": "CC-BY-SA-4.0",
+    "sources": {
+      "eyemap": {
+        "repository": "https://github.com/artxz/eyemap-archive",
+        "commit": "503c7f055d5491a48b60b49ade8c71798d24d8f1",
+        "manifest_url": "https://raw.githubusercontent.com/artxz/eyemap-archive/503c7f055d5491a48b60b49ade8c71798d24d8f1/docs/manifest.json",
+        "coordinate_frame_url": "https://raw.githubusercontent.com/artxz/eyemap-archive/503c7f055d5491a48b60b49ade8c71798d24d8f1/docs/index.html",
+        "exports": {
+          "eyemap_mcns_f20240701_left": {
+            "url": "https://raw.githubusercontent.com/artxz/eyemap-archive/503c7f055d5491a48b60b49ade8c71798d24d8f1/docs/data/eyemap_mcns_f20240701/left.csv",
+            "sha256": "abfe62cad8e2b066155d779e8ebbc70054124c82ade3da4fead3a84df6b0c2f3",
+            "rows": 850
+          },
+          "eyemap_mcns_f20240701_right": {
+            "url": "https://raw.githubusercontent.com/artxz/eyemap-archive/503c7f055d5491a48b60b49ade8c71798d24d8f1/docs/data/eyemap_mcns_f20240701/right.csv",
+            "sha256": "c9ee7b14656dbd58acc853a849330b740e9a193bff23d8a3839485e9ad1cc67c",
+            "rows": 846
+          }
+        }
+      },
+      "optic_columns": {
+        "url": "https://raw.githubusercontent.com/flyconnectome/2025malecns/67767d2233657983993ff6c2be48e836a935863c/supplemental_data/optic-column-type-assignments-v1.0.xlsx",
+        "commit": "67767d2233657983993ff6c2be48e836a935863c",
+        "sha256": "d4af1cacb751036f7e84bfecc9bec79ca010066ac066559c29b566003ec080d3",
+        "source_sheets": {
+          "R": "Right OL",
+          "L": "Left OL"
+        }
+      },
+      "annotations": {
+        "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+        "sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2"
+      },
+      "connectivity": {
+        "release_url": "https://male-cns.janelia.org/download/",
+        "filename": "connectome-weights.feather",
+        "sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1"
+      }
+    }
+  },
+  "generator": "scripts/build_sensory_map.py",
+  "output": {
+    "path": "runtime/neural-motor/malecns-sensory-map.json",
+    "sha256": "8af8afa69703a31752f56cf0ba9f0c7c50d43469eee8beabeb81324eb41eb1de"
+  },
+  "construction": {
+    "neuron_selection": "All official annotations whose superclass contains sensory; sorted by bodyId. No graph pruning.",
+    "neuron_fields": "Columns come directly from the CC-BY MaleCNS annotation file, including its own cross-specimen annotation fields; no separate crosswalk is read.",
+    "grouping": "Authored exact type/rootSide selection. Sugar uses LB3b/c; bitter LB1a-d; water LB3a. ORN and thermal groups use exact matching type names.",
+    "interpretation_citations": [
+      "https://doi.org/10.1101/2025.08.25.671814",
+      "https://doi.org/10.1038/nature09011"
+    ],
+    "citation_use": "Citations support functional interpretations only; no companion spreadsheet rows, figures or prose are included.",
+    "optics": "The separately attributed optical file is a precomputed derivative of standard author eye vectors, official column assignments and released L1 connectivity. This generator reuses that file without adding assignments.",
+    "missing_values": "Pandas JSON value conversion preserves source nulls; no unknown side, type or optical direction is inferred."
+  },
+  "counts": {
+    "sensory_entries": 17937,
+    "input_groups": 10,
+    "optical_rows": 1696,
+    "mapped_optical_columns": 1694,
+    "compound_receptors": 6091,
+    "wired_receptors": 5713
+  },
+  "data_comparison": {
+    "ordered_group_id_arrays_equal": true,
+    "all_source_neuron_fields_equal": true,
+    "ordered_optical_columns_sides_vectors_equal": true,
+    "normalized_direction_arrays_equal": true,
+    "receptor_ids_and_column_indices_equal": true,
+    "scope": "Data-only comparison; no model import, physics step, neuronal integration or checkpoint migration."
+  }
+}

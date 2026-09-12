@@ -1,0 +1,80 @@
+{
+  "model": "male-cns-embodied-v2",
+  "dataset": "male-cns:v1.0",
+  "neural_model": "Eon lumped LIF plus estimated graded photoreceptor/L1/L2 compartments; not complete cellular physiology",
+  "timestep_s": 2.5e-06,
+  "neural_timestep_s": 0.0001,
+  "physics_arena_bytes": 268435456,
+  "thermoreception": {
+    "baseline_rate_hz": 30.0,
+    "gain_hz_per_c": 25.0,
+    "maximum_rate_hz": 200.0,
+    "peripheral_time_constant_s": 0.02,
+    "adaptation_time_constant_s": 2.0,
+    "status": "Estimated opponent phasic receptor dynamics: VP2 heating and aristal VP3a cooling; basal firing and all constants are hypotheses, not behavior-fitted",
+    "missing": "Per-cell calibration, VP3b non-aristal/slow pathway, sacculus humidity/cooling, internal thermosensors and damage/nociception"
+  },
+  "proprioception": {
+    "position_midpoint_rad": 1.5707963267948966,
+    "position_flexion_reference_rad": 0.3141592653589793,
+    "position_extension_reference_rad": 3.141592653589793,
+    "maximum_rate_hz": 200.0,
+    "movement_scale_rad_s": 7.3303828583761845,
+    "velocity_filter_tau_s": 0.001,
+    "polarity": {
+      "SNpp50": "flexion",
+      "SNpp51": "extension",
+      "SNpp39": "extension",
+      "SNpp41": "flexion"
+    },
+    "polarity_status": "Circuit-consistent hypothesis from MANC Figure 59, NOT a measured per-cell functional assignment; no behavior-driven choice",
+    "kinematic_status": "Actual femur-tibia angle and its causal time derivative approximate FeCO deformation; no reconstructed arculum/tendon transfer",
+    "tuning_status": "Published population position/movement features with estimated firing-rate/filter constants; individual goniotopy, hysteresis and club tonotopy unresolved"
+  },
+  "vision": {
+    "sample_interval_s": 0.002,
+    "sky_radiance": 1.0,
+    "ground_albedo": 0.3,
+    "food_albedo": 0.15,
+    "body_albedo": 0.1,
+    "photoreceptor_rest_mV": -60.0,
+    "photo_current_max_mV": 30.0,
+    "half_saturation_radiance": 0.5,
+    "graded_tau_s": 0.02,
+    "release_midpoint_mV": -50.0,
+    "release_slope_mV": 4.0,
+    "release_equivalent_max_hz": 200.0,
+    "graded_lamina_types": [
+      "L1",
+      "L2"
+    ],
+    "status": "Estimated broadband ray optics, lumped phototransduction and graded release; constants are hypotheses, not behavior-fitted or validated retinal physiology",
+    "missing": "Measured corneal registration, spectral/UV/polarization sensitivity, acceptance-angle integration, adaptation, receptor-specific currents, R8 cotransmission, graded dynamics of other optic-lobe types"
+  },
+  "motor_capacity": "Equal capacity shares among named motor neurons of each represented muscle target; estimated, not fiber-specific innervation",
+  "nmj": {
+    "delay_s": 0.001,
+    "tau_exc_s": 0.008,
+    "tau_recovery_s": 0.1,
+    "spike_gain": 0.2,
+    "depression": 0.2
+  },
+  "leg_group_force_uN": 28.0,
+  "leg_activation_time_s": [
+    0.01,
+    0.04
+  ],
+  "leg_joint_damping_nNm_s": 0.02,
+  "leg_joint_armature_g_mm2": 1e-06,
+  "leg_joint_stiffness": 0.0,
+  "joint_range_half_width_rad": 1.5707963267948966,
+  "joint_range_status": "Estimated mechanical range around the supplied initial pose, not an action target or a measured physiological range",
+  "unmapped_motor_policy": "Retain neuron in the CNS and report its spikes, but do not invent a peripheral force target",
+  "unmapped_sensory_policy": "Retain neuron in the CNS; no fabricated sensory input",
+  "limitations": [
+    "Incomplete peripheral muscle and receptor coverage; not a complete digital animal.",
+    "Muscle force, kinetics, geometry transfer and motor-unit capacity are estimates.",
+    "No behavior policy, gait, target joint angle, approach score or direct walking stimulation.",
+    "Unknown transmitter physiology, neuromodulation and electrical synapses remain unresolved."
+  ]
+}

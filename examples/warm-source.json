@@ -1,0 +1,30 @@
+{
+  "seed": 0,
+  "phases": [
+    {
+      "name": "warm-source",
+      "steps": 100,
+      "sources": [
+        {
+          "enabled": true,
+          "x": 2.014720589711036,
+          "y": 0.12147369916008276,
+          "odor": 1.0,
+          "temperature": 45.0,
+          "taste": "sweet",
+          "liquid": true
+        },
+        {
+          "enabled": false,
+          "x": -6.0,
+          "y": 0.0,
+          "odor": 1.0,
+          "temperature": 22.0,
+          "taste": "bitter",
+          "liquid": true
+        }
+      ],
+      "release_block": false
+    }
+  ]
+}

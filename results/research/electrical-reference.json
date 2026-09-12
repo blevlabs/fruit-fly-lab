@@ -1,0 +1,186 @@
+{
+  "implementation": "PASS: source checks and fixed fit/holdout analysis executed",
+  "numerical_correctness": "PASS",
+  "biological_validation": "OPEN: effective two-recording response comparison; no population-equivalence margin",
+  "demonstrated_capability": "NONE_ADDED",
+  "source_snapshot_commit": "5edb22959211d96d7b4332c0de8190019fcdc8e8",
+  "script_sha256": "aeffe4f68e005b7da5b26b659c8cfa65cfefe55449c9c6f3defbe74dcac9a3a2",
+  "plan_sha256": "4c04498f1b3acb0d1ea8df9624ffa331d89df1df4a904bed49e31659a413f2bb",
+  "trace_sha256": "2604880611fb95be89b6f915c47d931c469b1ed0df226290dd4de8ad37f0ff78",
+  "versions": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1"
+  },
+  "wall_seconds": 0.04875954199815169,
+  "records": [
+    {
+      "recording_id": "Figure 6G.zip::6G/Mated female/2024_04_11_0002.abf",
+      "source_sha256": "e0428d71e098b523c2b2e9605aafdab9924981b2eddb0b515401f3fa4fdd7890",
+      "R_effective_MOhm_per_nominal_current": 345.8890160107274,
+      "tau_effective_s": 0.011585421398525409,
+      "C_effective_pF_not_independent_measurement": 33.494620708528366,
+      "parameter_interpretation": "R_eff and tau_eff summarize the recording-site response to nominal current. Derived C_eff=tau_eff/R_eff is an effective circuit quantity, not an independently measured biological capacitance, receptor concentration or channel density.",
+      "optimizer_success": true,
+      "calibration_jacobian_rank": 2,
+      "sample_rate_hz": 20000.0,
+      "comparisons": [
+        {
+          "sweep": 0,
+          "role": "calibration",
+          "nominal_command_pA": -30.0,
+          "onset_s": 0.017,
+          "duration_s": 0.35,
+          "observed_initial_baseline_mV": -39.712075626148895,
+          "rmse_mV": 0.6382328023518946,
+          "no_response_rmse_mV": 9.021233590958238,
+          "mse_ratio_to_no_response": 0.005005257047489346,
+          "prediction_advantage_over_no_response": true,
+          "rmse_over_nominal_response_amplitude": 0.06150651151178316
+        },
+        {
+          "sweep": 1,
+          "role": "held_out",
+          "nominal_command_pA": -20.0,
+          "onset_s": 0.017,
+          "duration_s": 0.35,
+          "observed_initial_baseline_mV": -39.54974903779871,
+          "rmse_mV": 0.48806727996069915,
+          "no_response_rmse_mV": 5.710032770263185,
+          "mse_ratio_to_no_response": 0.007306042355819035,
+          "prediction_advantage_over_no_response": true,
+          "rmse_over_nominal_response_amplitude": 0.07055258440839912
+        },
+        {
+          "sweep": 2,
+          "role": "held_out",
+          "nominal_command_pA": -10.0,
+          "onset_s": 0.017,
+          "duration_s": 0.35,
+          "observed_initial_baseline_mV": -38.02683213177849,
+          "rmse_mV": 0.9944870578787347,
+          "no_response_rmse_mV": 3.819633074446089,
+          "mse_ratio_to_no_response": 0.06778833714595091,
+          "prediction_advantage_over_no_response": true,
+          "rmse_over_nominal_response_amplitude": 0.2875162297284085
+        }
+      ],
+      "zero_current_diagnostic": {
+        "sweep": 3,
+        "baseline_mV": -39.84823787913603,
+        "rms_deflection_mV": 1.2677590054365588
+      },
+      "numerical_check": {
+        "status": "PASS",
+        "errors": [
+          {
+            "dt_s": 0.0001,
+            "maximum_error_mV": 0.0165343094085868,
+            "first_order_error_bound_mV": 0.08956662104360369,
+            "finite": true
+          },
+          {
+            "dt_s": 5e-05,
+            "maximum_error_mV": 0.008252263159223006,
+            "first_order_error_bound_mV": 0.044783310521801845,
+            "finite": true
+          },
+          {
+            "dt_s": 2.5e-05,
+            "maximum_error_mV": 0.0041224223593987475,
+            "first_order_error_bound_mV": 0.022391655260900922,
+            "finite": true
+          }
+        ]
+      }
+    },
+    {
+      "recording_id": "Figure 6G.zip::6G/Virgin female/2024_04_15_0004.abf",
+      "source_sha256": "7563847dfddf59fff86a75d64c79c11721c57bb0ed8b28087050dfbb7a79736b",
+      "R_effective_MOhm_per_nominal_current": 583.2032334804738,
+      "tau_effective_s": 0.02499823574888533,
+      "C_effective_pF_not_independent_measurement": 42.863678240772806,
+      "parameter_interpretation": "R_eff and tau_eff summarize the recording-site response to nominal current. Derived C_eff=tau_eff/R_eff is an effective circuit quantity, not an independently measured biological capacitance, receptor concentration or channel density.",
+      "optimizer_success": true,
+      "calibration_jacobian_rank": 2,
+      "sample_rate_hz": 20000.0,
+      "comparisons": [
+        {
+          "sweep": 0,
+          "role": "calibration",
+          "nominal_command_pA": -30.0,
+          "onset_s": 0.017,
+          "duration_s": 0.35,
+          "observed_initial_baseline_mV": -47.91820750517004,
+          "rmse_mV": 1.468325529432407,
+          "no_response_rmse_mV": 14.940816004964574,
+          "mse_ratio_to_no_response": 0.009658197115030786,
+          "prediction_advantage_over_no_response": true,
+          "rmse_over_nominal_response_amplitude": 0.0839230331805975
+        },
+        {
+          "sweep": 1,
+          "role": "held_out",
+          "nominal_command_pA": -20.0,
+          "onset_s": 0.017,
+          "duration_s": 0.35,
+          "observed_initial_baseline_mV": -47.598805147058826,
+          "rmse_mV": 1.0943330646028984,
+          "no_response_rmse_mV": 10.261188265623723,
+          "mse_ratio_to_no_response": 0.011373751388350416,
+          "prediction_advantage_over_no_response": true,
+          "rmse_over_nominal_response_amplitude": 0.09382090168396996
+        },
+        {
+          "sweep": 2,
+          "role": "held_out",
+          "nominal_command_pA": -10.0,
+          "onset_s": 0.017,
+          "duration_s": 0.35,
+          "observed_initial_baseline_mV": -47.68838321461397,
+          "rmse_mV": 0.6824974965573453,
+          "no_response_rmse_mV": 4.8654768102861325,
+          "mse_ratio_to_no_response": 0.019676656832465927,
+          "prediction_advantage_over_no_response": true,
+          "rmse_over_nominal_response_amplitude": 0.11702567087707957
+        }
+      ],
+      "zero_current_diagnostic": {
+        "sweep": 3,
+        "baseline_mV": -47.614512724034924,
+        "rms_deflection_mV": 0.3977458420481458
+      },
+      "numerical_check": {
+        "status": "PASS",
+        "errors": [
+          {
+            "dt_s": 0.0001,
+            "maximum_error_mV": 0.0128953172306705,
+            "first_order_error_bound_mV": 0.06998932716759569,
+            "finite": true
+          },
+          {
+            "dt_s": 5e-05,
+            "maximum_error_mV": 0.006442278237924981,
+            "first_order_error_bound_mV": 0.034994663583797846,
+            "finite": true
+          },
+          {
+            "dt_s": 2.5e-05,
+            "maximum_error_mV": 0.003219796044190204,
+            "first_order_error_bound_mV": 0.017497331791898923,
+            "finite": true
+          }
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "Response-only effective passive electrical reference for two female MS-WED recordings. No male transfer, recipient assignment, peptide kinetics, or behavioral claim.",
+    "Previously retained smallest compressed ABF per source condition, fixed by retrieval size before waveform inspection; not population representative.",
+    "delta_voltage is relative to the mean observed pre-command voltage in each sweep; this is a response conditional on initial baseline, not a replay of the individual across all sweeps.",
+    "Header-derived DAC0 command in pA, not an experimentally verified current monitor. Use actual per-file20kHz sampling and350ms pulse; preserve disagreement with paper10kHz/300ms protocol.",
+    "No population-equivalence margin or replicate validation available for this format pilot; report model error and predictive advantage without declaring M4 biological validation. Effective parameters remain provisional pending input calibration, access/filter metadata and matched replicates.",
+    "The selected DA-WED control/MSR2-RNAi files are gap-free and will not be used to fit ligand/receptor dynamics or as independent MS-WED cell replicates."
+  ],
+  "publication_scope": "Historical study summary; full method and limitations in docs/research. Not a fresh execution of this public tree."
+}

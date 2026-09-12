@@ -1,0 +1,473 @@
+{
+  "schema": 1,
+  "status": "PASS_ORIGINAL_REDUCED_RATE_MODEL_REFERENCE",
+  "executed_at_utc": "2026-09-12T03:30:06.763167+00:00",
+  "source_revision": "5d7c08a9a88f923169a0c3008aca68af421e9a7f",
+  "claim": "Original MATLAB saved fit curves reproduced by a bounded Python translation.",
+  "source_curve_comparisons": [
+    {
+      "condition": "17-Apr-2024_2modules_attractive",
+      "stored_points": 48,
+      "max_absolute_error_hz": 1.7763568394002505e-15
+    },
+    {
+      "condition": "17-Apr-2024_2modules_repulsive",
+      "stored_points": 48,
+      "max_absolute_error_hz": 7.105427357601002e-15
+    },
+    {
+      "condition": "17-Apr-2024_3modules_attractive",
+      "stored_points": 72,
+      "max_absolute_error_hz": 7.105427357601002e-15
+    },
+    {
+      "condition": "17-Apr-2024_3modules_repulsive",
+      "stored_points": 72,
+      "max_absolute_error_hz": 8.881784197001252e-15
+    }
+  ],
+  "checked_original_points": 240,
+  "source_curve_tolerance_hz": 1e-10,
+  "source_workbook_numeric_values_checked": 172,
+  "fit_data_agreement": [
+    {
+      "condition": "17-Apr-2024_2modules_attractive",
+      "protocol": "fitting",
+      "observations": 36,
+      "rmse_hz": 3.6352426484484806,
+      "weighted_sse": 52.954387311811466,
+      "scope": "same fitted observations; not independent biological validation"
+    },
+    {
+      "condition": "17-Apr-2024_2modules_repulsive",
+      "protocol": "fitting",
+      "observations": 24,
+      "rmse_hz": 4.448667940369309,
+      "weighted_sse": 59.505842859730315,
+      "scope": "same fitted observations; not independent biological validation"
+    },
+    {
+      "condition": "17-Apr-2024_3modules_attractive",
+      "protocol": "fitting",
+      "observations": 52,
+      "rmse_hz": 3.2757520124037476,
+      "weighted_sse": 74.67672700415723,
+      "scope": "same fitted observations; not independent biological validation"
+    },
+    {
+      "condition": "17-Apr-2024_3modules_repulsive",
+      "protocol": "fitting",
+      "observations": 34,
+      "rmse_hz": 3.807791840287768,
+      "weighted_sse": 65.79173419279851,
+      "scope": "same fitted observations; not independent biological validation"
+    },
+    {
+      "condition": "27-Mar-2023_2modules_attractive",
+      "protocol": "figure5c",
+      "observations": 36,
+      "rmse_hz": 3.778219007362752,
+      "weighted_sse": 64.95285669314632,
+      "scope": "same fitted observations; not independent biological validation"
+    },
+    {
+      "condition": "27-Mar-2023_2modules_repulsive",
+      "protocol": "figure5c",
+      "observations": 24,
+      "rmse_hz": 5.021260511759229,
+      "weighted_sse": 71.1049887686999,
+      "scope": "same fitted observations; not independent biological validation"
+    },
+    {
+      "condition": "27-Mar-2023_3modules_attractive",
+      "protocol": "figure5c",
+      "observations": 52,
+      "rmse_hz": 3.3859560122775028,
+      "weighted_sse": 90.29987806710852,
+      "scope": "same fitted observations; not independent biological validation"
+    },
+    {
+      "condition": "27-Mar-2023_3modules_repulsive",
+      "protocol": "figure5c",
+      "observations": 34,
+      "rmse_hz": 4.280912577514321,
+      "weighted_sse": 78.43004336885299,
+      "scope": "same fitted observations; not independent biological validation"
+    }
+  ],
+  "controls": {
+    "paired": {
+      "bouts": 51,
+      "simulated_s": 89520.0,
+      "shock_duration_s": 180.0,
+      "mbon_gamma1_CS_plus_delta_hz": [
+        22.616771718430968,
+        -2.304408418449519,
+        -8.40763293051484,
+        14.918615864190492,
+        22.465689045446602,
+        22.616771718430968
+      ],
+      "mbon_alpha3_CS_plus_delta_hz": [
+        14.531713112850106,
+        3.1492360824977297,
+        -11.03240246564297,
+        -8.071155816446765,
+        7.863376633563885,
+        12.767051651824858
+      ],
+      "final_effective_weight_change": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          2.5648109605265326,
+          8.0354075057677,
+          2.7299444848731547
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          2.7283118873458,
+          9.814512755746726,
+          14.24517504687281
+        ]
+      ]
+    },
+    "frozen": {
+      "bouts": 51,
+      "simulated_s": 89520.0,
+      "shock_duration_s": 180.0,
+      "mbon_gamma1_CS_plus_delta_hz": [
+        22.616771718430968,
+        11.656707967727236,
+        11.643891758126983,
+        22.40700943685745,
+        22.61619166336176,
+        22.616771718430968
+      ],
+      "mbon_alpha3_CS_plus_delta_hz": [
+        14.531713112850106,
+        7.489660245774353,
+        7.48142558331131,
+        14.396936791292276,
+        14.53134041625307,
+        14.531713112850106
+      ],
+      "final_effective_weight_change": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    "odor_only": {
+      "bouts": 51,
+      "simulated_s": 89520.0,
+      "shock_duration_s": 0.0,
+      "mbon_gamma1_CS_plus_delta_hz": [
+        22.616771718430968,
+        15.325971046797335,
+        15.781158582316877,
+        24.1122004729883,
+        22.739026317233552,
+        22.616771718430968
+      ],
+      "mbon_alpha3_CS_plus_delta_hz": [
+        14.531713112850106,
+        17.861355810541337,
+        19.96,
+        19.96,
+        19.96,
+        19.96
+      ],
+      "final_effective_weight_change": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          2.5648109605265326,
+          9.6904341711655,
+          14.031619918284846
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          2.7283118873458,
+          9.814512755746726,
+          14.24517504687281
+        ]
+      ]
+    },
+    "shock_only": {
+      "bouts": 51,
+      "simulated_s": 89520.0,
+      "shock_duration_s": 180.0,
+      "mbon_gamma1_CS_plus_delta_hz": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mbon_alpha3_CS_plus_delta_hz": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "final_effective_weight_change": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    "shifted": {
+      "bouts": 57,
+      "simulated_s": 89520.0,
+      "shock_duration_s": 180.0,
+      "mbon_gamma1_CS_plus_delta_hz": [
+        22.616771718430968,
+        15.325971046797335,
+        15.781158582316877,
+        24.1122004729883,
+        22.739026317233552,
+        22.616771718430968
+      ],
+      "mbon_alpha3_CS_plus_delta_hz": [
+        14.531713112850106,
+        17.861355810541337,
+        19.96,
+        19.96,
+        19.96,
+        19.96
+      ],
+      "final_effective_weight_change": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          2.5648109605265326,
+          9.6904341711655,
+          14.031619918284846
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          2.7283118873458,
+          9.814512755746726,
+          14.24517504687281
+        ]
+      ]
+    },
+    "checks": {
+      "matched_duration_and_shock_exposure": "PASS",
+      "frozen_and_shock_only_zero_weight_change": "PASS",
+      "pretraining_equal": "PASS",
+      "shifted_matches_odor_only_max_error_hz": 3.552713678800501e-15,
+      "scope": "deterministic bout-level mechanism controls; no arbitrary CS-US timing prediction"
+    }
+  },
+  "parameter_sets": {
+    "17-Apr-2024_2modules": {
+      "para_mu": [
+        -1.9441201549024132,
+        3.9712235695398674,
+        24.835362199176025,
+        16.559458722000155,
+        5.022153761846336,
+        12.551950550124527,
+        -21.105504536170685,
+        -5.316562132822892,
+        -0.036791187041650096,
+        -0.35007434862753345,
+        2.0743332914430242e-09,
+        -2.0743325852337948e-09,
+        1874.5710459463544,
+        6301.726274163911,
+        260629.09787271384,
+        712.4821163512511
+      ],
+      "saved_parameter_samples": 10000,
+      "used": "para_mu only; CI samples retained but not executed"
+    },
+    "17-Apr-2024_3modules": {
+      "para_mu": [
+        -2.114659931486826,
+        -3.7536848556073035,
+        4.679765879399402,
+        25.409349826326743,
+        17.34076969514443,
+        16.325998593348324,
+        5.144328666233586,
+        2.940453898912807,
+        13.719957724943319,
+        -21.35073162171509,
+        -5.604318227436501,
+        -0.038317847418581054,
+        -0.07480898095987185,
+        0.15474228901722345,
+        -0.3816454088221073,
+        2.0897965087825323e-09,
+        2.0897915132938865e-09,
+        -0.3087498160313475,
+        -2.0897919221366294e-09,
+        2022.7098422193494,
+        6219.828611270908,
+        242787.59006247285,
+        791.9841678866914
+      ],
+      "saved_parameter_samples": 10000,
+      "used": "para_mu only; CI samples retained but not executed"
+    },
+    "27-Mar-2023_2modules": {
+      "para_mu": [
+        -1.9441201549024132,
+        3.9712235695398674,
+        24.835362199176025,
+        16.559458722000155,
+        5.022153761846336,
+        12.551950550124527,
+        -21.105504536170685,
+        -5.316562132822892,
+        -0.036791187041650096,
+        -0.35007434862753345,
+        2.0743332914430242e-09,
+        -2.0743325852337948e-09,
+        1874.5710459463544,
+        6301.726274163911,
+        260629.09787271384,
+        712.4821163512511
+      ],
+      "saved_parameter_samples": 10000,
+      "used": "para_mu only; CI samples retained but not executed"
+    },
+    "27-Mar-2023_3modules": {
+      "para_mu": [
+        -2.114659931486826,
+        -3.7536848556073035,
+        4.679765879399402,
+        25.409349826326743,
+        17.34076969514443,
+        16.325998593348324,
+        5.144328666233586,
+        2.940453898912807,
+        13.719957724943319,
+        -21.35073162171509,
+        -5.604318227436501,
+        -0.038317847418581054,
+        -0.07480898095987185,
+        0.15474228901722345,
+        -0.3816454088221073,
+        2.0897965087825323e-09,
+        2.0897915132938865e-09,
+        -0.3087498160313475,
+        -2.0897919221366294e-09,
+        2022.7098422193494,
+        6219.828611270908,
+        242787.59006247285,
+        791.9841678866914
+      ],
+      "saved_parameter_samples": 10000,
+      "used": "para_mu only; CI samples retained but not executed"
+    }
+  },
+  "source_sha256": {
+    "outputs/program/publication-review/huang-luo-sources/upstream-model/README.md": "001d80785c968ee0226a069bac7d4572c8459a68f419c1f8ee2c2b156f1624ce",
+    "outputs/program/publication-review/huang-luo-sources/upstream-model/data_and_parameters/Dx_steady_state_nonlinear_3_27-Mar-2023_2modules.mat": "69effbd740976aa0702963edf3fa1105b110ff5bb05833fa7367d998567d05c6",
+    "outputs/program/publication-review/huang-luo-sources/upstream-model/data_and_parameters/Dx_steady_state_nonlinear_3_27-Mar-2023_3modules.mat": "cb7b555026f97b59678adf8902b9f4a02975413a7eed9d6e03f2e2864821915d",
+    "outputs/program/publication-review/huang-luo-sources/upstream-model/data_and_parameters/Imaging_24hr_data.xlsx": "45497111f4b49a48c4d85f6ddc898c32a4090320228c27a280f96a6266cbc9d6",
+    "outputs/program/publication-review/huang-luo-sources/upstream-model/matlab_code/figure_code_examples/config_path_and_function.m": "92a88ea219a39dc72379ad421de351982648bc5d4da75748f6f8d95c89f33b33",
+    "outputs/program/publication-review/huang-luo-sources/upstream-model/matlab_code/figure_code_examples/customcolormap/customcolormap.m": "f9976fa25cd441ed9d6e43c33e7307b2700802e14034c7f4c4add5433a261ec5",
+    "outputs/program/publication-review/huang-luo-sources/upstream-model/matlab_code/figure_code_examples/customcolormap/customcolormap_preset.m": "6b455dc94dfbe7ede08eb59d9ec6a054d0cf764c5501fc4e136cca17cebe916b",
+    "outputs/program/publication-review/huang-luo-sources/upstream-model/matlab_code/figure_code_examples/customcolormap/license.txt": "56d5d27bbd03df2a75d4022409407ac0c87f72b8fcb9b33e9d9d11f9f9e6b089",
+    "outputs/program/publication-review/huang-luo-sources/upstream-model/matlab_code/figure_code_examples/plotPanel_5c_S10j_R2_CI.m": "03dfb7207efd8046992f886082aa518f5001c499926c2000f8da64c3166aea69",
+    "outputs/program/publication-review/huang-luo-sources/upstream-model/matlab_code/figure_code_examples/plotPanel_5d.m": "0c7dc43913c8058cc7ac0d6187f3ba838065425c4443417a2826042568030fea",
+    "outputs/program/publication-review/huang-luo-sources/upstream-model/matlab_code/figure_code_examples/plotPanel_5e_R2.m": "df5ecb35bcf4f5695aed531cd79e4f95b37fb192f1e7135616897e295102366a",
+    "outputs/program/publication-review/huang-luo-sources/upstream-model/matlab_code/figure_code_examples/plotPanel_5f_R2_CI.m": "9995a21a49225e542ed9b34d545861eb0a924523d562720453f97398550e1603",
+    "outputs/program/publication-review/huang-luo-sources/upstream-model/matlab_code/figure_code_examples/plotPanel_5g_R2_CI.m": "29ec0d877938d5929b8c2781e3d842701008e7b8f2be9ee502334bfdcb9b9e24",
+    "outputs/program/publication-review/huang-luo-sources/upstream-model/matlab_code/figure_code_examples/plotPanel_5h_R2_CI.m": "b8ba37a81d80b0396073928b9726ee879f0c789f619de973630cae258eee52a0",
+    "outputs/program/publication-review/huang-luo-sources/upstream-model/matlab_code/figure_code_examples/plotPanel_5i_R2.m": "005c759e0e5481fa212543f7749d3d2c9fc343fb6eef506d2fa704c72d0e027d",
+    "outputs/program/publication-review/huang-luo-sources/upstream-model/matlab_code/figure_code_examples/plotPanel_5j_R2_CI.m": "aa670a1ea99376f040488a48985b109e50e282e5585733e895ed55fd185dc050",
+    "outputs/program/publication-review/huang-luo-sources/upstream-model/matlab_code/figure_code_examples/plotPanel_5k_R2_CI.m": "7587eeb0651eb534edc8b4376f89c6bef922f9272740daabd28bc9423eaebb27",
+    "outputs/program/publication-review/huang-luo-sources/upstream-model/matlab_code/figure_code_examples/supplemental_figure_1.m": "a89d1f130ccfbee21a92a368c80831f760d035620d5c019bc7effefc3cc459e4",
+    "outputs/program/publication-review/huang-luo-sources/upstream-model/matlab_code/model_fitting/figures/Dx_steady_state_nonlinear_3_17-Apr-2024_2modules.mat": "060cf49ea370b1219635af185cb9181fecda288d2d14a6a54d8d1691a1963a10",
+    "outputs/program/publication-review/huang-luo-sources/upstream-model/matlab_code/model_fitting/figures/Dx_steady_state_nonlinear_3_17-Apr-2024_3modules.mat": "ad37789664af8453a9409ebcec3d553fd58585c6bad7d2b4d5f2ad863ca06ef9",
+    "outputs/program/publication-review/huang-luo-sources/upstream-model/matlab_code/model_fitting/figures/para_compare.xlsx": "20126d18c14b75ec86740e6ee654534bcf3c8f530f9fcb84f21da5f7cff93871",
+    "outputs/program/publication-review/huang-luo-sources/upstream-model/matlab_code/model_fitting/fit_nonlinear_models.m": "9b8593e4079762abd201596749071c184a8515fe4a1d3616506c3129adc0dbec",
+    "outputs/program/publication-review/huang-luo-sources/upstream-model/matlab_code/model_functions/Dx_steady_state_MBON_0301_2023.m": "d33a065ba3eb9b03d09388bc312f0fca4f079bc98c93143feefaec73d97336cb",
+    "outputs/program/publication-review/huang-luo-sources/upstream-model/matlab_code/model_functions/Error_nonlinear_activation_function_gether.m": "bdd2b7433345c1b670d1cac5738e75ea5ce5cbfcec1ccbb46795542b17c47ed9",
+    "outputs/program/publication-review/huang-luo-sources/upstream-model/matlab_code/model_functions/experimental_condition.m": "6f7ef1e4337267adfe76bc684882ab7ce3dce091baa3d284e4562fc9a96373af",
+    "outputs/program/publication-review/huang-luo-sources/upstream-model/matlab_code/model_functions/para_exp_transform_simplify.m": "ca11b45f270c0ab63753b90f4745a25bb0485944aa2bc9c096d237935b7a7307",
+    "outputs/program/publication-review/huang-luo-sources/upstream-model/matlab_code/model_functions/parameter_vec2mat.m": "a04289ee32b0ad10e0c0aae9b46001c16d07012fd65dae45d8b73e35ea51f60a",
+    "outputs/program/publication-review/huang-luo-sources/upstream-model/matlab_code/model_functions/parameter_vec_range.m": "a21c614120e2bc2ce7ab98e1fe7c0bf8f03655d0606c0271cab68975f2bf91b9",
+    "outputs/program/publication-review/huang-luo-sources/upstream-model/matlab_code/model_functions/reset_parameter_by_valance.m": "46144c07e45c767940fed322a7a33a23c99fd3c11d67264933f51a80ef4653e8",
+    "outputs/program/publication-review/huang-luo-sources/upstream-model/matlab_code/output_functions/function_plotPanel_5d.m": "b9692b9361065e503228758250364911c476ff791945ae0f6c804b6174a87fb8",
+    "outputs/program/publication-review/huang-luo-sources/upstream-model/matlab_code/output_functions/function_plotPanel_5j.m": "b9d21c2bea04c80d31ec9e40b283525011c62daea345f1d3ee4d9e83f5601df2",
+    "outputs/program/publication-review/huang-luo-sources/upstream-model/matlab_code/output_functions/load_original_data.m": "34929efa17bfa36406203ac39b67b5500a5e8b1e11c4fcd68171e6e97c651edf",
+    "outputs/program/publication-review/huang-luo-sources/upstream-model/matlab_code/output_functions/para_mu_CI_xls.m": "393098e78366288ddbd46047c295d130a35b45c35fa54a38a9bf1e65d6e97c5b",
+    "outputs/program/publication-review/huang-luo-sources/upstream-model/matlab_code/output_functions/parameter_CI_sample.m": "337eb9a1cb9f0d6ae8c3d44efabf8a9ddecd956a2a1fa072096b014b9cb0b7a9",
+    "outputs/program/publication-review/huang-luo-sources/upstream-model/matlab_code/output_functions/plot_Dx_data.m": "fc36f6d8da1e3bd909e593aec61a9c38ff43eba3a9872e8383ebde30d81a9e78",
+    "outputs/program/publication-review/huang-luo-sources/publisher/Huang2024-fullText.xml": "ecab3ebe9fe9917dd911a765e2ccc9d3aedf2a365327a57b51d0df1a474316d9",
+    "outputs/program/publication-review/huang-luo-sources/publisher/41586_2024_7819_MOESM3_ESM.pdf": "fc2b546b3a76b25a44c16ebf32cea42ac927252e817bf580f54b8017a763d870",
+    "outputs/program/publication-review/huang-luo-sources/publisher/41586_2024_7819_MOESM6_ESM.xlsx": "f04361b7d0c2932f39779b251398e8a438fb6f596a96a30e59626af518f0954d",
+    "outputs/program/publication-review/huang-luo-sources/licenses/GPL-3.0.txt": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "outputs/program/publication-review/huang-luo-sources/manifest.json": "82bdfdd8c25405e5d16a6f92c17b4f571a208e4005e79d6b48a3e625d3a9fb3d",
+    "outputs/program/m7/huang-reference/sources/generated-model-fitting/Dx_steady_state_nonlinear_3_17-Apr-2024_2modules_attractive.fig": "157f06136723d3981bd29ae40f21662d8bce9f558269d81546d711bef4e17c51",
+    "outputs/program/m7/huang-reference/sources/generated-model-fitting/Dx_steady_state_nonlinear_3_17-Apr-2024_2modules_repulsive.fig": "12a4db736abd4526653f769b7155903cbb013206619fa0b0939c1d2ca2db7981",
+    "outputs/program/m7/huang-reference/sources/generated-model-fitting/Dx_steady_state_nonlinear_3_17-Apr-2024_3modules_attractive.fig": "83d6f70999340384c4a81394fe4c84baf744c8c220a46c9cfd4495785167dfa4",
+    "outputs/program/m7/huang-reference/sources/generated-model-fitting/Dx_steady_state_nonlinear_3_17-Apr-2024_3modules_repulsive.fig": "536ea92b56d0def9629b8c8c6ec259b6ac0365a0df23c14a12d8bdbd627d00b2",
+    "outputs/program/m7/huang-reference/sources/generated-model-fitting/manifest.json": "95fc333118d333d849169efa75b4281fbc2d4c0848812c5314204c5ac2dad851"
+  },
+  "code_sha256": "16fcfceac08ab8770f24787af1896e27392f9237d553f9dccf9a43401c80bb23",
+  "execution": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "hardware": "local CPU; no GPU/runtime or shared service accessed",
+    "wall_s": 0.08422733400948346,
+    "rng": "none; deterministic para_mu only",
+    "parameter_fitting": "NOT_RUN",
+    "matlab_or_octave": "NOT_RUN; independent stored MATLAB outputs used",
+    "ci_resampling": "NOT_RUN; no Figure5c 10000-sample CI reconstruction claimed"
+  },
+  "biological_validation": "OPEN; observations were used by original authors for fitting",
+  "malecns_learning": "NOT_IMPLEMENTED_OR_VALIDATED",
+  "limitations": [
+    "Six DAN/MBON outputs, two abstract KC channels and imposed shock input; not molecular kinetics or an individual CNS.",
+    "Bout recurrence assumes the original fixed 3-s CS-US interval and long inter-bout rests.",
+    "March2023 figure protocol and April2024 fitting protocol retained separately.",
+    "No checkpoint, circuit mapping, runtime gains or body changed."
+  ],
+  "publication_scope": "Historical study summary; full method and limitations in docs/research. Not a fresh execution of this public tree."
+}

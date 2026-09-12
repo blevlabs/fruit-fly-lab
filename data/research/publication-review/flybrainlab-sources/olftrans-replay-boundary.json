@@ -1,0 +1,71 @@
+{
+  "claim": "source-configuration handoff, not simulation validation",
+  "retrieved_at_utc": "2026-09-12",
+  "sources": [
+    {
+      "file": "odor-appendix.pdf",
+      "url": "https://journals.plos.org/ploscompbiol/article/file?type=supplementary&id=10.1371/journal.pcbi.1007751.s001",
+      "bytes": 1379805,
+      "sha256": "dce7294403597ca6e7b40073e2147b8a91fa27bc010f5884ff1d4ac9a31ce6f7"
+    },
+    {
+      "file": "odor-appendix.txt",
+      "url": null,
+      "bytes": 13559,
+      "sha256": "8e2478f16e3c6e8cad62805db9236dff6fa4c0c90c536db4b129c6aa0596cbfc"
+    },
+    {
+      "file": "kim2015.pdf",
+      "url": "https://cdn.elifesciences.org/articles/06651/elife-06651-v1.pdf",
+      "bytes": 2730389,
+      "sha256": "030aa18ad975a909ec804dea1ff4dd8b2b432aac4ad905593a5b2b2ce000c458"
+    },
+    {
+      "file": "kim2015.txt",
+      "url": null,
+      "bytes": 62668,
+      "sha256": "a1bbad26c47f2522149a2aa9b8525616ba8aa28005d6c12401903b84873e4d8e"
+    }
+  ],
+  "reference": "Lazar & Yeh 2020 Fig4; Table2; Dataset1 constants",
+  "OTP_parameters": {
+    "br": 0.0217,
+    "dr": 2.94,
+    "a1": 45.0,
+    "b1": 0.8,
+    "gamma": 0.2105,
+    "a2": 146.1,
+    "b2": 117.2,
+    "a3": 2.539,
+    "b3": 0.9096,
+    "kappa": 8841.0,
+    "c": 0.06546,
+    "p": 1.0,
+    "Imax": 62.13
+  },
+  "units": {
+    "time": "s",
+    "input_concentration": "ppm",
+    "br": "1/(ppm*s)",
+    "dr": "1/s",
+    "gamma": "s",
+    "Imax": "pA"
+  },
+  "holdout_candidate": [
+    "elife15/ramp",
+    "elife15/parabola"
+  ],
+  "PSTH": {
+    "bin_width_s": 0.1,
+    "overlap_s": 0.075,
+    "spacing_s": 0.025
+  },
+  "biological_preparation": "female 2-5 d post-eclosion; NP3062-GAL4/NP3062-GAL4;UAS-mCD8::GFP/UAS-mCD8::GFP;+/+",
+  "cautions": [
+    "Source notebook is population illustration with different br/dr, not original figure reproduction.",
+    "BSG S1 sigma2.05 is Brownian gate noise; resolve source time/noise units before replay.",
+    "HDF5 has averaged PSTHs; no raw trial identifiers.",
+    "Do not treat published error numbers as reproduced; original error definition must be matched.",
+    "multiple_pairs/1,/2 identities and /2 PSTH units unresolved."
+  ]
+}

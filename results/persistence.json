@@ -1,0 +1,31 @@
+{
+  "status": "PASS: exact deterministic individual persistence",
+  "implementation": {
+    "codec": true,
+    "delayed_events": true,
+    "active_native_muscles": true,
+    "asynchronous_history": true,
+    "fluid_exchange": true,
+    "sensory_adaptation": true,
+    "fresh_individual_isolation": true,
+    "pause": true,
+    "trial_transition": true,
+    "full_reset": true,
+    "fresh_process_continuation": true,
+    "corrupt_incompatible_rejection": true,
+    "interrupted_write_recovery": true,
+    "corrupt_deflate_rejection": true,
+    "malformed_array_inventory_rejection": true,
+    "checkpoint_command_validation": true,
+    "failed_command_preserves_individual": true,
+    "restored_sources_reset_release_block": true,
+    "read_before_restore": true
+  },
+  "checkpoint_step": 400,
+  "final_step": 625,
+  "wall_seconds": 163.90796502889134,
+  "exact_scope": "All exported scientific state, including global RNGs; wall-time profiling/renderer counters excluded",
+  "numerical_qualification": "Exact replay at existing fixed timesteps; no new biological equation or timestep claim",
+  "biological_validation": "not evaluated",
+  "capabilities": "No learned memory or natural repertoire claim"
+}

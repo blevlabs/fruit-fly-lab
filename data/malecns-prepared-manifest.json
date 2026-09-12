@@ -1,0 +1,90 @@
+{
+  "dataset": "male-cns:v1.0",
+  "source": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/",
+  "annotation_rows": 211577,
+  "neurons": 167216,
+  "neuron_inclusion": "superclass present OR status Traced; no activity/behavior filter",
+  "excluded_annotation_status_counts": {
+    "Orphan": 15893,
+    "Glia": 11864,
+    "Unimportant": 10751,
+    "missing": 3470,
+    "Assign": 1832,
+    "Anchor": 551
+  },
+  "superclass_counts": {
+    "ol_intrinsic": 89403,
+    "cb_intrinsic": 32164,
+    "vnc_intrinsic": 13161,
+    "visual_projection": 9201,
+    "vnc_sensory": 6370,
+    "ol_sensory": 6098,
+    "cb_sensory": 4868,
+    "ascending_neuron": 1846,
+    "descending_neuron": 1314,
+    "vnc_motor": 708,
+    "visual_centrifugal": 563,
+    "sensory_ascending": 537,
+    "unclassified_traced": 516,
+    "cb_motor": 107,
+    "vnc_efferent": 94,
+    "cb_endocrine": 72,
+    "ENS": 50,
+    "vnc_tbc": 38,
+    "vnc_sensory_tbc": 36,
+    "vnc_endocrine": 22,
+    "cb_sensory_tbc": 14,
+    "sensory_descending": 12,
+    "efferent_ascending": 8,
+    "cb_efferent": 4,
+    "efferent_descending": 4,
+    "visual_projection_tbc": 2,
+    "sensory_ascending_tbc": 2,
+    "descending_neuron_tbc": 2
+  },
+  "raw_segment_edge_rows": 151856684,
+  "raw_segment_synapses": 311833243,
+  "neuronal_edge_rows": 25587572,
+  "neuronal_synapses": 124193283,
+  "excluded_segment_edge_rows": 126269112,
+  "unresolved_transmitter_neurons": 3656,
+  "unresolved_outgoing_edge_rows": 589524,
+  "unresolved_outgoing_synapses": 2051771,
+  "transmitter_counts": {
+    "acetylcholine": 103746,
+    "glutamate": 29303,
+    "gaba": 22073,
+    "histamine": 7897,
+    "unclear": 3142,
+    "missing": 514,
+    "dopamine": 392,
+    "octopamine": 101,
+    "serotonin": 48
+  },
+  "matrix_orientation": "row=postsynaptic, column=presynaptic",
+  "weights": "Exact positive released synapse counts, unthresholded within neuronal subset",
+  "fast_current_assumptions": {
+    "acetylcholine": 1,
+    "glutamate": -1,
+    "gaba": -1,
+    "histamine": -1,
+    "dopamine": 1,
+    "octopamine": 1,
+    "serotonin": 1
+  },
+  "unresolved_policy": "Structural edges preserved; unresolved transmitter contributes no fast current. No invented transmitter.",
+  "limitations": [
+    "Structural import is not full physiological or whole-animal validation.",
+    "Lumped LIF signs are estimates; receptor-specific glutamate effects and aminergic biochemistry are not resolved.",
+    "Unknown peripheral receptors, muscles, and fragmented/unclassified segments remain explicit coverage gaps."
+  ],
+  "source_sha256": {
+    "body-annotations-male-cns-v1.0-minconf-0.5.feather": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+    "body-neurotransmitters-male-cns-v1.0.feather": "95c9289220663abeb3409f3ad9e5a7f8a53f8093f5139d15502cd08da8879621",
+    "connectome-weights.feather": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1"
+  },
+  "artifact_sha256": {
+    "neurons.feather": "10fa864a4de8e9c857e0a9bfcb78e70910818047bd632b51db8cb3a7692a0e71",
+    "connectome.npz": "8a48ac6232523652ff21efdc65b2e6986aa9e584b3cf25a121f72f53d5d32652"
+  }
+}
