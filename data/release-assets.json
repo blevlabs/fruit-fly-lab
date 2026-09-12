@@ -1,0 +1,93 @@
+{
+  "release": "v0.2.0",
+  "assets": [
+    {
+      "name": "scientific-archive.tar.gz",
+      "bytes": 1360877078,
+      "sha256": "df064e58f9fa45d2000449ad7f4745f754bbba37354be4737b6a3d14eb7e2a8f",
+      "role": "Historical scientific inputs, results, references and sanitized scientific-state exports",
+      "license": "File-level terms in the scientific archive index",
+      "url": "https://github.com/blevlabs/fruit-fly-lab/releases/download/v0.2.0/scientific-archive.tar.gz"
+    },
+    {
+      "name": "flybody-meshes.tar.gz",
+      "bytes": 18808816,
+      "sha256": "bce4d8b0461e004c93d61dce9ee8bcdeed69815e37458743623a50f18976256a",
+      "role": "Original optional FlyBody mesh bundle",
+      "license": "Apache-2.0",
+      "url": "https://github.com/blevlabs/fruit-fly-lab/releases/download/v0.2.0/flybody-meshes.tar.gz"
+    },
+    {
+      "name": "malecns-v1-manifest.json",
+      "bytes": 3150,
+      "sha256": "b9e1142f5af7c30ebc7b9a0cbb36d9be7e5328395c474d070cc6e6a68c114ef3",
+      "role": "Prepared MaleCNS v1 data",
+      "license": "CC-BY-4.0",
+      "url": "https://github.com/blevlabs/fruit-fly-lab/releases/download/v0.2.0/malecns-v1-manifest.json"
+    },
+    {
+      "name": "malecns-v1-neurons.feather",
+      "bytes": 22559746,
+      "sha256": "10fa864a4de8e9c857e0a9bfcb78e70910818047bd632b51db8cb3a7692a0e71",
+      "role": "Prepared MaleCNS v1 data",
+      "license": "CC-BY-4.0",
+      "url": "https://github.com/blevlabs/fruit-fly-lab/releases/download/v0.2.0/malecns-v1-neurons.feather"
+    },
+    {
+      "name": "malecns-v1-connectome.npz",
+      "bytes": 79006223,
+      "sha256": "8a48ac6232523652ff21efdc65b2e6986aa9e584b3cf25a121f72f53d5d32652",
+      "role": "Prepared MaleCNS v1 data",
+      "license": "CC-BY-4.0",
+      "url": "https://github.com/blevlabs/fruit-fly-lab/releases/download/v0.2.0/malecns-v1-connectome.npz"
+    },
+    {
+      "name": "body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "bytes": 14483314,
+      "sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+      "role": "Original MaleCNS v1 source input",
+      "license": "CC-BY-4.0",
+      "url": "https://github.com/blevlabs/fruit-fly-lab/releases/download/v0.2.0/body-annotations-male-cns-v1.0-minconf-0.5.feather"
+    },
+    {
+      "name": "body-neurotransmitters-male-cns-v1.0.feather",
+      "bytes": 43282834,
+      "sha256": "95c9289220663abeb3409f3ad9e5a7f8a53f8093f5139d15502cd08da8879621",
+      "role": "Original MaleCNS v1 source input",
+      "license": "CC-BY-4.0",
+      "url": "https://github.com/blevlabs/fruit-fly-lab/releases/download/v0.2.0/body-neurotransmitters-male-cns-v1.0.feather"
+    },
+    {
+      "name": "connectome-weights.feather",
+      "bytes": 1051241946,
+      "sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1",
+      "role": "Original MaleCNS v1 source input",
+      "license": "CC-BY-4.0",
+      "url": "https://github.com/blevlabs/fruit-fly-lab/releases/download/v0.2.0/connectome-weights.feather"
+    },
+    {
+      "name": "Completeness_783.csv",
+      "bytes": 3327347,
+      "sha256": "bbb847a4cc2caaa7a16349722d220c087317b946d148d4d592d94d250617a311",
+      "role": "Legacy FlyWire v783 input; separate from MaleCNS",
+      "license": "CC-BY-NC-4.0",
+      "url": "https://github.com/blevlabs/fruit-fly-lab/releases/download/v0.2.0/Completeness_783.csv"
+    },
+    {
+      "name": "Connectivity_783.parquet",
+      "bytes": 100804642,
+      "sha256": "efeb23fb99098e9c390f6869969b2a121a2ee92c833cfc45ecb2c1d8e1af0347",
+      "role": "Legacy FlyWire v783 input; separate from MaleCNS",
+      "license": "CC-BY-NC-4.0",
+      "url": "https://github.com/blevlabs/fruit-fly-lab/releases/download/v0.2.0/Connectivity_783.parquet"
+    },
+    {
+      "name": "2025_Completeness_783.csv",
+      "bytes": 3465987,
+      "sha256": "52b0ac6094cd32c546f8d4c341e094376f48f4e791f8db9b166de5dff8199ea4",
+      "role": "Legacy FlyWire v783 input; separate from MaleCNS",
+      "license": "CC-BY-NC-4.0",
+      "url": "https://github.com/blevlabs/fruit-fly-lab/releases/download/v0.2.0/2025_Completeness_783.csv"
+    }
+  ]
+}

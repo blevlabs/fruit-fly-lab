@@ -1,6 +1,7 @@
 """Validate public source, documentation and data without starting simulations."""
 import argparse
 import ast
+import gzip
 import io
 import ipaddress
 import json
@@ -21,22 +22,34 @@ RULES = {
     'personal home path': re.compile(r'/(?:Users|home)/[^\s/"<>]+/|[A-Za-z]:\\Users\\'),
     'credential': re.compile(r'\b(?:gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{35,}|sk-[A-Za-z0-9_-]{32,}|AKIA[A-Z0-9]{16})\b'),
     'private IPv6 address': re.compile(r'\b(?:f[cd][0-9a-f]{2}|fe80)(?::[0-9a-f]{0,4}){3,}\b', re.IGNORECASE),
+    'captured access-challenge metadata': re.compile(r'__cf_' + r'chl_|X-Real' + r'-Ip|window\._cf_' + r'chl_opt'),
+    'captured challenge URL': re.compile(r'/cdn-cgi/(?:challenge-platform|content)[/?]'),
+    'populated web session token': re.compile(r'(?:name=["\'](?:csrf-token|authenticity_token)["\'][^>]*?(?:content|value)=["\'][^"\']+|["\'](?:csrf[_-]?token|authenticity_token)["\']\s*:\s*["\'][^"\']+)', re.IGNORECASE),
+    'signed URL credential': re.compile(r'[?&](?:access_token|id_token|auth_token|X-Amz-Signature|X-Goog-Signature)='),
 }
 IP = re.compile(r'(?<![\d.])(?:\d{1,3}\.){3}\d{1,3}(?![\d.])')
 
 def inspect_text(text, label, errors, denied):
+    text = text.replace('\x00', '').replace('\\x00', '')
     for kind, pattern in RULES.items():
         if pattern.search(text):
             errors.append(f'{label}: {kind}')
-    for match in IP.finditer(text):
+    # SVG path coordinates and explicit software versions are not IP addresses.
+    ip_text = re.sub(r'\bd=["\'][MmZzLlHhVvCcSsQqTtAa0-9eE+.,\s-]+["\']', '', text)
+    for match in IP.finditer(ip_text):
         token = match.group()
         try:
             ipaddress.IPv4Address(token)
         except ipaddress.AddressValueError:
             continue
+        prefix = ip_text[max(0, match.start()-40):match.start()]
+        if re.search(r'(?:[\w_-]*version|\bv\.)["\s:=]+$', prefix, re.IGNORECASE):
+            continue
+        if re.search(r'<sec\b[^>]*\bid=["\']sec$', prefix):
+            continue
         # CUDA dependency versions can have four components; they are not hosts.
         if label == 'uv.lock':
-            line = text[text.rfind('\n', 0, match.start())+1:text.find('\n', match.end())]
+            line = ip_text[ip_text.rfind('\n', 0, match.start())+1:ip_text.find('\n', match.end())]
             if re.fullmatch(r'\s*version\s*=\s*"'+re.escape(token)+r'"\s*', line):
                 continue
             if 'https://files.pythonhosted.org/' in line and re.search(r'/[^/\s"]+-'+re.escape(token)+r'-[^/\s"]+\.whl', line):
@@ -51,7 +64,9 @@ def inspect_file(path, errors, denied):
     suffix = path.suffix.lower()
     def inspect_numpy(stream, member_label):
         version = np.lib.format.read_magic(stream)
-        _, _, dtype = np.lib.format._read_array_header(stream, version)
+        reader = (np.lib.format.read_array_header_1_0 if version == (1, 0)
+                  else np.lib.format.read_array_header_2_0)
+        _, _, dtype = reader(stream)
         if dtype.hasobject:
             errors.append(f'{member_label}: object-array metadata cannot be inspected without pickle')
             return
@@ -74,6 +89,31 @@ def inspect_file(path, errors, denied):
                         inspect_numpy(stream, label+'!'+member.filename)
                 elif member.filename.endswith(('.xml', '.json', '.txt', '.rels')):
                     inspect_text(archive.read(member).decode('utf-8', errors='replace'), label+'!'+member.filename, errors, denied)
+    elif path.name.endswith(('.csv.gz', '.tsv.gz', '.json.gz', '.txt.gz')):
+        with gzip.open(path, 'rt') as stream:
+            for line in stream: inspect_text(line, label, errors, denied)
+    elif suffix in ('.h5', '.hdf5', '.h5j'):
+        import h5py
+        with h5py.File(path, 'r') as hdf:
+            def inspect_hdf(name, node):
+                inspect_text(name+str(dict(node.attrs)), label, errors, denied)
+                if isinstance(node, h5py.Dataset) and h5py.check_string_dtype(node.dtype):
+                    inspect_text(str(node.asstr()[()]), label+'!'+name, errors, denied)
+            inspect_hdf('/', hdf)
+            hdf.visititems(inspect_hdf)
+    elif path.name.endswith('-signal-video.bin'):
+        result = subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format_tags:stream_tags',
+                                 '-of', 'json', str(path)], capture_output=True, text=True)
+        if result.returncode:
+            errors.append(f'{label}: scientific video metadata inspection failed')
+        else:
+            inspect_text(result.stdout, label, errors, denied)
+    elif path.name.endswith('-signal.raw'):
+        # Indexed decoded uint8 voxel streams have no textual metadata channel.
+        # The export index verifies their exact bytes and source dimensions.
+        pass
+    elif path.name.endswith('-stack-header.bin'):
+        inspect_text(path.read_bytes().replace(b'\0', b'').decode('utf-8', errors='ignore'), label, errors, denied)
     elif suffix == '.npy':
         with path.open('rb') as stream: inspect_numpy(stream, label)
     elif suffix in ('.mat', '.fig'):

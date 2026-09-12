@@ -83,6 +83,22 @@
       "sha256": "efeb23fb99098e9c390f6869969b2a121a2ee92c833cfc45ecb2c1d8e1af0347",
       "license": "CC-BY-NC-4.0",
       "source": "https://flywire.ai/guidelines"
+    },
+    {
+      "group": "archive",
+      "path": "data/downloaded/scientific-archive.tar.gz",
+      "url": "https://github.com/blevlabs/fruit-fly-lab/releases/download/v0.2.0/scientific-archive.tar.gz",
+      "sha256": "df064e58f9fa45d2000449ad7f4745f754bbba37354be4737b6a3d14eb7e2a8f",
+      "license": "File-level terms in the scientific archive index",
+      "source": "https://github.com/blevlabs/fruit-fly-lab/releases/tag/v0.2.0"
+    },
+    {
+      "group": "assets",
+      "path": "data/downloaded/flybody-meshes.tar.gz",
+      "url": "https://github.com/blevlabs/fruit-fly-lab/releases/download/v0.2.0/flybody-meshes.tar.gz",
+      "sha256": "bce4d8b0461e004c93d61dce9ee8bcdeed69815e37458743623a50f18976256a",
+      "license": "Apache-2.0",
+      "source": "https://github.com/blevlabs/fruit-fly-lab/releases/tag/v0.2.0"
     }
   ],
   "notes": "Data downloads are explicit. Reference datasets have separate source terms; see data/README.md."

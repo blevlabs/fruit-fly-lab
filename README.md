@@ -76,11 +76,32 @@ Generated connectome files, caches, credentials and individual checkpoints are
 not versioned. The publication has a fresh history; operational records and
 personal environment configuration are not part of the public project.
 
+## Reuse the retained work
+
+The [v0.2.0 release](https://github.com/blevlabs/fruit-fly-lab/releases/tag/v0.2.0)
+includes prepared connectomes, the original MaleCNS inputs, legacy FlyWire inputs,
+optional FlyBody meshes, and a **1.36 GB scientific archive**. Its index covers
+**1,814 retained scientific files**, including exact raw sources/results and
+privacy-clean scientific-state exports. The complete download set is about
+**2.70 GB**; source clones stay much smaller.
+
+```sh
+./fly fetch --group prepared
+./fly fetch --group archive
+tar -xzf data/downloaded/scientific-archive.tar.gz
+./fly restore-data --list
+```
+
+Downloads are pinned by SHA-256. Historical state exports are useful research
+data; strict checkpoint compatibility still applies. See the [archive guide](archive/README.md),
+[file inventory](data/scientific-archive.json) and [asset checksums](data/release-assets.json).
+
 ## Methods, references and attribution
 
 - [Architecture and data flow](docs/architecture.md)
 - [Setup and data acquisition](docs/setup.md)
 - [Testing and evidence levels](docs/testing.md)
+- [Publication validation](docs/validation.md)
 - [Research report index](docs/research/README.md)
 - [Research and external-code references](docs/references.md)
 - [Comprehensive reference index](docs/reference-index.json)
